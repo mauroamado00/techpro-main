@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-08-2024 a las 22:42:38
+-- Tiempo de generación: 24-09-2024 a las 00:30:13
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -68,8 +68,29 @@ CREATE TABLE `oferta` (
 CREATE TABLE `producto` (
   `id` int(11) NOT NULL,
   `stock` int(11) NOT NULL,
-  `precio` int(11) NOT NULL
+  `precio` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`) VALUES
+(1, 50, 700, 'Smartphone'),
+(2, 30, 1000, 'Laptop'),
+(3, 100, 200, 'Auriculares'),
+(4, 75, 250, 'Smartwatch'),
+(5, 40, 500, 'Tablet'),
+(6, 150, 90, 'Teclado mecánico'),
+(7, 200, 30, 'Ratón óptico'),
+(8, 20, 200, 'Monitor 24\"'),
+(9, 60, 80, 'Cámara web'),
+(10, 25, 300, 'Proyector'),
+(11, 0, 0, ''),
+(12, 0, 0, ''),
+(13, 0, 0, ''),
+(14, 0, 0, '');
 
 -- --------------------------------------------------------
 
@@ -94,9 +115,17 @@ CREATE TABLE `usuario` (
   `password` varchar(255) NOT NULL,
   `nombre` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `direccion` varchar(255) NOT NULL,
-  `telefono` varchar(255) NOT NULL
+  `apellido` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`isAdmin`, `password`, `nombre`, `email`, `apellido`) VALUES
+(1, '12', 'mauro', 'mauroamado12@gmail.com', 'amado'),
+(0, '1', 'mauro', 'mauroamado700@gmail.com', 'amado'),
+(0, '1', '1', 'mma@aa', '');
 
 --
 -- Índices para tablas volcadas
@@ -133,7 +162,8 @@ ALTER TABLE `producto`
 -- Indices de la tabla `productocompra`
 --
 ALTER TABLE `productocompra`
-  ADD PRIMARY KEY (`idProducto`,`idCompra`);
+  ADD PRIMARY KEY (`idProducto`,`idCompra`),
+  ADD KEY `idCompra` (`idCompra`);
 
 --
 -- Indices de la tabla `usuario`
@@ -167,7 +197,30 @@ ALTER TABLE `oferta`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `compra`
+--
+ALTER TABLE `compra`
+  ADD CONSTRAINT `compra_ibfk_1` FOREIGN KEY (`emailUsuario`) REFERENCES `usuario` (`email`);
+
+--
+-- Filtros para la tabla `imagen`
+--
+ALTER TABLE `imagen`
+  ADD CONSTRAINT `imagen_ibfk_1` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`);
+
+--
+-- Filtros para la tabla `productocompra`
+--
+ALTER TABLE `productocompra`
+  ADD CONSTRAINT `productocompra_ibfk_1` FOREIGN KEY (`idCompra`) REFERENCES `compra` (`id`),
+  ADD CONSTRAINT `productocompra_ibfk_2` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

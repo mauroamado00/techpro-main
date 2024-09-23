@@ -60,8 +60,6 @@ header{
     font-size: 14px;
 }
 
-    /* bottom header */
-    
 .header {
     display: flex;
     align-items: center;
@@ -78,8 +76,8 @@ header{
 }
 
 .wish-card img {
-    width: 40px; /* Ajusta el ancho deseado */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 40px; 
+    height: auto;
 }
 
 
