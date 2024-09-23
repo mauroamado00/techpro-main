@@ -1,0 +1,162 @@
+/* styles.css */
+
+/* Barra de navegación */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+#loginButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
+    padding: 5px; /* Espacio interno para el botón */
+}
+
+.icon {
+    width: 24px; /* Tamaño del SVG */
+    height: 24px; /* Tamaño del SVG */
+    fill: white; /* Color del SVG */
+}
+
+/* Estilo para el formulario de productos */
+.formulario-producto {
+    padding: 30px;
+    margin: 80px auto 20px auto; /* Margin superior ajustado para el espacio debajo de la barra de navegación */
+    width: 450px; /* Ampliado para mejor presentación */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-producto h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    color: #333;
+}
+
+.formulario-producto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-producto label {
+    font-size: 14px;
+    color: #333;
+}
+
+.formulario-producto input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.formulario-producto button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.formulario-producto button:hover {
+    background-color: #0056b3;
+}
+
+#resultadoOperacion {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d9534f; /* Color rojo para mensajes de error */
+}
+
+/* Estilo para los productos */
+.producto {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espacio adicional dentro del contenedor */
+    display: flex;
+    flex-direction: column;
+    width: 240px; /* Ampliar ligeramente el ancho */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    cursor: pointer; /* Cursor de puntero para indicar clic */
+    margin: 10px;
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Ampliar ligeramente al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Bordes redondeados para imágenes */
+}
+
+.producto .nombre {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto .descripcion {
+    font-size: 12px;
+    color: #555;
+}
+
+.producto .precio {
+    margin-top: auto; /* Empujar el precio hacia abajo */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.producto button {
+    background-color: #dc3545; /* Color rojo para botón de eliminación */
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #c82333;
+}

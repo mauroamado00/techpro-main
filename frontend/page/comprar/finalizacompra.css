@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter';
+}
+button,a{
+    cursor: pointer;
+}
+:is(.balck-list) a{
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+:is(ul){
+    list-style: none;
+}
+:is(a){
+    text-decoration: none;
+}
+:is(.white-list) a{
+    color: #fff;
+    font-size: 16px;
+}
+
+/* top header */
+header{
+    border-bottom: 0.1px solid #c1c1c1;
+}
+.topheader{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top-header{ 
+    color: white;
+    background-color: black;
+    padding: 10px 0;
+    font-family: 'Poppins';
+    font-size: 13px;
+}   
+.top-header p {
+    margin-left: 20%;
+    margin-right: 10px;
+}
+.lang {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+    /* bottom header */
+    
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 5px 0px;
+    width: 80%;
+    margin: auto;
+}
+.header h2 a{
+    color: #000;
+    flex-grow: 0.5;
+    font: normal 700 24px;
+    letter-spacing: 0.03em;
+}
+
+/* container */
+
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+} 
+
+ /* informacion customer */
+
+.container > span a{
+    font: normal 400 14px/21px 'Poppins';
+    color: #949494;
+    margin: 30px 0;
+}
+.container > span > a > b{
+    color: #000;
+}
+.container h1 {
+    font: normal 500 36px/30px 'Inter';
+    letter-spacing: 0.04em;
+    margin: 50px 0;
+}
+.customer-info{
+    display: flex;
+    flex-direction: column;
+}
+.customer-info > input{
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+.customer-info > label{
+    font: normal 400 16px/24px 'Poppins';
+    opacity: 0.4;
+    margin: 5px 0;
+}
+.checkbox{
+    display: flex;
+    gap: 10px;
+}
+#checkbox{
+    accent-color: #DB4444;
+    width: 20px;
+}
+
+/* checkout informacion */
+
+.checkout-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 445px;
+    margin-top: 35px;
+}
+
+.cart-total{
+    display: flex;
+    flex-direction: column;
+}
+.cart-total > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.subtotal, .shipping {
+    border-bottom: 1px solid #000;
+}

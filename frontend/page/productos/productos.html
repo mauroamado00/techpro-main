@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productos.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container nav_container">
+          <a href="../index/index.html" class="nav_logo">TECHPROUY</a>
+          <ul class="nav_list">
+            <li class="nav_item"><a href="../index/index.html" class="nav_link">Inicio</a></li>
+            <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
+            <li class="nav_item"><a href="../iniciarSesion.html" class="nav_link">Iniciar Sesion</a></li> 
+            <li class="nav_item">
+              <a href="registro.html" class="nav_link">Registrarse</a>
+            </li>
+          </ul>
+  
+           <!-- SVG de la nvbar -->
+           <span class="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </span>
+        </div>
+      </nav>
+      <nav class="mobile_nav mobile_nav_hide">
+        <ul class="mobile_nav_list">
+          <li class="mobile_nav_item">
+            <a href="index.html" class="mobile_nav_link">Inicio</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../sobrenosotros/sobrenosotros.html" class="mobile_nav_link">SobreNosotros</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="contacto.html" class="mobile_nav_link">Contactanos</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../producto/producto.html" class="mobile_nav_link" >Productos</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../registro/registro.html" class="mobile_nav_link" >Registrarse</a>
+           
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../carrito/carrito.html" class="mobile_nav_link">Carrito</a>
+          </li>
+        </ul>
+      </nav>
+
+     <!-- BANNERS -->
+
+    <div class="banner-container">
+      <div class="banner-slide">
+          <img src="/frontend/image/productos.jpg" alt="Banner 1">
+      </div>
+      <div class="banner-slide">
+          <img src="/frontend/image/banner2.jpg" alt="Banner 2">
+      </div>
+      <div class="banner-slide">
+          <img src="/frontend/image/banner3.jpg" alt="Banner 3">
+      </div>
+   </div>
+
+
+    <div class="filtros">
+        <label for="filtroNombre">Filtrar por nombre:</label>
+        <input type="text" id="filtroNombre" placeholder="Nombre del producto">
+        
+        <label for="filtroPrecio">Filtrar por precio:</label>
+        <input type="range" id="filtroPrecio" min="0" max="1000" value="500" step="10">
+        <p id="precioValor">$500</p> 
+    </div>
+    
+    <div id="datos">
+        
+
+    </div>
+
+</body>
+</html>

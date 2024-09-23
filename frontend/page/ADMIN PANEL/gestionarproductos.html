@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Productos</title>
+    <link rel="stylesheet" href="gestionarproductos.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <span>Admin Panel</span>
+            </div>
+            <div class="nav-links">
+                <button id="loginButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h2V7zm-1 10.9c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulario para crear y eliminar productos -->
+    <div class="formulario-producto">
+        <h2>Crear/Eliminar Producto</h2>
+        <form id="productoForm">
+            <label for="productoId">ID:</label>
+            <input type="number" id="productoId" name="productoId" placeholder="ID del producto" required>
+
+            <label for="productoNombre">Nombre:</label>
+            <input type="text" id="productoNombre" name="productoNombre" placeholder="Nombre del producto" required>
+
+            <label for="productoPrecio">Precio:</label>
+            <input type="number" id="productoPrecio" name="productoPrecio" placeholder="Precio del producto" step="0.01" required>
+
+            <label for="productoStock">Stock:</label>
+            <input type="number" id="productoStock" name="productoStock" placeholder="Stock del producto" required>
+
+            <button type="button" id="crearProducto">Crear Producto</button>
+            <button type="button" id="eliminarProducto">Eliminar Producto</button>
+        </form>
+        <p id="resultadoOperacion"></p>
+    </div>
+
+    <!-- Contenedor de productos -->
+    <div id="datos">
+        
+    </div>
+
+</body>
+</html>

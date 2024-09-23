@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>TECHPROUY | PRINCIPAL</title>
+  </head>
+  <body>
+   
+    <!-- MENU NAVEGACION -->
+
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="index.html" class="nav_logo">TECHPROUY</a>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="index.html" class="nav_link">Inicio</a></li>
+          <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
+          <li class="nav_item"><a href="contacto.html" class="nav_link">Contactanos</a></li>
+          <li class="nav_item"><a href="../productos/productos.html" class="nav_link">Productos</a></li>
+
+          <li class="nav_item">
+            <a href="../registro/registro.html" class="nav_link"></a>
+          </li>
+        </ul>
+        
+        <a href="../carrito/carrito.html" class="icon_link">
+          <img src="/frontend/image/iconos/cart.png" alt="Carrito" class="icon_img">
+      </a>
+
+        <!-- Nvbar MOVIL -->
+    
+        <!-- SVG de la nvbar -->
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </span>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="index.html" class="mobile_nav_link">Inicio</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../sobrenosotros/sobrenosotros.html" class="mobile_nav_link">SobreNosotros</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="contacto.html" class="mobile_nav_link">Contactanos</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../producto/producto.html" class="mobile_nav_link" >Productos</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../registro/registro.html" class="mobile_nav_link" >Registrarse</a>
+         
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../carrito/carrito.html" class="mobile_nav_link">Carrito</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- BANNERS -->
+
+    <div class="banner-container">
+      <div class="banner-slide">
+          <img src="/frontend/image/banner1.jpg" alt="Banner 1">
+      </div>
+      <div class="banner-slide">
+          <img src="/frontend/image/banner2.jpg" alt="Banner 2">
+      </div>
+      <div class="banner-slide">
+          <img src="/frontend/image/banner3.jpg" alt="Banner 3">
+      </div>
+   </div>
+
+
+      <hr>
+   
+      <!-- Buscar por Categorias -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section_category">
+          <p class="section_category_p">Categorias</p>
+        </div>
+        <div class="section_header">
+          <h3 class="section_title">Buscar por Categorias</h3>
+        </div>
+        <div class="categories">
+
+          <div class="category">
+            <img
+              src="/frontend/image/iconos/computer.png"
+              alt=""
+              class="category_icon" />
+            <p class="category_name">Computadoras</p>
+          </div>
+          <div class="category">
+            <img src="/frontend/image/iconos/carcasa-de-telefono.png" alt="" class="category_icon" />
+            <p class="category_name">Accesorios</p>
+          </div>
+          <div class="category">
+            <img
+              src="/frontend/image/iconos/headphone.png"
+              alt=""
+              class="category_icon" />
+            <p class="category_name">Audiculares</p>
+          </div>
+          <div class="category">
+            <img src="/frontend/image/iconos/phone.png" alt="" class="category_icon" />
+            <p class="category_name">Celulares</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+      
+
+    <div class="section_category">
+      <p class="section_category_p">Ofertas</p>
+    </div>
+    <div class="section_header">
+      <h3 class="section_title">Los productos con descuentos por este mes.</h3>
+    </div>
+      <!-- CONTENT  -->
+      <div class="shop-content">
+          <!-- BOX 1 -->
+          <div class="product-box">
+              <img src="/frontend/image/productos/product-11.png" alt="" class="product-img">
+              <h2 class="product-title">Audifonos</h2>
+              <span class="product-price">$280</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- BOX 2 -->
+          <div class="product-box">
+              <img src="/frontend/image/productos/product-13.png" alt="" class="product-img">
+              <h2 class="product-title">BACKPACK</h2>
+              <span class="product-price">$59.5</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- BOX 3 -->
+          <div class="product-box">
+              <img src="image/items/product3.jpg" alt="" class="product-img">
+              <h2 class="product-title">METAL BOTTLE</h2>
+              <span class="product-price">$29.5</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- BOX 4 -->
+          <div class="product-box">
+              <img src="image/items/product4.jpg" alt="" class="product-img">
+              <h2 class="product-title">METAL SUNGLASSES</h2>
+              <span class="product-price">$105</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- BOX 5 -->
+          <div class="product-box">
+              <img src="image/items/product5.jpg" alt="" class="product-img">
+              <h2 class="product-title">PS5 Controller</h2>
+              <span class="product-price">$95</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- BOX 6 -->
+          <div class="product-box">
+              <img src="image/items/product6.jpg" alt="" class="product-img">
+              <h2 class="product-title">Galaxy Z Fold</h2>
+              <span class="product-price">$1400</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- BOX 7 -->
+          <div class="product-box">
+              <img src="image/items/product7.jpg" alt="" class="product-img">
+              <h2 class="product-title">Nokon Camera</h2>
+              <span class="product-price">$1700</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- BOX 8 -->
+          <div class="product-box">
+              <img src="image/items/product8.jpg" alt="" class="product-img">
+              <h2 class="product-title">Apple Watch</h2>
+              <span class="product-price">$110.5</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+      </div>
+      </section>
+  
+    <hr>
+
+      <!-- FOOTER -->
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">
+            Copyright TECHPROUY 2024. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- swiper Banner -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

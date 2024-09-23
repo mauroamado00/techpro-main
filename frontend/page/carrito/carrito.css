@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter';
+}
+button,a{
+    cursor: pointer;
+}
+:is(.balck-list) a{
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+:is(ul){
+    list-style: none;
+}
+:is(a){
+    text-decoration: none;
+}
+:is(.white-list) a{
+    color: #fff;
+    font-size: 16px;
+}
+.ShopNow {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 14px;
+} 
+
+    /* top header */
+
+header{
+    border-bottom: 0.1px solid #c1c1c1;
+}
+.topheader{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top-header{ 
+    color: white;
+    background-color: black;
+    padding: 10px 0;
+    font-family: 'Poppins';
+    font-size: 13px;
+}   
+.top-header p {
+    margin-left: 20%;
+    margin-right: 10px;
+}
+.lang {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+    /* bottom header */
+    
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 5px 0px;
+    width: 80%;
+    margin: auto;
+}
+.header h2 a{
+    color: #000;
+    flex-grow: 0.5;
+    font: normal 700 24px;
+    letter-spacing: 0.03em;
+}
+
+.wish-card img {
+    width: 40px; /* Ajusta el ancho deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+   /* header menu */
+
+.menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    margin-right: 30px;
+}
+
+   /*<!--=====  Container  =====-->*/
+   .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.add-product-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.add-product-form input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 150px;
+}
+.add-product-form input[type="text"] {
+    flex: 2;
+}
+.add-product-form input[type="number"] {
+    flex: 1;
+}
+.add-product-form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thead {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.thead p {
+    margin: 0;
+    font-weight: 600;
+}
+.product-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid #e1e5eb;
+    text-align: center;
+}
+.product-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.button-container button, .button-container a {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    color: #ffffff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.button-container button:hover, .button-container a:hover {
+    background-color: #0056b3;
+}
+.button-container button:active, .button-container a:active {
+    transform: scale(0.98);
+}
+.button-container a {
+    display: inline-block;
+    text-align: center;
+}
+.button-container button {
+    background-color: #28a745;
+}
+.button-container button:hover {
+    background-color: #218838;
+}
+.button-container button:active {
+    background-color: #1e7e34;
+}
+.volver{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.volver button{
+    padding: 16px 48px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.volver button:hover{
+    color: #fff;
+    background-color: #000;
+}
+.procesar-compra{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+} 

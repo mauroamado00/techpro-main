@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TECHPRO | LOGIN</title>
+    <script src="script.js" type="module"></script>
+
+  </head>
+
+  <body>
+ 
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="index.html" class="nav_logo">TECHPROUY</a>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="../index/index.html" class="nav_link">Inicio</a></li>
+          <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">SobreNosotros</a></li>
+          <li class="nav_item"><a href="" class="nav_link">Contactanos</a></li>
+          <li class="nav_item">
+            <a href="registro.html" class="nav_link">Registrarse</a>
+          </li>
+        </ul>
+        </div>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </span>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="iniciarSesion.html" class="mobile_nav_link">iniciodesesion</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../sobrenosotros/sobrenosotros.html" class="mobile_nav_link">SobreNosotros</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="contacto.html" class="mobile_nav_link">Contactanos</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../registro/registro.html" class="mobile_nav_link">Registrarse</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../carrito/carrito.html" class="mobile_nav_link">Carrito</a>
+        </li>
+      </ul>
+    </nav>
+
+        <!-- inicio sesion form -->
+        <div class="form-content">
+          <form id="frmInicio" class="auth_form">
+            <h2 class="form-titulo">Inicio de Sesión</h2>
+            <p class="form-p">Ingresa los datos debajo</p>
+            <div class="form_group">
+              <input type="email" placeholder="Email" name="email" class="form-input" />
+            </div>
+            <div class="form_group form-password">
+              <input
+                type="password"
+                placeholder="Password" name="password"
+                class="form-input" 
+              />
+            </div>
+            <div class="form_group">
+              <input type="submit" value="Logear" class="form-btn">
+            </div>
+            <div class="form_group">
+              <span
+                >No tienes una cuenta aún?
+                <a href="../registro/registro.html" class="form_auth_link"
+                  >Registrarse</a
+                ></span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer -->
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">TECHPROUY</a>
+          <div class="footer_p">
+           Si tienes problemas para registrarte o iniciar sesion, puedes enviarnos un mensaje a nuestras redes sociales. nuestro personal está listo para ayudarlo
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Información</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Ombues de Lavalle, Colonia</li>
+            <li class="li footer_list_item">TECHPRO@gmail.com</li>
+            <li class="li footer_list_item"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">
+            Copyright TECHPRO 2024. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

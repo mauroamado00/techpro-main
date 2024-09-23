@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHPRO | Proceso de Compra</title>
+    <link rel="stylesheet" href="finalizacompra.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Finalizar Compra</h1>
+        <div class="checkout">
+            <div class="customer-info">
+                <label for="nombre-completo">Nombre Completo</label>
+                <input type="text" id="nombre-completo">
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad">
+                <label for="numero-telefono">Numero de Telefono</label>
+                <input type="tel" id="numero-telefono">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox" value="1">
+                    <label for="checkbox">Guardar informacion para proximas compras</label>
+                </div>
+            </div>
+            <div class="checkout-info">
+                <div class="product1-detail">
+                    <div class="product1">
+                       
+                    </div>
+                    <p></p>
+                </div>
+                <div class="product2-detail">
+                 
+                    <p></p>
+                </div>
+                <div class="cart-total">
+                    <div class="subtotal">
+                        <p>Subtotal:</p>
+                        <p></p>
+                    </div>
+                    <div class="shipping">
+                        <p>Envío:</p>
+                        <p>Gratis</p>
+                    </div>
+                    <div>
+                        <p>Total</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="pay-method">
+                    <div class="bank-type">
+                        <div class="pay-by-bank">
+                            <input type="radio" id="bank" name="pay" value="bank">
+                            <label for="bank">Tarjeta</label>
+                        </div>
+                    
+                    </div>
+                    <div class="cash-on-delivery">
+                        <input type="radio" id="cash-on-delivery" name="pay" value="CashOnDelivery" checked>
+                        <label for="CashOnDelivery">Efectivo</label>
+                    </div>
+                </div>
+                <button id="realize-order">Realizar pedido</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
