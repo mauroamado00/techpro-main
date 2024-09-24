@@ -29,7 +29,8 @@ switch($function){
         $nombre = $_POST['nombre'];
         $stock = $_POST['stock'];
         $precio = $_POST['precio'];
-        $resultado = (new productos)->verproductos($id,$nombre,$stock,$precio);
+        $imagen_url = $_POST['imagen'];
+        $resultado = (new productos)->verproductos($id,$nombre,$stock,$precio, $imagen_url);
         echo json_encode($resultado);
 
     }

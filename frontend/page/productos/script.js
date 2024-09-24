@@ -11,16 +11,16 @@ window.onload = () => {
 
 function obtenerProductos() {
     const productos = [
-        { nombre: 'Smartphone', precio: 699.99, stock: 50, imagen: '' },
-        { nombre: 'Laptop', precio: 999.99, stock: 30 },
-        { nombre: 'Auriculares', precio: 199.99, stock: 100 },
-        { nombre: 'Smartwatch', precio: 249.99, stock: 75 },
-        { nombre: 'Tablet', precio: 499.99, stock: 40 },
-        { nombre: 'Teclado mecánico', precio: 89.99, stock: 150 },
-        { nombre: 'Ratón óptico', precio: 29.99, stock: 200 },
-        { nombre: 'Monitor 24"', precio: 199.99, stock: 20 },
-        { nombre: 'Cámara web', precio: 79.99, stock: 60 },
-        { nombre: 'Proyector', precio: 299.99, stock: 25 }
+        { nombre: 'Smartphone', precio: 699.99, stock: 50, imagen: 'https://smartphonecash.es/wp-content/uploads/2023/07/iphone-14-pro-max-morado-oscuro-01.jpg' },
+        { nombre: 'Laptop', precio: 999.99, stock: 30, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6583/6583789_sd.jpg;maxHeight=640;maxWidth=550;format=webp'},
+        { nombre: 'Auriculares', precio: 199.99, stock: 100, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/665589cb-53f9-4d3e-a86d-739d85408620.jpg;maxHeight=640;maxWidth=550;format=webp' },
+        { nombre: 'Smartwatch', precio: 249.99, stock: 75, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6584/6584970_sd.jpg;maxHeight=640;maxWidth=550;format=webp' },
+        { nombre: 'Tablet', precio: 499.99, stock: 40, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6566/6566195_sd.jpg;maxHeight=640;maxWidth=550;format=webp' },
+        { nombre: 'Teclado mecánico', precio: 89.99, stock: 150, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412548_sd.jpg;maxHeight=640;maxWidth=550;format=webp' },
+        { nombre: 'Ratón óptico', precio: 29.99, stock: 200, imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/19/191822/atreo-web-000.jpg' },
+        { nombre: 'Monitor 24"', precio: 199.99, stock: 20, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/08fe3bbf-1472-4f99-8295-c24b8a375265.jpg;maxHeight=640;maxWidth=550;format=webp' },
+        { nombre: 'Cámara web', precio: 79.99, stock: 60, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6550/6550199_sd.jpg;maxHeight=640;maxWidth=550;format=webp' },
+        { nombre: 'Proyector', precio: 299.99, stock: 25, imagen: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/74f4a228-d58d-44d8-861f-f86080d43ecf.jpg;maxHeight=640;maxWidth=550;format=webp' }
     ];
 
     return productos;
@@ -54,9 +54,9 @@ function agregarEventosFiltro() {
         nombreFiltro = inputNombre.value.toLowerCase();
         filtrarProductos();
     }
-
+    
     inputPrecio.oninput = () => {
-        precioFiltro = parseFloat(inputPrecio.value); // Convierte a número o asigna Infinity si está vacío
+        precioFiltro = parseFloat(inputPrecio.value);
         document.querySelector("#precioValor").textContent = `$${precioFiltro}`; // Actualiza el texto que muestra el valor
         filtrarProductos();
     }
@@ -72,38 +72,3 @@ function filtrarProductos() {
 
     mostrarProductos(productosFiltrados); 
 }
-
-// slides
-
-let slideIndex = 0;
-const slides = document.querySelectorAll('.banner-slide');
-const totalSlides = slides.length;
-
-function showSlide(index) {
-  // Asegurarse de que el índice esté en el rango correcto
-  if (index >= totalSlides) {
-    slideIndex = 0;
-  } else if (index < 0) {
-    slideIndex = totalSlides - 1;
-  } else {
-    slideIndex = index;
-  }
-
-  // Ocultar todas las diapositivas
-  slides.forEach((slide, i) => {
-    slide.style.display = i === slideIndex ? 'block' : 'none';
-  });
-}
-
-// Avanzar o retroceder en las diapositivas
-function moveSlide(step) {
-  showSlide(slideIndex + step);
-}
-
-// Mostrar la primera diapositiva al cargar
-showSlide(slideIndex);
-
-// Cambiar diapositiva automáticamente cada 5 segundos
-setInterval(() => {
-  moveSlide(1);
-}, 5000);

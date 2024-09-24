@@ -54,8 +54,6 @@ header{
     align-items: center;
     font-size: 14px;
 }
-
- /* style bottom header */
     
 .header {
     display: flex;
@@ -71,8 +69,6 @@ header{
     font: normal 700 24px;
     letter-spacing: 0.03em;
 }
-
-    /* menu style */
 
 .about{
     padding-bottom: 10px;
@@ -208,39 +204,6 @@ header{
   margin-right: 10px; 
 }
 
-/* servicios */
-
-.customer-service {
-display: flex;
-flex-wrap: wrap; 
-justify-content: center; 
-}
-
-.servicio-cliente > div {
-flex: 0 0 calc(33.33% - 20px); 
-margin: 10px; 
-text-align: center; 
-padding: 10px; 
-background-color: #f0f0f0; 
-border-radius: 8px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.servicio-cliente > div img {
-max-width: 60px; 
-height: auto; 
-}
-
-.servicio-cliente > div h3 {
-font-size: 16px; 
-margin: 10px 0; 
-}
-
-.servicio-cliente > div p {
-font-size: 14px; 
-color: #666; 
-margin: 8px 0; 
-}
 
 /* navbaar */
 .nav {
@@ -478,5 +441,5 @@ margin: 8px 0;
 
 .servicio-cliente p {
   font-size: 14px;
-  color: #c1c1c1;
+  color: #000;
 }

@@ -118,6 +118,15 @@ ul {
   align-items: center;
 }
 
+.nav_cart {
+  position: relative;
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 400px; 
+}
+
+
   /* MOBILE NAVBAR */
 
 @media only screen and (max-width: 1070px) {
@@ -148,6 +157,9 @@ ul {
   }
   .hamburger {
     display: block;
+  }
+  .nav_cart {
+    display: none;
   }
 }
 @media only screen and (max-width: 800px) {

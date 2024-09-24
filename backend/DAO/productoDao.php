@@ -6,8 +6,8 @@
 class productos{
 
 
-    public function verproductos($id, $nombre, $stock, $precio) {
-        $sql = "INSERT INTO producto (id, nombre, stock, precio) VALUES ('$id', '$nombre', '$stock', '$precio')";
+    public function verproductos($id, $nombre, $stock, $precio, $imagen_url) {
+        $sql = "INSERT INTO producto (id, nombre, stock, precio, imagen_url) VALUES ('$id', '$nombre', '$stock', '$precio', '$imagen_url')";
         $connection = connection();
         try {
             $connection->query($sql);

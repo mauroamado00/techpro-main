@@ -31,8 +31,6 @@ button,a{
     font-size: 14px;
 } 
 
-    /* top header */
-
 header{
     border-bottom: 0.1px solid #c1c1c1;
 }
@@ -80,9 +78,7 @@ header{
     height: auto;
 }
 
-
-   /* header menu */
-
+/* nvbar */
 .menu{
     display: flex;
     gap: 20px;
@@ -91,7 +87,6 @@ header{
     margin-right: 30px;
 }
 
-   /*<!--=====  Container  =====-->*/
    .container {
     width: 90%;
     max-width: 1200px;
