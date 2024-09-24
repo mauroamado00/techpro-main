@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-09-2024 a las 00:30:13
+-- Tiempo de generación: 24-09-2024 a las 02:03:25
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -69,28 +69,29 @@ CREATE TABLE `producto` (
   `id` int(11) NOT NULL,
   `stock` int(11) NOT NULL,
   `precio` int(11) NOT NULL,
-  `nombre` varchar(255) NOT NULL
+  `nombre` varchar(255) NOT NULL,
+  `imagen_url` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`) VALUES
-(1, 50, 700, 'Smartphone'),
-(2, 30, 1000, 'Laptop'),
-(3, 100, 200, 'Auriculares'),
-(4, 75, 250, 'Smartwatch'),
-(5, 40, 500, 'Tablet'),
-(6, 150, 90, 'Teclado mecánico'),
-(7, 200, 30, 'Ratón óptico'),
-(8, 20, 200, 'Monitor 24\"'),
-(9, 60, 80, 'Cámara web'),
-(10, 25, 300, 'Proyector'),
-(11, 0, 0, ''),
-(12, 0, 0, ''),
-(13, 0, 0, ''),
-(14, 0, 0, '');
+INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`, `imagen_url`) VALUES
+(1, 50, 700, 'Smartphone', ''),
+(2, 30, 1000, 'Laptop', ''),
+(3, 100, 200, 'Auriculares', ''),
+(4, 75, 250, 'Smartwatch', ''),
+(5, 40, 500, 'Tablet', ''),
+(6, 150, 90, 'Teclado mecánico', ''),
+(7, 200, 30, 'Ratón óptico', ''),
+(8, 20, 200, 'Monitor 24\"', ''),
+(9, 60, 80, 'Cámara web', ''),
+(10, 25, 300, 'Proyector', ''),
+(11, 0, 0, '', ''),
+(12, 0, 0, '', ''),
+(13, 0, 0, '', ''),
+(14, 0, 0, '', '');
 
 -- --------------------------------------------------------
 
