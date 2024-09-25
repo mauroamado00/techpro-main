@@ -7,6 +7,7 @@ window.onload = () => {
     allProductos = productos;
     mostrarProductos(productos);
     agregarEventosFiltro();
+    agregarEvento();
 }
 
 function obtenerProductos() {
@@ -27,6 +28,7 @@ function obtenerProductos() {
 }
 
 
+
 function mostrarProductos(productos) {
     let datosElement = document.querySelector("#datos");
     datosElement.innerHTML = "";
@@ -37,9 +39,9 @@ function mostrarProductos(productos) {
         <div class="producto-info">
             <p>ID: ${producto.id}</p>
             <p>Nombre: ${producto.nombre}</p>
-            <p>Precio: $${producto.precio.toFixed(2)}</p>
+            <p>Precio: $${producto.precio}</p>
             <p>Stock: ${producto.stock}</p>
-            <button>Ver Más</button>
+            <button>Comprar</button>
         </div>
     </div>
     `;
@@ -71,4 +73,10 @@ function filtrarProductos() {
     });
 
     mostrarProductos(productosFiltrados); 
+}
+
+function agregarCarrito(){
+
+
+
 }
