@@ -57,9 +57,9 @@ class usuario{
         $connection = connection();
         try{
             $connection->query($sql);
-            return new respuesta(true,"Usuario eliminado",null);
+            return new respuesta(true,"Usuario modificado",null);
         }catch(Exception $e){
-            return new respuesta(false,"Error al eliminar el usuario",null);
+            return new respuesta(false,"Error al modificar el usuario",null);
         }
 
     }
