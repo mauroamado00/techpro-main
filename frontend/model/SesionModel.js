@@ -1,13 +1,13 @@
-export default class producto{
-    email;
-    password;
+// export default class producto{
+//     email;
+//     password;
 
 
 
-constructor(email,password){
+// constructor(email,password){
 
-    this.email = email;
-    this.password = password;
+//     this.email = email;
+//     this.password = password;
   
-}
-}
+// }
+// }
