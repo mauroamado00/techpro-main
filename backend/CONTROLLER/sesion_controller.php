@@ -25,7 +25,7 @@ switch($function){
 
     function iniciarsesion(){
         $email = $_POST['email'];
-        $contraseña = $_POST['password'];
+        $contraseña = $_POST['contraseña'];
         $respusta = (new SesionDao)->iniciarsesion($email,$contraseña);
         echo json_encode($respusta);
     }

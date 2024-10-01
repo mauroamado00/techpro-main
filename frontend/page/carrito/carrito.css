@@ -136,83 +136,27 @@ header{
     border: none;
   }
   
-.thead {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 1rem;
-    border-radius: 8px 8px 0 0;
-    text-align: center;
-    font-size: 1.1rem;
+ 
+#cart {
+  list-style: none;
+  padding: 0;
 }
-.thead p {
-    margin: 0;
-    font-weight: 600;
+
+#total {
+  font-weight: bold;
+  margin-top: 20px;
 }
-.product-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 1rem;
-    border-bottom: 1px solid #e1e5eb;
-    text-align: center;
+
+#checkout {
+  margin-top: 20px;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.product-row:nth-child(even) {
-    background-color: #f9f9f9;
+
+#checkout:hover {
+  background: #0056b3;
 }
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-.button-container button, .button-container a {
-    padding: 0.75rem 1.5rem;
-    border: none;
-    color: #ffffff;
-    background-color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 1rem;
-    font-weight: 500;
-}
-.button-container button:hover, .button-container a:hover {
-    background-color: #0056b3;
-}
-.button-container button:active, .button-container a:active {
-    transform: scale(0.98);
-}
-.button-container a {
-    display: inline-block;
-    text-align: center;
-}
-.button-container button {
-    background-color: #28a745;
-}
-.button-container button:hover {
-    background-color: #218838;
-}
-.button-container button:active {
-    background-color: #1e7e34;
-}
-.volver{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-.volver button{
-    padding: 16px 48px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-.volver button:hover{
-    color: #fff;
-    background-color: #000;
-}
-.procesar-compra{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 68px;
-} 

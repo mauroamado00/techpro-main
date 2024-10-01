@@ -106,7 +106,6 @@ ul {
   text-decoration: none;
 }
 
-
 .nav_item:hover {
   transform: scale(1.05); 
   background-color: #e2e6ea; 
@@ -158,6 +157,10 @@ ul {
   .hamburger {
     display: block;
   }
+  .producto {
+    width: calc(47% - 30px);
+  }
+  
 }
 @media only screen and (max-width: 800px) {
   .gallery {
@@ -186,15 +189,6 @@ ul {
 }
 .mobile_nav_hide {
   display: none;
-}
-
-@media only screen and (max-width: 800px) {
-  .auth_img {
-    display: none;
-  }
-  .auth_content {
-    width: 100%;
-  }
 }
 
 /* hr */
@@ -253,6 +247,8 @@ hr {
   color: #6c757d;
 }
 
+/* productos */
+
 .producto {
   background-color: #fff;
   border: 1px solid #ced4da;
@@ -264,12 +260,17 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s ease; /* Agregado para un efecto de elevación */
+}
+
+.producto:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
 }
 
 .producto-imagen {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 8px; /* Bordes más suaves */
   margin-bottom: 10px;
 }
 
@@ -281,6 +282,7 @@ hr {
   margin: 5px 0;
   font-size: 16px;
   color: #333;
+  line-height: 1.5; /* Mejor legibilidad */
 }
 
 .producto button {
@@ -291,11 +293,12 @@ hr {
   padding: 10px 15px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para el botón */
 }
 
 .producto button:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Efecto de aumento en el botón al pasar el ratón */
 }
 
 /* banner css */

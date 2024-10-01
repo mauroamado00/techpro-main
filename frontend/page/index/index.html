@@ -17,19 +17,27 @@
         <ul class="nav_list">
           <li class="nav_item"><a href="index.html" class="nav_link">Principal</a></li>
           <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
-          <li class="nav_item"><a href="../productos/productos.html" class="nav_link">Productos</a></li>
+          <li class="nav_item">
+            <a href="../productos/productos.html" class="nav_link">Productos</a>
+            <ul class="dropdown">
+              <li><a href="productos/computadoras.html" class="nav_link">Computadoras</a></li>
+              <li><a href="productos/accesorios.html" class="nav_link">Accesorios</a></li>
+              <li><a href="productos/audiculares.html" class="nav_link">Audiculares</a></li>
+              <li><a href="productos/celulares.html" class="nav_link">Celulares</a></li>
+            </ul>
+          </li>
           <li class="nav_item"><a href="../iniciarSesion/iniciarSesion.html" class="nav_link">Inicio de Sesion</a></li>
         </ul>
         
         <a href="../registro/registro.html" class="icon_link">
           <img src="/frontend/image/iconos/usuario.png" alt="Registro" class="icon_img">
-      </a>
+        </a>
         <a href="../carrito/carrito.html" class="icon_link">
           <img src="/frontend/image/iconos/cart.png" alt="Carrito" class="icon_img">
-      </a>
-
+        </a>
+      </div>
+    </nav>
     
-
         <!-- Nvbar MOVIL -->
     
         <!-- SVG de la nvbar -->
@@ -52,20 +60,17 @@
     <nav class="mobile_nav mobile_nav_hide">
       <ul class="mobile_nav_list">
         <li class="mobile_nav_item">
-          <a href="index.html" class="mobile_nav_link">Inicio</a>
+          <a href="../sobrenosotros/sobrenosotros.html" class="mobile_nav_link">Sobre Nosotros</a>
         </li>
         <li class="mobile_nav_item">
-          <a href="../sobrenosotros/sobrenosotros.html" class="mobile_nav_link">SobreNosotros</a>
-        </li>
-        <li class="mobile_nav_item">
-          <a href="contacto.html" class="mobile_nav_link">Contactanos</a>
-        </li>
-        <li class="mobile_nav_item">
-          <a href="../producto/producto.html" class="mobile_nav_link" >Productos</a>
+          <a href="../productos/productos.html" class="mobile_nav_link" >Productos</a>
+
         </li>
         <li class="mobile_nav_item">
           <a href="../registro/registro.html" class="mobile_nav_link" >Registrarse</a>
-         
+        </li>
+        <li class="mobile_nav_item">
+          <a href="../iniciarSesion/iniciarSesion.html" class="mobile_nav_link" >Iniciar Sesion</a>
         </li>
         <li class="mobile_nav_item">
           <a href="../carrito/carrito.html" class="mobile_nav_link">Carrito</a>
@@ -91,41 +96,37 @@
    
       <!-- Buscar por Categorias -->
 
-    <section class="section">
-      <div class="container">
-        <div class="section_category">
-          <p class="section_category_p">Categorias</p>
-        </div>
-        <div class="section_header">
-          <h3 class="section_title">Buscar por Categorias</h3>
-        </div>
-        <div class="categories">
-
-          <div class="category">
-            <img
-              src="/frontend/image/iconos/computer.png"
-              alt=""
-              class="category_icon" />
-            <p class="category_name">Computadoras</p>
+      <section class="section">
+        <div class="container">
+          <div class="section_category">
+            <p class="section_category_p">Categorías</p>
           </div>
-          <div class="category">
-            <img src="/frontend/image/iconos/carcasa-de-telefono.png" alt="" class="category_icon" />
-            <p class="category_name">Accesorios</p>
+          <div class="section_header">
+            <h3 class="section_title">Buscar por Categorías</h3>
           </div>
-          <div class="category">
-            <img
-              src="/frontend/image/iconos/headphone.png"
-              alt=""
-              class="category_icon" />
-            <p class="category_name">Audiculares</p>
-          </div>
-          <div class="category">
-            <img src="/frontend/image/iconos/phone.png" alt="" class="category_icon" />
-            <p class="category_name">Celulares</p>
+          <div class="categories">
+      
+            <a href="../productos/productos.html" class="category">
+              <img src="/frontend/image/iconos/computer.png" alt="Computadoras" class="category_icon" />
+              <p class="category_name">Computadoras</p>
+            </a>
+            <a href="productos/accesorios.html" class="category">
+              <img src="/frontend/image/iconos/carcasa-de-telefono.png" alt="Accesorios" class="category_icon" />
+              <p class="category_name">Accesorios</p>
+            </a>
+            <a href="productos/audiculares.html" class="category">
+              <img src="/frontend/image/iconos/headphone.png" alt="Audiculares" class="category_icon" />
+              <p class="category_name">Audiculares</p>
+            </a>
+            <a href="productos/celulares.html" class="category">
+              <img src="/frontend/image/iconos/phone.png" alt="Celulares" class="category_icon" />
+              <p class="category_name">Celulares</p>
+            </a>
+            
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
     
     <hr>
       
@@ -136,9 +137,6 @@
     <div class="section_header">
       <h3 class="section_title">Los productos con descuentos por este mes.</h3>
     </div>
-      
-
-
 
     <hr>
 

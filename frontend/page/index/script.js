@@ -30,3 +30,32 @@ showSlide(slideIndex);
 setInterval(() => {
   moveSlide(1);
 }, 5000);
+
+// desplegar la nvbar mobile
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mobileNav = document.querySelector('.mobile_nav');
+  const hamburger = document.querySelector('.hamburger');
+
+  // Abre y cierra el menú móvil al hacer clic en la hamburguesa
+  hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('active'); // Cambia la clase para mostrar/ocultar el menú
+  });
+
+  // Cierra el menú al hacer clic en cualquier enlace
+  const navLinks = document.querySelectorAll('.mobile_nav_link');
+  navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+          mobileNav.classList.remove('active'); // Elimina la clase para ocultar el menú
+      });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile_nav');
+
+  hamburger.addEventListener('click', function() {
+      mobileNav.classList.toggle('mobile_nav_hide'); // Alterna la clase para mostrar/ocultar
+  });
+});

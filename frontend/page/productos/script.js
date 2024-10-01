@@ -41,7 +41,7 @@ function mostrarProductos(productos) {
             <p>Nombre: ${producto.nombre}</p>
             <p>Precio: $${producto.precio}</p>
             <p>Stock: ${producto.stock}</p>
-            <button>Comprar</button>
+            <button class="btn-add">Agregar</button>
         </div>
     </div>
     `;
@@ -75,8 +75,3 @@ function filtrarProductos() {
     mostrarProductos(productosFiltrados); 
 }
 
-function agregarCarrito(){
-
-
-
-}
