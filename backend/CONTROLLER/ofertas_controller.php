@@ -25,7 +25,6 @@ switch($function){
         $oferta = $_POST['oferta'];
         $fechainicio = $_POST['fechainicio'];
         $fechafin = $_POST['fechafin'];
-      
         $resultado = (new ofertas())->verofertas($id, $oferta, $fechainicio, $fechafin);
         echo json_encode($resultado);
 

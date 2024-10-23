@@ -9,31 +9,31 @@
 </head>
 <body>
 
-        <nav class="nav">
-            <div class="container nav_container">
-              <a href="index.html" class="nav_logo">TECHPROUY</a>
-              <ul class="nav_list">
-                <li class="nav_item"><a href="index.html" class="nav_link">Principal</a></li>
-                <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
-                <li class="nav_item"><a href="../productos/productos.html" class="nav_link">Productos</a></li>
-                <li class="nav_item"><a href="../iniciarSesion/iniciarSesion.html" class="nav_link">Inicio de Sesion</a></li>
-              </ul>
-            </div>
+         <!-- nvbar -->
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="../index/index.html" class="nav_logo">
+          <img src="/frontend/image/iconos/TECHPRO.jpg" alt="" class="logo_img">
+        </a>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="index.html" class="nav_link">Principal</a></li>
+          <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
+          <li class="nav_item"><a href="../productos/productos.html" class="nav_link">Productos</a></li>
+          <li class="nav_item">
+            <a href="../registro/registro.html" class="nav_link">Registrarse</a>
+          </li>
+        </ul>
+        <a href="../carrito/carrito.html" class="icon_link">
+          <img src="/frontend/image/iconos/cart.png" alt="Carrito" class="icon_img">
+        </a>
+      </div>
+    </nav>
+
+       
 
 
-            <div class="container">
-              <h1>Carrito de Compras</h1>
-              
-              <h2>Productos</h2>
-              <div class="datos" id="producto"></div>
-              
-              <h2>Carrito</h2>
-              <div class="cart-container">
-                  <ul id="cart"></ul>
-                  <div id="total">Total: $0</div>
-                  <button id="checkout">Procesar Compra</button>
-              </div>
-          </div>
+
+
           <script src="../productos/script.js"></script>
           <script src="carrito.js"></script>
           

@@ -41,7 +41,6 @@ class usuario{
         $connection = connection();
         $sql = 'SELECT * FROM usuario';
         $resultado = $connection->query($sql);
-        
         if ($resultado) {
             return $resultado->fetch_all(MYSQLI_ASSOC);
         } else {

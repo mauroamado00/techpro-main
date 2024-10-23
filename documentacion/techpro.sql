@@ -88,10 +88,7 @@ INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`, `imagen_url`) VALUES
 (8, 20, 200, 'Monitor 24\"', ''),
 (9, 60, 80, 'Cámara web', ''),
 (10, 25, 300, 'Proyector', ''),
-(11, 0, 0, '', ''),
-(12, 0, 0, '', ''),
-(13, 0, 0, '', ''),
-(14, 0, 0, '', '');
+
 
 -- --------------------------------------------------------
 
@@ -123,10 +120,6 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`isAdmin`, `password`, `nombre`, `email`, `apellido`) VALUES
-(1, '12', 'mauro', 'mauroamado12@gmail.com', 'amado'),
-(0, '1', 'mauro', 'mauroamado700@gmail.com', 'amado'),
-(0, '1', '1', 'mma@aa', '');
 
 --
 -- Índices para tablas volcadas

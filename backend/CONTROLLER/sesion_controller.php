@@ -26,29 +26,29 @@ switch($function){
     function iniciarsesion(){
         $email = $_POST['email'];
         $contraseña = $_POST['contraseña'];
-        $respusta = (new SesionDao)->iniciarsesion($email,$contraseña);
-        echo json_encode($respusta);
+        $respuesta = (new SesionDao)->iniciarsesion($email,$contraseña);
+        echo json_encode($respuesta);
     }
 
     function obtenerSesion(){
 
-        $respusta = (new SesionDao)->obtenerSesion();
-        echo json_encode($respusta);
+        $respuesta = (new SesionDao)->obtenerSesion();
+        echo json_encode($respuesta);
     }
 
 
     function cerrarSesion(){
     
-        $respusta = (new SesionDao)->cerrarSesion();
-        echo json_encode($respusta);
+        $respuesta = (new SesionDao)->cerrarSesion();
+        echo json_encode($respuesta);
 
     }
 
 
     function estaloggeado(){
 
-        $respusta = (new SesionDao)->estaloggeado();
-        echo json_encode($respusta);
+        $respuesta = (new SesionDao)->estaloggeado();
+        echo json_encode($respuesta);
 
     }
 
