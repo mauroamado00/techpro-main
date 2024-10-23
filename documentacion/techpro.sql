@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-09-2024 a las 02:03:25
+-- Tiempo de generación: 23-10-2024 a las 22:07:24
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -87,8 +87,7 @@ INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`, `imagen_url`) VALUES
 (7, 200, 30, 'Ratón óptico', ''),
 (8, 20, 200, 'Monitor 24\"', ''),
 (9, 60, 80, 'Cámara web', ''),
-(10, 25, 300, 'Proyector', ''),
-
+(10, 25, 300, 'Proyector', '');
 
 -- --------------------------------------------------------
 
@@ -120,6 +119,10 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
+INSERT INTO `usuario` (`isAdmin`, `password`, `nombre`, `email`, `apellido`) VALUES
+(1, '12', 'mauro', 'mauroamado12@gmail.com', 'amado'),
+(0, '1', 'mauro', 'mauroamado700@gmail.com', 'amado'),
+(0, '1', '1', 'mma@aa', '');
 
 --
 -- Índices para tablas volcadas
