@@ -2,6 +2,8 @@
 
     require_once '../CONEXION/conexion.php';
     require_once __DIR__ . "/respuesta.php";
+    require_once __DIR__ . "/Origen.php";
+    require_once __DIR__ . "/ImagenDAO.php";
 
 class productos{
 
@@ -15,6 +17,32 @@ class productos{
         } catch (Exception $e) {
             return new respuesta(false, "Error al obtener el Producto", null);
         }
+    }
+
+    public function obtener():respuesta {
+        $sql = "SELECT p.id,p.stock,p.precio,p.nombre,i.id AS idImagen, i.extension FROM `producto` p LEFT JOIN imagen i ON p.idImagen = i.id";
+        $connection = connection();
+        try {
+            $resultado = $connection->query($sql);
+            $productos = [];
+            while ($row = $resultado->fetch_assoc()) {
+                $origen = getOrigen();
+                $idImagen = $row["idImagen"];
+                $extension = $row["extension"];
+                $url = "$origen/backend/imagenes/$idImagen.$extension";
+                $productos[] = [
+                    "id" => $row["id"],
+                    "stock" => $row["stock"],
+                    "precio" => $row["precio"],
+                    "nombre" => $row["nombre"],
+                    "imagen" => isset($idImagen) ? $url : null
+                ];
+            }
+            return new respuesta(true, "Productos obtenidos", $productos);
+        } catch (Exception $e) {
+            return new respuesta(false, "Error al obtener los productos", null);
+        }
+        
     }
     
 
@@ -32,8 +60,13 @@ class productos{
     }
 
 
-    public function agregarproductos($id, $nombre, $stock, $precio) {
-        $sql = "INSERT INTO producto (id, nombre, stock, precio) VALUES ('$id', '$nombre', '$stock', '$precio')";
+    public function agregarproductos($nombre, $stock, $precio,$imagen) {
+        if(isset($imagen)){
+            $imagenDAO = new ImagenDAO();
+            $respuesta = $imagenDAO->agregarImagen($imagen);
+            $imagen = $respuesta->datos;
+        }
+        $sql = "INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`, `idImagen`) VALUES (NULL, '$stock', '$precio', '$nombre', $imagen);";
         $connection = connection();
         try {
             $connection->query($sql);
@@ -52,8 +85,9 @@ class productos{
     }
     
     
-
 }
+
+
 
 
 ?>

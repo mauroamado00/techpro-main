@@ -21,6 +21,9 @@ switch($function){
     case 'buscar';
     buscarproductos();
     break;
+    case 'obtener';
+    obtener();
+    break;
 
 }
     function verproductos(){
@@ -46,7 +49,8 @@ switch($function){
         $nombre = $_POST['nombre'];
         $stock = $_POST['stock'];
         $precio = $_POST['precio'];
-        $resultado = (new productos())->agregarproductos(null, $nombre, $stock, $precio); 
+        $imagen = isset($_FILES['imagen']) ? $_FILES['imagen'] : null;
+        $resultado = (new productos())->agregarproductos($nombre, $stock, $precio, $imagen); 
         echo json_encode($resultado);
     }
     
@@ -56,6 +60,12 @@ switch($function){
         $precio = $_POST['precio'];
         $resultado = (new productos())->buscarproductos($nombre, $precio);
         echo json_encode($resultado);
+    }
+
+    function obtener() {
+        $resultado = (new productos())->obtener();
+        echo json_encode($resultado);
+        
     }
     
 

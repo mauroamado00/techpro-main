@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Productos</title>
     <link rel="stylesheet" href="gestionarproductos.css">
+    <script type="module" src="gestionarProducto.js"></script>
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -27,8 +28,6 @@
     <div class="formulario-producto">
         <h2>Crear/Eliminar Producto</h2>
         <form id="productoForm">
-            <label for="productoId">ID:</label>
-            <input type="number" id="productoId" name="productoId" placeholder="ID del producto" required>
 
             <label for="productoNombre">Nombre:</label>
             <input type="text" id="productoNombre" name="productoNombre" placeholder="Nombre del producto" required>
@@ -39,7 +38,11 @@
             <label for="productoStock">Stock:</label>
             <input type="number" id="productoStock" name="productoStock" placeholder="Stock del producto" required>
 
-            <button type="button" id="crearProducto">Crear Producto</button>
+            <label>Imagen</label>
+            <input type="file" id="productoImagen" name="productoImagen" accept="image/*" required>
+            <img id="imagenPreview" src="" alt="Imagen del producto">
+
+            <input type="submit" value="Crear producto" id="crearProducto">
             <button type="button" id="eliminarProducto">Eliminar Producto</button>
         </form>
         <p id="resultadoOperacion"></p>
