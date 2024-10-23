@@ -32,12 +32,13 @@ function obtenerProductos() {
 function mostrarProductos(productos) {
     let datosElement = document.querySelector("#datos");
     datosElement.innerHTML = "";
+    console.log(productos);
     productos.forEach(producto => {
         datosElement.innerHTML += `
         <div class="producto">
         <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen">
         <div class="producto-info">
-            <p>ID: ${producto.id}</p>
+          
             <p>Nombre: ${producto.nombre}</p>
             <p>Precio: $${producto.precio}</p>
             <p>Stock: ${producto.stock}</p>
