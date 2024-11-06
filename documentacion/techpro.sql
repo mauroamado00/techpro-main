@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-10-2024 a las 22:07:24
+-- Tiempo de generación: 06-11-2024 a las 19:33:50
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -41,9 +41,18 @@ CREATE TABLE `compra` (
 
 CREATE TABLE `imagen` (
   `id` int(11) NOT NULL,
-  `extension` varchar(255) NOT NULL,
-  `idProducto` int(11) NOT NULL
+  `extension` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `imagen`
+--
+
+INSERT INTO `imagen` (`id`, `extension`) VALUES
+(1, 'jpg'),
+(2, 'jpg'),
+(3, 'jpg'),
+(4, 'jpg');
 
 -- --------------------------------------------------------
 
@@ -70,24 +79,29 @@ CREATE TABLE `producto` (
   `stock` int(11) NOT NULL,
   `precio` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
-  `imagen_url` varchar(255) NOT NULL
+  `idImagen` int(9) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`, `imagen_url`) VALUES
-(1, 50, 700, 'Smartphone', ''),
-(2, 30, 1000, 'Laptop', ''),
-(3, 100, 200, 'Auriculares', ''),
-(4, 75, 250, 'Smartwatch', ''),
-(5, 40, 500, 'Tablet', ''),
-(6, 150, 90, 'Teclado mecánico', ''),
-(7, 200, 30, 'Ratón óptico', ''),
-(8, 20, 200, 'Monitor 24\"', ''),
-(9, 60, 80, 'Cámara web', ''),
-(10, 25, 300, 'Proyector', '');
+INSERT INTO `producto` (`id`, `stock`, `precio`, `nombre`, `idImagen`) VALUES
+(1, 50, 700, 'Smartphone', NULL),
+(2, 30, 1000, 'Laptop', NULL),
+(3, 100, 200, 'Auriculares', NULL),
+(4, 75, 250, 'Smartwatch', NULL),
+(5, 40, 500, 'Tablet', NULL),
+(6, 150, 90, 'Teclado mecánico', NULL),
+(7, 200, 30, 'Ratón óptico', NULL),
+(8, 20, 200, 'Monitor 24\"', NULL),
+(9, 60, 80, 'Cámara web', NULL),
+(10, 25, 300, 'Proyector', NULL),
+(15, 4, 30, 'sa', NULL),
+(16, 1, 1, 'sdafsa', 1),
+(17, 1, 1, 'sdafsa', 2),
+(18, 67, 678, 'iuyo', 3),
+(19, 5678, 5678, 'yuio', 4);
 
 -- --------------------------------------------------------
 
@@ -139,8 +153,7 @@ ALTER TABLE `compra`
 -- Indices de la tabla `imagen`
 --
 ALTER TABLE `imagen`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `idProducto` (`idProducto`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `oferta`
@@ -153,7 +166,8 @@ ALTER TABLE `oferta`
 -- Indices de la tabla `producto`
 --
 ALTER TABLE `producto`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idImagen` (`idImagen`);
 
 --
 -- Indices de la tabla `productocompra`
@@ -182,7 +196,7 @@ ALTER TABLE `compra`
 -- AUTO_INCREMENT de la tabla `imagen`
 --
 ALTER TABLE `imagen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `oferta`
@@ -194,7 +208,7 @@ ALTER TABLE `oferta`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Restricciones para tablas volcadas
@@ -207,10 +221,10 @@ ALTER TABLE `compra`
   ADD CONSTRAINT `compra_ibfk_1` FOREIGN KEY (`emailUsuario`) REFERENCES `usuario` (`email`);
 
 --
--- Filtros para la tabla `imagen`
+-- Filtros para la tabla `producto`
 --
-ALTER TABLE `imagen`
-  ADD CONSTRAINT `imagen_ibfk_1` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`);
+ALTER TABLE `producto`
+  ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`idImagen`) REFERENCES `imagen` (`id`);
 
 --
 -- Filtros para la tabla `productocompra`
