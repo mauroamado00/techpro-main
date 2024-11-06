@@ -1,8 +1,11 @@
-import CarritoDAo from "../../dao/CompraDao";
+import CarritoDAo from "../../dao/CarritoDao.js";
+
 
 window.onload =()=>{
     addEvent();
 }
+
+
 
 function addEvent(){
     let metodoEnvio = document.querySelector("#metodoEnvio");
@@ -21,18 +24,19 @@ function addEvent(){
 
     confirmarCompraElement.onsubmit = (e) => {
         e.preventDefault();
-        let metodoEnvio = confirmarCompraElement.metodoEnvio.value;
+        let nombreCompleto = confirmarCompraElement.nombreCompleto.value;
         let metodoPago = confirmarCompraElement.metodoPago.value;
         let direccion = confirmarCompraElement.direccion.value;
-        confirmarCompra(metodoEnvio,metodoPago,direccion);
+
+        confirmarCompra(nombreCompleto,metodoPago,direccion);
 
         
     }
 }
 
-async function confirmarCompra(metodoEnvio,metodoPago,direccion){
+async function confirmarCompra(nombreCompleto,metodoPago,direccion){
     let carritoDAO = new CarritoDAo();
-    let respuesta = await carritoDAO.confirmarCompra(direccion,metodoEnvio,metodoPago);
+    let respuesta = await carritoDAO.confirmarCompra()
     console.log(respuesta.menssage);
 
 

@@ -42,8 +42,8 @@ export default class CarritoDAo {
     aumentarCantidadCarrito(id_producto) {
         let carrito = this.obtenerCarrito();
         let nuevoCarrito = carrito.map(producto => {
-            if (producto.id_producto == id_producto) {
-                producto.quantity++;
+            if (producto.id == id_producto) {
+                producto.cantidad++;
             }
             return producto;
         });
@@ -53,8 +53,8 @@ export default class CarritoDAo {
     disminuirCantidadCarrito(id) {
         let carrito = this.obtenerCarrito();
         let nuevoCarrito = carrito.map(producto => {
-            if (producto.id == id && producto.quantity > 1) {
-                producto.quantity--;
+            if (producto.id == id && producto.cantidad > 1) {
+                producto.cantidad--;
             }
             return producto;
         });
@@ -71,7 +71,7 @@ export default class CarritoDAo {
             
         }else{
             this.eliminarProductoCarrito(producto.id);
-            productoExistente.id += producto.id;
+            productoExistente.cantidad += producto.cantidad;
             let carritoSinExistente = this.obtenerCarrito();
             carritoSinExistente.push(productoExistente);
             this.guardarCarrito(carritoSinExistente);
@@ -97,7 +97,7 @@ export default class CarritoDAo {
 
     }
 
-    async confirmarCompra(nombre, stock, precio) {
+    async confirmarCompra(nombre,ciudad, stock, precio) {
         if(metodoEnvio == "Retiro en el local"){
             direccion = null;
         }
@@ -112,14 +112,17 @@ export default class CarritoDAo {
         formData.append("nombre", nombre);
         formData.append("stock", stock);
         formData.append("precio", precio);
+        formData.append("ciudad", ciudad);
+        
+        formData.append("productos", JSON.stringify(products));
         let config = {
             method: "POST",
             body: formData
         }
         console.log(products);
-       // let response = await fetch("http://localhost:3000/ventas", config);
-       // let data = await response.json();
-     //   return data;
+        let response = await fetch("http://localhost:3000/ventas", config);
+        let data = await response.json();
+       return data;
 
     }
 }
