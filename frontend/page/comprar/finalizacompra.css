@@ -3,150 +3,153 @@
 * {
     margin: 0;
     padding: 0;
-}
-body{
-    font-family: 'Inter';
-}
-button,a{
-    cursor: pointer;
-}
-:is(.balck-list) a{
-    color: #000;
-    text-decoration: none;
-    font-size: 16px;
-}
-:is(ul){
-    list-style: none;
-}
-:is(a){
-    text-decoration: none;
-}
-:is(.white-list) a{
-    color: #fff;
-    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* top header */
-header{
-    border-bottom: 0.1px solid #c1c1c1;
-}
-.topheader{
-    width: 80%;
-    margin: auto;
+body {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-}
-.top-header{ 
-    color: white;
-    background-color: black;
-    padding: 10px 0;
-    font-family: 'Poppins';
-    font-size: 13px;
-}   
-.top-header p {
-    margin-left: 20%;
-    margin-right: 10px;
-}
-.lang {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
+    min-height: 100vh;
+    background-color: #eef3f9;
 }
 
-    /* bottom header */
-    
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0px 5px 0px;
-    width: 80%;
-    margin: auto;
-}
-.header h2 a{
-    color: #000;
-    flex-grow: 0.5;
-    font: normal 700 24px;
-    letter-spacing: 0.03em;
+.container {
+    width: 90%;
+    max-width: 750px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #4CAF50;
 }
 
-/* container */
-
-.checkout{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 30px;
 }
-.container{
+
+.checkout {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-} 
+    gap: 25px;
+}
 
- /* informacion customer */
+.customer-info,
+.checkout-info {
+    padding: 20px;
+    border: 1px solid #cfd8e3;
+    border-radius: 8px;
+    background-color: #f9fbfd;
+}
 
-.container > span a{
-    font: normal 400 14px/21px 'Poppins';
-    color: #949494;
-    margin: 30px 0;
+label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
 }
-.container > span > a > b{
-    color: #000;
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d1dce5;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s;
 }
-.container h1 {
-    font: normal 500 36px/30px 'Inter';
-    letter-spacing: 0.04em;
-    margin: 50px 0;
-}
-.customer-info{
-    display: flex;
-    flex-direction: column;
-}
-.customer-info > input{
-    height: 40px;
-    background: #F5F5F5;
-    border-radius: 4px;
-    border: none;
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #4CAF50;
     outline: none;
-    padding: 0 10px;
-    margin-bottom: 25px;
-}
-.customer-info > label{
-    font: normal 400 16px/24px 'Poppins';
-    opacity: 0.4;
-    margin: 5px 0;
-}
-.checkbox{
-    display: flex;
-    gap: 10px;
-}
-#checkbox{
-    accent-color: #DB4444;
-    width: 20px;
 }
 
-/* checkout informacion */
-
-.checkout-info{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 445px;
-    margin-top: 35px;
+input[type="checkbox"] {
+    margin-right: 8px;
 }
 
-.cart-total{
-    display: flex;
-    flex-direction: column;
+.checkbox label {
+    display: inline;
+    font-weight: normal;
+    color: #555;
 }
-.cart-total > div {
+
+.cart-total {
+    padding: 15px;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 15px;
+    background-color: #f1f8ff;
+    border-radius: 8px;
+}
+
+.subtotal,
+.shipping,
+.total {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #444;
 }
-.subtotal, .shipping {
-    border-bottom: 1px solid #000;
+
+.total {
+    font-weight: bold;
+    font-size: 22px;
+    color: #2c7a7b;
+    border-top: 2px solid #ddd;
+    margin-top: 12px;
+    padding-top: 15px;
+    background-color: #e6f5f4;
+    border-radius: 8px;
+}
+
+.total p {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #43a047;
+}
+
+button:active {
+    transform: scale(0.98);
+    background-color: #388e3c;
+}
+
+#metodoEnvio,
+#metodoPago {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1dce5;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
 }

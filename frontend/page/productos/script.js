@@ -1,5 +1,4 @@
 import ProductosDAO from "../../dao/ProductoDao.js";
-import productos from "../../dao/ProductoDao.js";
 
 let nombreFiltro = "";
 let precioFiltro = "";
@@ -13,32 +12,31 @@ window.onload = async () => {
     agregarEvento();
 }
 
+
 async function obtenerProductos() {
     let respuesta = await new ProductosDAO().obtenerProductos();
     return respuesta.datos;
 }
 
-
-
 function mostrarProductos(productos) {
     let datosElement = document.querySelector("#datos");
     datosElement.innerHTML = "";
     console.log(productos);
-    productos.forEach(producto => {
+    productos.forEach(producto => {  // Renombré la variable aquí para evitar conflicto
         datosElement.innerHTML += `
         <div class="producto">
-        <img src="${producto.imagen != null ? producto.imagen : "../../image/banner1.jpg"}" alt="${producto.nombre}" class="producto-imagen">
-        <div class="producto-info">
-          
-            <p>Nombre: ${producto.nombre}</p>
-            <p>Precio: $${producto.precio}</p>
-            <p>Stock: ${producto.stock}</p>
-            <button class="btn-add">Agregar</button>
+            <img src="${producto.imagen != null ? producto.imagen : "../../image/banner1.jpg"}" alt="${producto.nombre}" class="producto-imagen">
+            <div class="producto-info">
+                <p>Nombre: ${producto.nombre}</p>
+                <p>Precio: $${producto.precio}</p>
+                <p>Stock: ${producto.cantidad}</p>
+                <button class="btn-add">Agregar</button>
+            </div>
         </div>
-    </div>
-    `;
+        `;
     });
 }
+
 
 function agregarEventosFiltro() {
     let inputNombre = document.querySelector("#filtroNombre");

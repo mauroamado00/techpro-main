@@ -29,9 +29,10 @@ switch($function){
     $apellido = $_POST['apellido'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $resultado = (new usuario())->agregarusuario($nombre, $apellido, $email, $password);
+    $isAdmin = $_POST['isadmin'];
+    $resultado = (new usuario())->agregarusuario($isAdmin, $nombre, $apellido, $email, $password);
     if($resultado){
-        echo "Usuario registrado";
+        echo json_encode($resultado);
     }else{
         echo 'Hubo un error al registrar el usuario';
     }

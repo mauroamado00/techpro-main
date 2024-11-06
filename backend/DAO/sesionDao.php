@@ -10,24 +10,22 @@ class SesionDao{
     public $email;
     public $password;
 
-    public function iniciarSesion($email,$password){
-        
-      
-        $connection = connection();
-        $sql = "SELECT * FROM usuario WHERE email='$email'";
-        $respuesta = $connection->query($sql);
+    public function iniciarSesion($email, $password){
+        $conection = connection();
+        $sql = "SELECT * FROM usuario WHERE email = '$email' AND password = '$password'";
+        $respuesta = $conection->query($sql);
         $fila = $respuesta->fetch_assoc();
-        if($fila != null && password_verify($password,$fila['password'])){
+        if ($fila !=null){
+            $respuesta =  new Respuesta(estado: true,mensaje: "Sesion Iniciada", datos: $_SESSION['sesion']);
+            $_SESSION['sesion']=["usuario"=>$fila];
 
-            $respuesta = new respuesta(true,"Sesion Iniciada",null);
-            $_SESSION['sesion'] = ['usuario'=>$fila['nombre'],"email"=>$fila['email'],"isadmin"=>$fila['isadmin']==1 ? true:false];
+                
         }else{
-
-            $respuesta = new respuesta(false,"Credenciales Incorrectas", null);
-            $_SESSION['sesion'] = null;
+            $respuesta = new Respuesta(estado: false,mensaje: "Error al iniciar", datos: null);
+            $_SESSION['sesion']=["usuario"=>$fila];
         }
         return $respuesta;
-
+        
     }
 
     public function obtenerSesion(){
@@ -63,7 +61,6 @@ class SesionDao{
 
         }
         return $respuesta;
-    
     }
 }   
   

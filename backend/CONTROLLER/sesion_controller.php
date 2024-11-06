@@ -23,10 +23,10 @@ switch($function){
 
 }
 
-    function iniciarsesion(){
+    function iniciarSesion(){
         $email = $_POST['email'];
-        $contraseña = $_POST['contraseña'];
-        $respuesta = (new SesionDao)->iniciarsesion($email,$contraseña);
+        $password = $_POST['password'];
+        $respuesta = (new SesionDao)->iniciarSesion($email,$password);
         echo json_encode($respuesta);
     }
 

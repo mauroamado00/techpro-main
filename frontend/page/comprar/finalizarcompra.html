@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECHPRO | Proceso de Compra</title>
+    <title>TECHPRO | FINALIZAR COMPRA</title>
     <link rel="stylesheet" href="finalizacompra.css">
+    <script type="module" src="script.js"></script>
 </head>
 <body>
 
@@ -12,15 +13,13 @@
         <h1>Finalizar Compra</h1>
         <div class="checkout">
             <div class="customer-info">
-                <label for="nombre-completo">Nombre Completo</label>
+                <label for="nombre-completo" name="nombrecompleto">Nombre Completo</label>
                 <input type="text" id="nombre-completo">
-                <label for="direccion">Direccion</label>
-                <input type="text" id="direccion">
-                <label for="ciudad">Ciudad</label>
+                <label for="ciudad" name="ciudad">Ciudad</label>
                 <input type="text" id="ciudad">
-                <label for="numero-telefono">Numero de Telefono</label>
+                <label for="numero-telefono" name="numerodetelefono">Numero de Telefono</label>
                 <input type="tel" id="numero-telefono">
-                <label for="email">Email</label>
+                <label for="email" name="email">Email</label>
                 <input type="email" id="email">
                 <div class="checkbox">
                     <input type="checkbox" id="checkbox" name="checkbox" value="1">
@@ -28,16 +27,6 @@
                 </div>
             </div>
             <div class="checkout-info">
-                <div class="product1-detail">
-                    <div class="product1">
-                       
-                    </div>
-                    <p></p>
-                </div>
-                <div class="product2-detail">
-                 
-                    <p></p>
-                </div>
                 <div class="cart-total">
                     <div class="subtotal">
                         <p>Subtotal:</p>
@@ -47,28 +36,29 @@
                         <p>Envío:</p>
                         <p>Gratis</p>
                     </div>
-                    <div>
-                        <p>Total</p>
+                    <div class="total">
+                        <p>Total:</p>
                         <p></p>
                     </div>
                 </div>
-                <div class="pay-method">
-                    <div class="bank-type">
-                        <div class="pay-by-bank">
-                            <input type="radio" id="bank" name="pay" value="bank">
-                            <label for="bank">Tarjeta</label>
-                        </div>
-                    
-                    </div>
-                    <div class="cash-on-delivery">
-                        <input type="radio" id="cash-on-delivery" name="pay" value="CashOnDelivery" checked>
-                        <label for="CashOnDelivery">Efectivo</label>
-                    </div>
+                <label for="metodoEnvio">Metodo Envio</label>
+                <select id="metodoEnvio" name="metodoEnvio">
+                    <option value="envio">Envio a Domicilio</option>
+                    <option value="local">Retiro en Sucursal</option>
+                </select>
+                <div class="direccion-container">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" id="direccion" name="direccion">
                 </div>
+                <label for="metodoPago">Metodo de Pago</label>
+                <select id="metodoPago" name="metodoPago">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>        
+                </select>
                 <button id="realize-order">Realizar pedido</button>
             </div>
         </div>
     </div>
-
+    
 </body>
 </html>

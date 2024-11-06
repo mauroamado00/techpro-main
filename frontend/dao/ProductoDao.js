@@ -20,7 +20,6 @@ export default class ProductosDAO{
 
     async agregarproductos(nombre,stock,precio,imagen){
 
-       
         let url =  Origen+"/backend/CONTROLLER/productos_controlador.php?function=agregar";
         let formData = new FormData();
         formData.append("nombre", nombre);

@@ -309,17 +309,17 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease; /* Agregado para un efecto de elevación */
+  transition: transform 0.3s ease; 
 }
 
 .producto:hover {
-  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  transform: translateY(-5px); 
 }
 
 .producto-imagen {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Bordes más suaves */
+  border-radius: 8px; 
   margin-bottom: 10px;
 }
 
@@ -331,7 +331,7 @@ hr {
   margin: 5px 0;
   font-size: 16px;
   color: #333;
-  line-height: 1.5; /* Mejor legibilidad */
+  line-height: 1.5;
 }
 
 .producto button {
@@ -342,12 +342,12 @@ hr {
   padding: 10px 15px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para el botón */
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 .producto button:hover {
   background-color: #0056b3;
-  transform: scale(1.05); /* Efecto de aumento en el botón al pasar el ratón */
+  transform: scale(1.05); 
 }
 
 /* banner css */

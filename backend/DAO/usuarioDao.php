@@ -7,16 +7,15 @@ require_once __DIR__ . '/../DAO/respuesta.php';
 class usuario{
 
 
-    public function agregarusuario($nombre, $apellido, $email, $password){
+    public function agregarusuario($isAdmin, $nombre, $apellido, $email, $password){
         
         $hash= $password;
         $hashedPassword = password_hash($hash, PASSWORD_BCRYPT);
-        echo $hashedPassword;
-        $sql = "INSERT INTO usuario(nombre,apellido,email, password) VALUES ('$nombre','$apellido', '$email', '$hash')";
+        $sql = "INSERT INTO usuario(isAdmin,nombre,apellido,email, password) VALUES ('$isAdmin','$nombre','$apellido', '$email', '$hash')";
         $connection = connection();
         try{
             $connection->query($sql);
-            return new respuesta(true,"Usuario agregado",null);
+            return new respuesta(true,"Usuario agregado",datos: null);
         }catch(Exception $e){
             return new respuesta(false,"Error al agregar el usuario",null);
         }
@@ -47,8 +46,6 @@ class usuario{
             return false; 
         }
     }
-    
-
 
     public function modificarusuario($nombre, $apellido, $email, $password){
 
