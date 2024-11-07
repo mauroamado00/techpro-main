@@ -45,19 +45,11 @@ function mostrarProductos(productos){
         let tdAcciones = document.createElement("td");
         let divAcciones = document.createElement("div");
         tdAcciones.appendChild(divAcciones);
-<<<<<<< HEAD
-
-=======
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
         let btnEliminar = document.createElement("button");
         btnEliminar.innerHTML = "Quitar carrito";
         btnEliminar.onclick = () => {
             eliminarProducto(producto.id);
-<<<<<<< HEAD
         };
-=======
-        }
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
         divAcciones.appendChild(btnEliminar);
 
         let btnAumentar = document.createElement("button");
