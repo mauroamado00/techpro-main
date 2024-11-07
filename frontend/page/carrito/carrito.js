@@ -82,7 +82,7 @@ function actualizarProductos() {
 }
 
 // Función para calcular el subtotal
-function calcularSubtotal() {
+function calcularTotal() {
     let productos = obtenerProductos();
     let subtotal = 0;
     productos.forEach(producto => {
@@ -91,20 +91,9 @@ function calcularSubtotal() {
     return subtotal;
 }
 
-// Función para calcular el total con un impuesto o descuento, por ejemplo
-function calcularTotal() {
-    const subtotal = calcularSubtotal();
-    const impuesto = 0.15; // 15% de impuesto
-    const total = subtotal * (1 + impuesto);
-    return total;
-}
-
 // Función para actualizar el DOM
 function actualizarResumen() {
-    const subtotal = calcularSubtotal();
     const total = calcularTotal();
-
-    document.getElementById("subtotal").textContent = `$${subtotal.toFixed(2)}`;
     document.getElementById("total").textContent = `$${total.toFixed(2)}`;
 }
 

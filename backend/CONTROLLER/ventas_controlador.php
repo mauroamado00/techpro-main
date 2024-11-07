@@ -1,12 +1,12 @@
 <?php
-
+require_once __DIR__ . "/../config/config.php";
 require_once  __DIR__."/../DAO/ventasDao.php";
 
 
 // Evaluar la función solicitada
 switch ($function) {
-    case 'obtener':
-        obtenerCompras(); 
+    case 'realizarCompra':
+        realizarCompra(); 
         break;
     case 'obtenertodas':
         obtenerTodas();
@@ -20,7 +20,7 @@ switch ($function) {
 }
 
 // Función para obtener compras
-function obtenerCompras(){
+function realizarCompra(){
     $nombreCompleto = $_POST['nombrecompleto'];
     $ciudad = $_POST['ciudad'];
     $numeroDeTelefono = $_POST['numerodetelefono'];
@@ -28,8 +28,9 @@ function obtenerCompras(){
     $metodoDeEnvio = $_POST['metododeenvio'];
     $direccion = $_POST['direccion'];
     $metodoDePago = $_POST['metododepago'];
+    $productos = json_decode($_POST['productos'], true);
 
-    $respuesta = (new VentasDao())->obtenerCompras($nombreCompleto, $ciudad, $numeroDeTelefono, $email, $metodoDeEnvio, $direccion, $metodoDePago);
+    $respuesta = (new VentasDao())->realizarCompra($nombreCompleto, $ciudad, $numeroDeTelefono, $email, $metodoDeEnvio, $direccion, $metodoDePago,$productos);
     echo json_encode($respuesta);
 }   
 

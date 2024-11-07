@@ -7,13 +7,10 @@ require_once __DIR__ . "/respuesta.php";
 class VentasDao
 {
     // Método para agregar una compra en la base de datos
-    function obtenerCompras($nombreCompleto, $ciudad, $numeroDeTelefono, $email, $metodoDeEnvio, $direccion, $metodoDePago)
+    function realizarCompra($nombreCompleto, $ciudad, $numeroDeTelefono, $email, $metodoDeEnvio, $direccion, $metodoDePago,$productos)
     {
-        $session = (new SesionDAO())->obtenerSesion()->estado;
-        $email = $session['email'];
-        $direccion = $direccion ? "'$direccion'" : "NULL";
-        $metodoDePago = ($metodoDePago == "Tarjeta") ? 1 : 0;
-        $metodoDeEnvio = ($metodoDeEnvio == "Retiro") ? "En Espera en el local" : "En Espera de despachar el envío";
+        
+        
 
         $sql = "INSERT INTO `compra`(`nombrecompleto`, `ciudad`, `numerodetelefono`, `email`, `metododeenvio`, `direccion`, `metododepago`) 
                 VALUES ('$nombreCompleto', '$ciudad', '$numeroDeTelefono', '$email', '$metodoDeEnvio', $direccion, '$metodoDePago')";
