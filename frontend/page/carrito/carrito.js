@@ -1,6 +1,5 @@
 import CarritoDAo from "../../dao/CarritoDao.js";
 
-<<<<<<< HEAD
 window.onload = () => {
     let productos = obtenerProductos();
     mostrarProductos(productos);
@@ -8,23 +7,11 @@ window.onload = () => {
 };
 
 function obtenerProductos() {
-=======
-window.onload = ()=>{
-    let productos = obtenerProductos();
-    mostrarProductos(productos);
-}
-
-function obtenerProductos(){
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
     let carritoDAO = new CarritoDAo();
     return carritoDAO.obtenerCarrito();
 }
 
-<<<<<<< HEAD
 function mostrarProductos(productos) {
-=======
-function mostrarProductos(productos){
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
     let tablaBody = document.querySelector("#cart-items");
     tablaBody.innerHTML = "";
     productos.forEach(producto => {
@@ -33,12 +20,7 @@ function mostrarProductos(productos){
             <td>${producto.nombre}</td>
             <td>${producto.precio}</td>
             <td>${producto.cantidad}</td>
-<<<<<<< HEAD
             <td>${(producto.precio * producto.cantidad).toFixed(2)}</td>
-=======
-            <td>${producto.precio * producto.cantidad}</td>
-
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
         `;
         tablaBody.appendChild(tr);
 
@@ -56,19 +38,13 @@ function mostrarProductos(productos){
         btnAumentar.innerHTML = "Aumentar cantidad";
         btnAumentar.onclick = () => {
             aumentar(producto.id);
-<<<<<<< HEAD
         };
-=======
-        }
-
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
         divAcciones.appendChild(btnAumentar);
 
         let btnDisminuir = document.createElement("button");
         btnDisminuir.innerHTML = "Disminuir cantidad";
         btnDisminuir.onclick = () => {
             disminuir(producto.id);
-<<<<<<< HEAD
         };
         divAcciones.appendChild(btnDisminuir);
 
@@ -136,42 +112,3 @@ document.getElementById("confirmarcompra").addEventListener("click", () => {
     // Redirigir a finalizarcompra.html
     window.location.href = "../comprar/finalizarcompra.html";
 });
-=======
-        }
-        divAcciones.appendChild(btnDisminuir);
-        tr.appendChild(tdAcciones);
-        
-    });
-
-
-
-}
-
-
-function eliminarProducto(id){
-    let carritoDAO = new CarritoDAo();
-    console.log("Eliminando producto", id);
-    carritoDAO.eliminarProductoCarrito(id);
-
-    let productos = carritoDAO.obtenerCarrito();
-    mostrarProductos(productos);
-}
-
-function aumentar(id){
-    let carritoDAO = new CarritoDAo();
-    console.log("Aumentando cantidad", id);
-    
-    carritoDAO.aumentarCantidadCarrito(id);
-    let productos = carritoDAO.obtenerCarrito();
-    mostrarProductos(productos);
-}
-
-function disminuir(id){
-    let carritoDAO = new CarritoDAo();
-    console.log("Disminuyendo cantidad", id);
-    
-    carritoDAO.disminuirCantidadCarrito(id);
-    let productos = carritoDAO.obtenerCarrito();
-    mostrarProductos(productos);
-}
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
