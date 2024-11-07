@@ -97,11 +97,7 @@ export default class CarritoDAo {
 
     }
 
-<<<<<<< HEAD
     async confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago) {
-=======
-    async confirmarCompra(nombre,ciudad, stock, precio) {
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
         if(metodoEnvio == "Retiro en el local"){
             direccion = null;
         }
@@ -117,7 +113,6 @@ export default class CarritoDAo {
         }
 
         let formData = new FormData();
-<<<<<<< HEAD
         formData.append("nombrecompleto", nombrecompleto);
         formData.append("ciudad", ciudad);
         formData.append("numerodetelefono", numerodetelefono);
@@ -126,12 +121,6 @@ export default class CarritoDAo {
         formData.append("direccion", direccion);
         formData.append("metodoPago", metodoPago);
         
-=======
-        formData.append("nombre", nombre);
-        formData.append("stock", stock);
-        formData.append("precio", precio);
-        formData.append("ciudad", ciudad);
->>>>>>> cd388766f64a9336c6f526ef1e6d3d569433fdfa
         
         formData.append("productos", JSON.stringify(products));
         let config = {
