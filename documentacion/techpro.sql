@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-11-2024 a las 19:33:50
+-- Tiempo de generación: 07-11-2024 a las 18:35:31
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -28,9 +28,14 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `compra` (
-  `id` int(11) NOT NULL,
-  `fecha` date NOT NULL,
-  `emailUsuario` varchar(255) NOT NULL
+  `nombrecompleto` varchar(255) NOT NULL,
+  `ciudad` varchar(255) NOT NULL,
+  `numerodetelefono` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `metododeenvio` int(11) NOT NULL,
+  `direccion` varchar(255) NOT NULL,
+  `metododepago` int(11) NOT NULL,
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -146,8 +151,7 @@ INSERT INTO `usuario` (`isAdmin`, `password`, `nombre`, `email`, `apellido`) VAL
 -- Indices de la tabla `compra`
 --
 ALTER TABLE `compra`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `emailUsuario` (`emailUsuario`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `imagen`
@@ -215,12 +219,6 @@ ALTER TABLE `producto`
 --
 
 --
--- Filtros para la tabla `compra`
---
-ALTER TABLE `compra`
-  ADD CONSTRAINT `compra_ibfk_1` FOREIGN KEY (`emailUsuario`) REFERENCES `usuario` (`email`);
-
---
 -- Filtros para la tabla `producto`
 --
 ALTER TABLE `producto`
@@ -230,8 +228,8 @@ ALTER TABLE `producto`
 -- Filtros para la tabla `productocompra`
 --
 ALTER TABLE `productocompra`
-  ADD CONSTRAINT `productocompra_ibfk_1` FOREIGN KEY (`idCompra`) REFERENCES `compra` (`id`),
-  ADD CONSTRAINT `productocompra_ibfk_2` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`);
+  ADD CONSTRAINT `productocompra_ibfk_2` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`),
+  ADD CONSTRAINT `productocompra_ibfk_3` FOREIGN KEY (`idCompra`) REFERENCES `compra` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
