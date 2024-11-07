@@ -1,14 +1,15 @@
-import CarritoDAo from "../../dao/CompraDao";
+import CarritoDAo from "../../dao/CarritoDao.js";
 
 window.onload =()=>{
-    addEvent();
+    agregarevento();
 }
 
-function addEvent(){
+function agregarevento(){
     let metodoEnvio = document.querySelector("#metodoEnvio");
+    let metodoPago = document.querySelector("#metodoPago");
     let confirmarCompraElement = document.querySelector("#realize-order");
 
-    metodoEnvio.onchange = () => {
+  metodoEnvio.onchange = () => {
         let valor = metodoEnvio.value;
         if(valor == "direccion"){
             confirmarCompraElement.classList.add("tipoEnvio");
@@ -21,20 +22,24 @@ function addEvent(){
 
     confirmarCompraElement.onsubmit = (e) => {
         e.preventDefault();
+        let nombrecompleto = confirmarCompraElement.nombrecompleto.value;
+        let ciudad = confirmarCompraElement.ciudad.value;
+        let numerodetelefono = confirmarCompraElement.numerodetelefono.value;
+        let email = confirmarCompraElement.email.value;
         let metodoEnvio = confirmarCompraElement.metodoEnvio.value;
-        let metodoPago = confirmarCompraElement.metodoPago.value;
         let direccion = confirmarCompraElement.direccion.value;
-        confirmarCompra(metodoEnvio,metodoPago,direccion);
-
+        let metodoPago = confirmarCompraElement.direccion.value;
+        confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago);
         
     }
 }
 
-async function confirmarCompra(metodoEnvio,metodoPago,direccion){
+async function confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago){
     let carritoDAO = new CarritoDAo();
-    let respuesta = await carritoDAO.confirmarCompra(direccion,metodoEnvio,metodoPago);
+    let respuesta = await carritoDAO.confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago)
     console.log(respuesta.menssage);
 
-
 }
+
+
 

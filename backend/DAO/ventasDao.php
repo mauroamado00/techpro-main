@@ -1,68 +1,81 @@
 <?php
 
-require_once __DIR__ . '/../CONEXION/conexion.php';
-require_once __DIR__ . '/../DAO/respuesta.php';
-    
+require_once __DIR__ . "/../CONEXION/conexion.php";
+require_once __DIR__ . "/sesionDao.php";
+require_once __DIR__ . "/respuesta.php";
 
-class ventas{
+class VentasDao
+{
+    // Método para agregar una compra en la base de datos
+    function obtenerCompras($nombreCompleto, $ciudad, $numeroDeTelefono, $email, $metodoDeEnvio, $direccion, $metodoDePago)
+    {
+        $session = (new SesionDAO())->obtenerSesion()->estado;
+        $email = $session['email'];
+        $direccion = $direccion ? "'$direccion'" : "NULL";
+        $metodoDePago = ($metodoDePago == "Tarjeta") ? 1 : 0;
+        $metodoDeEnvio = ($metodoDeEnvio == "Retiro") ? "En Espera en el local" : "En Espera de despachar el envío";
 
-
-    public function agregarusuario($nombre, $apellido, $email, $password){
+        $sql = "INSERT INTO `compra`(`nombrecompleto`, `ciudad`, `numerodetelefono`, `email`, `metododeenvio`, `direccion`, `metododepago`) 
+                VALUES ('$nombreCompleto', '$ciudad', '$numeroDeTelefono', '$email', '$metodoDeEnvio', $direccion, '$metodoDePago')";
+        $connection = connection();
         
-        $hash= $password;
-        $hashedPassword = password_hash($hash, PASSWORD_BCRYPT);
-        echo $hashedPassword;
-        $sql = "INSERT INTO usuario(nombre,apellido,email, password) VALUES ('$nombre','$apellido', '$email', '$hash')";
-        $connection = connection();
-        try{
+        try {
             $connection->query($sql);
-            return new respuesta(true,"Usuario agregado",null);
-        }catch(Exception $e){
-            return new respuesta(false,"Error al agregar el usuario",null);
+            $compraId = $connection->insert_id;
+            $respuesta = new respuesta(true, "Compra agregada correctamente", null);
+        } catch (Exception $e) {
+            error_log($e);
+            $respuesta = new respuesta(false, "No se pudo agregar la compra", null);
         }
-          
+
+        return $respuesta;
     }
 
-    public function eliminarusuario($email){
-
-        $sql = "DELETE FROM usuario where email='$email'";
+    function obtenerComprasUsuario()
+    {
+        $session = (new SesionDAO())->obtenerSesion()->estado;
+        $email = $session['email'];
         $connection = connection();
-        try{
+        
+        $sql = "SELECT * FROM `compra` WHERE `email` = '$email'";
+        $result = $connection->query($sql);
+        $compras = $result->fetch_all(MYSQLI_ASSOC);
+        
+        $respuesta = new respuesta(true, "Compras obtenidas correctamente", $compras);
+        return $respuesta;
+    }
+
+    function obtenerUltimasCompras($email)
+    {
+        $connection = connection();
+        
+        $sql = "SELECT * FROM `compra` WHERE `email` >= '$email'";
+        $result = $connection->query($sql);
+        $compras = $result->fetch_all(MYSQLI_ASSOC);
+        
+        $respuesta = new respuesta(true, "Últimas compras obtenidas", $compras);
+        return $respuesta;
+    }
+
+    function actualizarCompra($metodoDeEnvio, $direccion, $metodoDePago, $nombreCompleto, $ciudad, $numeroDeTelefono, $email)
+    {
+        $direccion = $direccion ? "'$direccion'" : "NULL";
+        $sql = "UPDATE `compra` 
+                SET `metododeenvio` = '$metodoDeEnvio', `direccion` = $direccion, `metododepago` = '$metodoDePago',
+                    `nombrecompleto` = '$nombreCompleto', `ciudad` = '$ciudad', `numerodetelefono` = '$numeroDeTelefono', 
+                    `email` = '$email' 
+                WHERE `email` = '$email'";
+        $connection = connection();
+        
+        try {
             $connection->query($sql);
-            return new respuesta(true,"Usuario eliminado",null);
-        }catch(Exception $e){
-            return new respuesta(false,"Error al eliminar el usuario",null);
+            $respuesta = new respuesta(true, "Compra actualizada correctamente", null);
+        } catch (Exception $e) {
+            error_log($e);
+            $respuesta = new respuesta(false, "No se pudo actualizar la compra", null);
         }
 
+        return $respuesta;
     }
-
-
-    public function obtenerusuario() {
-        $connection = connection();
-        $sql = 'SELECT * FROM usuario';
-        $resultado = $connection->query($sql);
-        if ($resultado) {
-            return $resultado->fetch_all(MYSQLI_ASSOC);
-        } else {
-            return false; 
-        }
-    }
-    
-
-
-    public function modificarusuario($nombre, $apellido, $email, $password){
-
-        $sql = "UPDATE `usuario` SET `nombre`='$nombre',`apellido`='$apellido',`email`='$email',`password`='$password' WHERE `email`='$email'";
-        $connection = connection();
-        try{
-            $connection->query($sql);
-            return new respuesta(true,"Usuario modificado",null);
-        }catch(Exception $e){
-            return new respuesta(false,"Error al modificar el usuario",null);
-        }
-
-    }
-
 }
-  
 ?>

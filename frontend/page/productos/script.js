@@ -1,3 +1,4 @@
+import CarritoDAo from "../../dao/CarritoDao.js";
 import ProductosDAO from "../../dao/ProductoDao.js";
 
 let nombreFiltro = "";
@@ -9,7 +10,7 @@ window.onload = async () => {
     allProductos = productos;
     mostrarProductos(productos);
     agregarEventosFiltro();
-    agregarEvento();
+   
 }
 
 
@@ -23,18 +24,48 @@ function mostrarProductos(productos) {
     datosElement.innerHTML = "";
     console.log(productos);
     productos.forEach(producto => {  // Renombré la variable aquí para evitar conflicto
-        datosElement.innerHTML += `
-        <div class="producto">
+
+        let divProducto = document.createElement("div");
+        divProducto.classList.add("producto");
+        divProducto.innerHTML = `
             <img src="${producto.imagen != null ? producto.imagen : "../../image/banner1.jpg"}" alt="${producto.nombre}" class="producto-imagen">
-            <div class="producto-info">
-                <p>Nombre: ${producto.nombre}</p>
-                <p>Precio: $${producto.precio}</p>
-                <p>Stock: ${producto.cantidad}</p>
-                <button class="btn-add">Agregar</button>
-            </div>
-        </div>
         `;
+
+
+
+        let divInfoProducto = document.createElement("div");
+        divInfoProducto.classList.add("producto-info");
+        divInfoProducto.innerHTML = `
+            <p>Nombre: ${producto.nombre}</p>
+            <p>Precio: $${producto.precio}</p>
+            <p>Stock: ${producto.cantidad}</p>
+        `;
+
+        divProducto.appendChild(divInfoProducto);
+
+
+        let btn = document.createElement("button");
+        btn.classList.add("btn-add");
+        btn.textContent = "Agregar";
+        btn.onclick = () => {
+            agregarProducto(producto);
+        }
+        divInfoProducto.appendChild(btn);
+
+
+        datosElement.appendChild(divProducto);
+
     });
+}
+
+
+function agregarProducto(producto){
+    console.log("Agregando producto", producto);
+    producto.cantidad = 1;
+    let carritoDAO = new CarritoDAo();
+    carritoDAO.agregarProductoCarrito(producto);
+
+
 }
 
 
@@ -64,4 +95,3 @@ function filtrarProductos() {
 
     mostrarProductos(productosFiltrados); 
 }
-

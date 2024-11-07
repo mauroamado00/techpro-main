@@ -6,6 +6,7 @@
     <title>TECHPRO | FINALIZAR COMPRA</title>
     <link rel="stylesheet" href="finalizacompra.css">
     <script type="module" src="script.js"></script>
+
 </head>
 <body>
 
@@ -16,7 +17,19 @@
                 <label for="nombre-completo" name="nombrecompleto">Nombre Completo</label>
                 <input type="text" id="nombre-completo">
                 <label for="ciudad" name="ciudad">Ciudad</label>
-                <input type="text" id="ciudad">
+                <select id="ciudad" name="ciudad">
+                    <option value="">Seleccione una ciudad</option>
+                    <option>Colonia</option>
+                    <option>Rosario</option>
+                    <option>Tarariras</option>
+                    <option>Juan Lacaze</option>
+                    <option>Ombues de Lavalle</option>
+                    <option>Carmelo</option>
+                    <option>Nueva palmira</option>
+                    <option>Montevideo</option>
+                    <option>Otra ciudad.</option>
+                </select>
+                
                 <label for="numero-telefono" name="numerodetelefono">Numero de Telefono</label>
                 <input type="tel" id="numero-telefono">
                 <label for="email" name="email">Email</label>
@@ -50,10 +63,10 @@
                     <label for="direccion">Direccion</label>
                     <input type="text" id="direccion" name="direccion">
                 </div>
-                <label for="metodoPago">Metodo de Pago</label>
+                <label for="metodoPago">Método de Pago</label>
                 <select id="metodoPago" name="metodoPago">
                     <option value="efectivo">Efectivo</option>
-                    <option value="tarjeta">Tarjeta</option>        
+                    <option value="tarjeta">Tarjeta</option>                       
                 </select>
                 <button id="realize-order">Realizar pedido</button>
             </div>

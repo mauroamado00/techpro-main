@@ -42,8 +42,8 @@ export default class CarritoDAo {
     aumentarCantidadCarrito(id_producto) {
         let carrito = this.obtenerCarrito();
         let nuevoCarrito = carrito.map(producto => {
-            if (producto.id_producto == id_producto) {
-                producto.quantity++;
+            if (producto.id == id_producto) {
+                producto.cantidad++;
             }
             return producto;
         });
@@ -53,8 +53,8 @@ export default class CarritoDAo {
     disminuirCantidadCarrito(id) {
         let carrito = this.obtenerCarrito();
         let nuevoCarrito = carrito.map(producto => {
-            if (producto.id == id && producto.quantity > 1) {
-                producto.quantity--;
+            if (producto.id == id && producto.cantidad > 1) {
+                producto.cantidad--;
             }
             return producto;
         });
@@ -71,7 +71,7 @@ export default class CarritoDAo {
             
         }else{
             this.eliminarProductoCarrito(producto.id);
-            productoExistente.id += producto.id;
+            productoExistente.cantidad += producto.cantidad;
             let carritoSinExistente = this.obtenerCarrito();
             carritoSinExistente.push(productoExistente);
             this.guardarCarrito(carritoSinExistente);
@@ -97,29 +97,40 @@ export default class CarritoDAo {
 
     }
 
-    async confirmarCompra(nombre, stock, precio) {
+    async confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago) {
         if(metodoEnvio == "Retiro en el local"){
             direccion = null;
         }
         let products = this.obtenerCarrito();
         let venta = {
-            nombre: nombre,
-            stock: stock,
-            precio: precio,
+            nombrecompleto: nombrecompleto,
+            ciudad: ciudad,
+            numerodetelefono: numerodetelefono,
+            email: email,
+            metodoEnvio: metodoEnvio,
+            direccion: direccion,
+            metodoPago: metodoPago
         }
 
         let formData = new FormData();
-        formData.append("nombre", nombre);
-        formData.append("stock", stock);
-        formData.append("precio", precio);
+        formData.append("nombrecompleto", nombrecompleto);
+        formData.append("ciudad", ciudad);
+        formData.append("numerodetelefono", numerodetelefono);
+        formData.append("email", email);
+        formData.append("metodoEnvio", metodoEnvio);
+        formData.append("direccion", direccion);
+        formData.append("metodoPago", metodoPago);
+        
+        
+        formData.append("productos", JSON.stringify(products));
         let config = {
             method: "POST",
             body: formData
         }
         console.log(products);
-       // let response = await fetch("http://localhost:3000/ventas", config);
-       // let data = await response.json();
-     //   return data;
+        let response = await fetch("http://localhost:3000/ventas", config);
+        let data = await response.json();
+       return data;
 
     }
 }
