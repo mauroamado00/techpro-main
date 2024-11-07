@@ -1,8 +1,9 @@
 <?php
-require_once __DIR__ . "/../config/config.php";
+require_once __DIR__ . "/../config/Configuracion.php";
 require_once  __DIR__."/../DAO/ventasDao.php";
 
 
+$function = $_GET['function'];
 // Evaluar la función solicitada
 switch ($function) {
     case 'realizarCompra':
@@ -25,9 +26,9 @@ function realizarCompra(){
     $ciudad = $_POST['ciudad'];
     $numeroDeTelefono = $_POST['numerodetelefono'];
     $email = $_POST['email'];
-    $metodoDeEnvio = $_POST['metododeenvio'];
+    $metodoDeEnvio = $_POST['metodoEnvio'];
     $direccion = $_POST['direccion'];
-    $metodoDePago = $_POST['metododepago'];
+    $metodoDePago = $_POST['metodoPago'];
     $productos = json_decode($_POST['productos'], true);
 
     $respuesta = (new VentasDao())->realizarCompra($nombreCompleto, $ciudad, $numeroDeTelefono, $email, $metodoDeEnvio, $direccion, $metodoDePago,$productos);

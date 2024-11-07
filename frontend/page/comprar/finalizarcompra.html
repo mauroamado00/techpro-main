@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <form class="container" id="realize-order">
         <h1>Finalizar Compra</h1>
         <div class="checkout">
             <div class="customer-info">
@@ -30,10 +30,10 @@
                     <option>Otra ciudad.</option>
                 </select>
                 
-                <label for="numero-telefono" name="numerodetelefono">Numero de Telefono</label>
-                <input type="tel" id="numero-telefono">
-                <label for="email" name="email">Email</label>
-                <input type="email" id="email">
+                <label for="numero-telefono" >Numero de Telefono</label>
+                <input type="tel" id="numero-telefono" name="numerodetelefono">
+                <label for="email" >Email</label>
+                <input type="email" id="email" name="email">
                 <div class="checkbox">
                     <input type="checkbox" id="checkbox" name="checkbox" value="1">
                     <label for="checkbox">Guardar informacion para proximas compras</label>
@@ -68,10 +68,10 @@
                     <option value="efectivo">Efectivo</option>
                     <option value="tarjeta">Tarjeta</option>                       
                 </select>
-                <button id="realize-order">Realizar pedido</button>
+                <button>Realizar pedido</button>
             </div>
         </div>
-    </div>
+    </form>
     
 </body>
 </html>

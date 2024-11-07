@@ -63,6 +63,7 @@ function agregarProducto(producto){
     console.log("Agregando producto", producto);
     producto.cantidad = 1;
     let carritoDAO = new CarritoDAo();
+  
     carritoDAO.agregarProductoCarrito(producto);
 
 

@@ -1,3 +1,5 @@
+import Origen from "./origen.js";
+
 export default class CarritoDAo {
     constructor() {
 
@@ -17,7 +19,6 @@ export default class CarritoDAo {
         let carrito = this.obtenerCarrito();
         let nuevoCarrito = carrito.filter(producto => producto.id != id);
         this.guardarCarrito(nuevoCarrito);
-        
     }
 
     guardarCarrito(carrito) {
@@ -63,8 +64,10 @@ export default class CarritoDAo {
 
     // Función para agregar un producto al carrito
     agregarProductoCarrito(producto) {
+        console.log(producto);
         let carrito = this.obtenerCarrito();
-        let productoExistente = carrito.find(producto => producto.id == producto.id);
+        let productoExistente = carrito.find(productoc => productoc.id == producto.id);
+        console.log(productoExistente);
         if (productoExistente == null) {
             carrito.push(producto);
             this.guardarCarrito(carrito);
@@ -98,13 +101,7 @@ export default class CarritoDAo {
     }
 
     async confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago) {
-        nombrecompleto = "John Doe";
-        ciudad = "Sample City";
-        numerodetelefono = "123456789";
-        email = "johndoe@example.com";
-        metodoEnvio = "local";
-        direccion = "123 Sample Street";
-        metodoPago = "efectivo";
+        
 
         if(metodoEnvio == "local"){
             direccion = null;
@@ -121,14 +118,16 @@ export default class CarritoDAo {
         formData.append("direccion", direccion);
         formData.append("metodoPago", metodoPago);
         formData.append("productos", JSON.stringify(products));
-        
+
         let config = {
             method: "POST",
             body: formData
         }
         console.log(products);
-        let response = await fetch("http://localhost:3000/ventas", config);
+        let url = Origen+"/backend/CONTROLLER/ventas_controlador.php?function=realizarCompra";
+        let response = await fetch(url, config);
         let data = await response.json();
+        console.log(data);
        return data;
 
     }

@@ -22,7 +22,8 @@ function agregarevento(){
 
     confirmarCompraElement.onsubmit = (e) => {
         e.preventDefault();
-        let nombrecompleto = confirmarCompraElement.nombrecompleto.value;
+        console.log("enviando compra");
+        let nombrecompleto = confirmarCompraElement.nombreCompleto.value;
         let ciudad = confirmarCompraElement.ciudad.value;
         let numerodetelefono = confirmarCompraElement.numerodetelefono.value;
         let email = confirmarCompraElement.email.value;

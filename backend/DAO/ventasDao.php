@@ -12,20 +12,33 @@ class VentasDao
         
         
 
-        $sql = "INSERT INTO `compra`(`nombrecompleto`, `ciudad`, `numerodetelefono`, `email`, `metododeenvio`, `direccion`, `metododepago`) 
-                VALUES ('$nombreCompleto', '$ciudad', '$numeroDeTelefono', '$email', '$metodoDeEnvio', $direccion, '$metodoDePago')";
+        $sql = "INSERT INTO `compra` (`nombrecompleto`, `ciudad`, `numerodetelefono`, `email`, `metododeenvio`, `direccion`, `metododepago`, `id`) VALUES ('$nombreCompleto', '$ciudad', '$$numeroDeTelefono', '$email', '$metodoDeEnvio', '$direccion', '$metodoDePago', NULL);";
         $connection = connection();
         
         try {
             $connection->query($sql);
             $compraId = $connection->insert_id;
+            $this->insertarProductoCompra($productos, $compraId);
             $respuesta = new respuesta(true, "Compra agregada correctamente", null);
         } catch (Exception $e) {
             error_log($e);
             $respuesta = new respuesta(false, "No se pudo agregar la compra", null);
         }
-
         return $respuesta;
+    }
+
+    function insertarProductoCompra($productos,$idCompra){
+        $connection = connection();
+        foreach ($productos as $producto) {
+            error_log(json_encode($producto));
+            $idProducto = $producto["id"];
+            $cantidad = $producto["cantidad"];
+
+           $sql = "INSERT INTO `productocompra` (`idCompra`, `idProducto`, `cantidad`) VALUES ( '$idCompra', '$idProducto', '$cantidad');";
+
+            $connection->query($sql);
+        }
+       
     }
 
     function obtenerComprasUsuario()
