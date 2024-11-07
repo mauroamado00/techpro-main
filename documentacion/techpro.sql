@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2024 a las 18:35:31
+-- Tiempo de generación: 07-11-2024 a las 19:26:47
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -32,11 +32,29 @@ CREATE TABLE `compra` (
   `ciudad` varchar(255) NOT NULL,
   `numerodetelefono` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `metododeenvio` int(11) NOT NULL,
+  `metododeenvio` varchar(255) NOT NULL,
   `direccion` varchar(255) NOT NULL,
-  `metododepago` int(11) NOT NULL,
+  `metododepago` varchar(255) NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `compra`
+--
+
+INSERT INTO `compra` (`nombrecompleto`, `ciudad`, `numerodetelefono`, `email`, `metododeenvio`, `direccion`, `metododepago`, `id`) VALUES
+('nombre', 'cuidad', 0, 'email', 'local', 'direccion', 'efectivo', 1),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', '', 'null', '', 2),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 3),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 4),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 5),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 6),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 7),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 8),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 9),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 10),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 11),
+('John Doe', 'Sample City', 0, 'johndoe@example.com', 'local', 'null', 'efectivo', 12);
 
 -- --------------------------------------------------------
 
@@ -120,6 +138,16 @@ CREATE TABLE `productocompra` (
   `cantidad` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `productocompra`
+--
+
+INSERT INTO `productocompra` (`idProducto`, `idCompra`, `cantidad`) VALUES
+(1, 11, 3),
+(1, 12, 3),
+(2, 11, 2),
+(2, 12, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -194,7 +222,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `compra`
 --
 ALTER TABLE `compra`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `imagen`
