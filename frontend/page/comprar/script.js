@@ -37,8 +37,12 @@ function agregarevento(){
 
 async function confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago){
     let carritoDAO = new CarritoDAo();
-    let respuesta = await carritoDAO.confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago)
-    console.log(respuesta.menssage);
+    let respuesta = await carritoDAO.confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago);
+    if(respuesta.estado){
+
+    }else{
+
+    }
 
 }
 

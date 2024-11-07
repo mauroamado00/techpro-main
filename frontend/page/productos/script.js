@@ -65,6 +65,7 @@ function agregarProducto(producto){
     let carritoDAO = new CarritoDAo();
   
     carritoDAO.agregarProductoCarrito(producto);
+  
 
 
 }
