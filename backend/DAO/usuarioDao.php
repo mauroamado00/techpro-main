@@ -7,11 +7,11 @@ require_once __DIR__ . '/../DAO/respuesta.php';
 class usuario{
 
 
-    public function agregarusuario($isAdmin, $nombre, $apellido, $email, $password){
+    public function agregarusuario($isAdmin, $password, $nombre, $email, $apellido){
         
         $hash= $password;
         $hashedPassword = password_hash($hash, PASSWORD_BCRYPT);
-        $sql = "INSERT INTO usuario(isAdmin,nombre,apellido,email, password) VALUES ('$isAdmin','$nombre','$apellido', '$email', '$hash')";
+        $sql = "INSERT INTO usuario (isAdmin, password, nombre, email, apellido) VALUES ($isAdmin, '$hashedPassword', '$nombre', '$email', '$apellido')";
         $connection = connection();
         try{
             $connection->query($sql);

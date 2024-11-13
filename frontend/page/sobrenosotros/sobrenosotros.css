@@ -24,51 +24,54 @@ ul {
   padding: 0rem 1rem;
 }
 
-/* Navbar */
+/* navbar */
 .nav {
   width: 100%;
   height: 8rem;
-  background-color: #db4444;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10;
+  background-color: #db4444;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 2rem; 
 }
 
 .nav_container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .nav_logo {
-  font-size: 2.2rem;
+  font-size: 2.4rem; 
   font-weight: 800;
-  color: #222;
-  text-decoration: none;
+  color: #fff; 
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  height: 70px;
+  width: 200px;
+  margin-right: 10px;
 }
 
 .nav_list {
   display: flex;
-  flex-grow: 1;
   justify-content: center; 
   align-items: center;
+  flex-grow: 1;
 }
 
 .nav_item {
   position: relative;
-  margin: 0 1rem;
-  transition: transform 0.3s;
-  padding: 0.5rem;
+  margin: 0 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: transform 0.3s, background-color 0.3s ease;
   border-radius: 8px;
-}
-
-.nav_link {
-  color: #222;
-  text-decoration: none;
 }
 
 .nav_item:hover {
@@ -76,30 +79,46 @@ ul {
   background-color: #e2e6ea;
 }
 
-.nav_icons {
+.nav_link {
+  color: black; 
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nav_form {
+  padding: 0.8rem;
+  background-color: #fff;
   display: flex;
   align-items: center;
+  border-radius: 8px;
 }
 
-.icon_link {
-  margin-left: 15px; 
+.nav_input {
+  padding: 0.4rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1rem;
 }
 
-.icon_img {
-  width: 30px; 
-  height: auto;
+.nav_carrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-/* Estilo para el logo */
-.nav_logo {
-  display: flex; 
-  margin-left: 0; 
-  
+.nav_carrito img {
+  height: 30px;
+  width: auto;
+  margin-left: 10px;
 }
 
-.logo_img {
-  height: 70px;
-  width: auto; 
+.nav_carrito_activo {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 /* MOBILE NAVBAR */
@@ -198,7 +217,7 @@ ul {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 40px 0; /* Mayor margen superior e inferior para alejar del navbar */
+  margin: 40px 0;
 }
 
 .sobre-nosotros h1 {

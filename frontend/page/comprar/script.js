@@ -1,50 +1,57 @@
 import CarritoDAo from "../../dao/CarritoDao.js";
 
-window.onload =()=>{
-    agregarevento();
-}
+window.onload = () => {
+  agregarevento();
+};
 
-function agregarevento(){
-    let metodoEnvio = document.querySelector("#metodoEnvio");
-    let metodoPago = document.querySelector("#metodoPago");
-    let confirmarCompraElement = document.querySelector("#realize-order");
+function agregarevento() {
+  let metodoEnvio = document.querySelector("#metodoEnvio");
+  let confirmarCompraElement = document.querySelector("#realize-order");
 
   metodoEnvio.onchange = () => {
-        let valor = metodoEnvio.value;
-        if(valor == "direccion"){
-            confirmarCompraElement.classList.add("tipoEnvio");
-        }else{
-            confirmarCompraElement.classList.remove("tipoEnvio");
+    let valor = metodoEnvio.value;
+    if (valor == "direccion") {
+      confirmarCompraElement.classList.add("tipoEnvio");
+    } else {
+      confirmarCompraElement.classList.remove("tipoEnvio");
+    }
+  };
 
-        }
-        
+  confirmarCompraElement.onsubmit = (e) => {
+    e.preventDefault();
+    let nombreCompleto = confirmarCompraElement.nombreCompleto.value.trim();
+    let ciudad = confirmarCompraElement.ciudad.value.trim();
+    let numeroDeTelefono = confirmarCompraElement.numerodetelefono.value.trim();
+    let email = confirmarCompraElement.email.value.trim();
+    let metodoEnvio = confirmarCompraElement.metodoEnvio.value;
+    let direccion = confirmarCompraElement.direccion.value.trim();
+    let metodoPago = confirmarCompraElement.metodoPago.value;
+
+    if (!nombreCompleto || !ciudad || !numeroDeTelefono || !email || !metodoEnvio || !metodoPago) {
+      alert("Por favor, completa todos los campos requeridos.");
+      return;
     }
 
-    confirmarCompraElement.onsubmit = (e) => {
-        e.preventDefault();
-        console.log("enviando compra");
-        let nombrecompleto = confirmarCompraElement.nombreCompleto.value;
-        let ciudad = confirmarCompraElement.ciudad.value;
-        let numerodetelefono = confirmarCompraElement.numerodetelefono.value;
-        let email = confirmarCompraElement.email.value;
-        let metodoEnvio = confirmarCompraElement.metodoEnvio.value;
-        let direccion = confirmarCompraElement.direccion.value;
-        let metodoPago = confirmarCompraElement.direccion.value;
-        confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago);
-        
+    if (metodoEnvio === "direccion" && !direccion) {
+      alert("Por favor, ingresa la dirección de envío.");
+      return;
     }
+
+    confirmarCompra(nombreCompleto, ciudad, numeroDeTelefono, email, metodoEnvio, direccion, metodoPago);
+  };
 }
 
-async function confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago){
-    let carritoDAO = new CarritoDAo();
-    let respuesta = await carritoDAO.confirmarCompra(nombrecompleto,ciudad,numerodetelefono,email,metodoEnvio,direccion,metodoPago);
-    if(respuesta.estado){
-
-    }else{
-
-    }
-
+async function confirmarCompra(nombreCompleto, ciudad, numeroDeTelefono, email, metodoEnvio, direccion, metodoPago) {
+  let carritoDAO = new CarritoDAo();
+  let respuesta = await carritoDAO.confirmarCompra(nombreCompleto, ciudad, numeroDeTelefono, email, metodoEnvio, direccion, metodoPago);
+  
+  if (respuesta.estado) {
+    alert("Compra realizada con éxito");
+    localStorage.removeItem('carrito');
+    console.log("carrito")
+    window.location.href = "../productos/productos.html";
+} else {
+    alert("Error al confirmar la compra. Inténtalo nuevamente.");
 }
 
-
-
+}

@@ -3,10 +3,10 @@ import Origen from "./origen.js";
 
 export default class usuario{
 
-    async agregarusuario(isadmin, nombre, apellido, email, password) {
+    async agregarusuario(nombre, apellido, email, password) {
         let url = Origen + "/backend/CONTROLLER/usuario_controlador.php?function=agregar";
         let formData = new FormData();
-        formData.append("isadmin", isadmin);
+        formData.append("isadmin", 0);
         formData.append("nombre", nombre);
         formData.append("apellido", apellido);
         formData.append("email", email);

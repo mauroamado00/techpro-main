@@ -18,14 +18,14 @@ async function agregarEvento() {
 
 async function iniciarSesion(email, password) {
     let respuesta = await new SesionDao().iniciarSesion(email, password);
-    
+
     if (respuesta && respuesta.estado === true) {
-        if(respuesta.datos.usuario.isAdmin == 0){
+        if(respuesta.datos.usuario.isadmin == 0){
             alert("Bienvenido " +respuesta.datos.usuario.nombre);
             window.location.href = "../index/index.html"; 
         }else{
             alert("Bienvenido administrador");
-            window.location.href = "../ADMIN%20PANEL/admin-login.html";
+            window.location.href = "../ADMIN%20PANEL/gestionarproductos.html";
         }
          
     } else {

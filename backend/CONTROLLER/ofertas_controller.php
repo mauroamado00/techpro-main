@@ -49,5 +49,11 @@ switch($function){
 
     }
 
+    function obtener() {
+        $resultado = (new ofertas())->obtener();
+        echo json_encode($resultado);
+        
+    }
+
 
 ?>

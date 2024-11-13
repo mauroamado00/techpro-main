@@ -25,6 +25,7 @@ export default class CarritoDAo {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }
 
+    
     // Función para modificar el stock de un producto en el carrito
     modificarStockCarrito(id, cantidad) {
 

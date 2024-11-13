@@ -19,7 +19,6 @@ export default class SesionDao{
         return respuesta;      
     }
     
-
     async obtenerSesion(){
 
         let url = Origen+"/backend/CONTROLLER/sesion_controller.php?function=obtener";

@@ -19,6 +19,7 @@ class ofertas{
 
     }
 
+
     public function modificaroferta($id, $oferta, $fechainicio, $fechafin){
 
         $sql = "UPDATE `oferta` SET `id`='$id',`oferta`='$oferta',`fechainicio`='$fechainicio',`fechafin`='$fechafin' WHERE `oferta`. `id` = $id;";

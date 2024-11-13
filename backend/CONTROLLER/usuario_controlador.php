@@ -25,12 +25,12 @@ switch($function){
 
     function agregarusuario(){
 
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
     $isAdmin = $_POST['isadmin'];
-    $resultado = (new usuario())->agregarusuario($isAdmin, $nombre, $apellido, $email, $password);
+    $password = $_POST['password'];
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $apellido = $_POST['apellido'];
+    $resultado = (new usuario())->agregarusuario($isAdmin, $password, $nombre, $email,$apellido);
     if($resultado){
         echo json_encode($resultado);
     }else{
