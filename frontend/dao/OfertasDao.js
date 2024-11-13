@@ -1,8 +1,10 @@
+import Origen from "./origen.js";
+
 export default class ofertas{
 
     async verproductos(){
 
-        let url = "http://localhost/techpro-main/backend/CONTROLLER/ofertas_controller.php?function=ver";
+        let url = Origen+"/backend/CONTROLLER/ofertas_controller.php?function=ver";
         let respuestaConsulta = await fetch(url,config);
         let respuesta = await respuestaConsulta.json();   
     }
@@ -10,7 +12,7 @@ export default class ofertas{
 
     async eliminarproductos(){
 
-        let url = "http://localhost/techpro-main/backend/CONTROLLER/ofertas_controller.php?function=modificar";
+        let url = Origen+"/backend/CONTROLLER/ofertas_controller.php?function=modificar";
         let respuestaConsulta = await fetch(url,config);
         let respuesta = await respuestaConsulta.json();        
 
@@ -18,10 +20,19 @@ export default class ofertas{
 
     async buscarproductos(){
 
-        let url = "http://localhost/techpro-main/backend/CONTROLLER/ofertas_controller.php?function=eliminar";
+        let url = Origen+"/backend/CONTROLLER/ofertas_controller.php?function=eliminar";
         let respuestaConsulta = await fetch(url,config);
         let respuesta = await respuestaConsulta.json();        
 
     }
+
+    async obtenerOfertas(){
+            
+        let url =  Origen+"/backend/CONTROLLER/ofertas_controller.php?function=obtener";
+        let respuestaConsulta = await fetch(url);
+        let respuesta = await respuestaConsulta.json();
+        return respuesta;
+}
+
 
 }

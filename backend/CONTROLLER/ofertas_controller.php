@@ -16,6 +16,9 @@ switch($function){
     case 'eliminar';
     eliminaroferta();
     break;
+    case 'obtener';
+    obtener();
+    break;
 
 }
 

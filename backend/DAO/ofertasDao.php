@@ -5,7 +5,6 @@
 
 class ofertas{
 
-
     public function verofertas($id,$oferta, $fechainicio, $fechafin){
 
         $sql = "INSERT INTO oferta(id,oferta,fechainicio,fechafin) VALUES ('$id, $oferta','$fechainicio', '$fechafin')";
@@ -16,10 +15,9 @@ class ofertas{
         }catch(Exception $e){
             return new respuesta(false,"Error al Obtener las Ofertas",null);
         }
-
     }
 
-
+    
     public function modificaroferta($id, $oferta, $fechainicio, $fechafin){
 
         $sql = "UPDATE `oferta` SET `id`='$id',`oferta`='$oferta',`fechainicio`='$fechainicio',`fechafin`='$fechafin' WHERE `oferta`. `id` = $id;";
