@@ -1,3 +1,5 @@
+import OfertaDAO from "../../dao/OfertasDao.js";
+
 let slideIndex = 0;
 const slides = document.querySelectorAll('.banner-slide');
 const totalSlides = slides.length;
@@ -59,3 +61,45 @@ document.addEventListener('DOMContentLoaded', function() {
       mobileNav.classList.toggle('mobile_nav_hide'); // Alterna la clase para mostrar/ocultar
   });
 });
+
+window.onload = async () => {
+  let ofertas = await obtenerOfertas();
+  mostrarOfertas(ofertas);
+}
+
+
+async function obtenerOfertas() {
+  let respuesta = await new OfertaDAO().obtenerOfertas();
+  return respuesta.datos;
+}
+
+function mostrarOfertas(ofertas) {
+  let ofertasElement = document.querySelector("#listaOferta");
+  ofertasElement.innerHTML = "";
+  console.log(ofertas);
+  ofertas.forEach(oferta => {
+
+      let divOferta = document.createElement("div");
+      divOferta.classList.add("oferta");
+      divOferta.innerHTML = `
+          <img src="${oferta.imagen != null ? oferta.imagen : "../../image/banner1.jpg"}" alt="${oferta.nombre}" class="oferta-imagen">
+      `;
+
+      let divInfoOferta = document.createElement("div");
+      divInfoOferta.classList.add("oferta-info");
+      let precio = parseFloat(oferta.precio) - (parseFloat(oferta.precio) * (parseFloat(oferta.oferta) / 100));
+      divInfoOferta.innerHTML = `
+          <p>Nombre: ${oferta.nombre}</p>
+          <p>Precio: $${oferta.precio}</p>
+          <p>Descuento: ${oferta.oferta}%</p>
+          <p>Precio con oferta: $${precio}</p>
+      `;
+
+      divOferta.appendChild(divInfoOferta);
+
+     
+
+      ofertasElement.appendChild(divOferta);
+
+  });
+}

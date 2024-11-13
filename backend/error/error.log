@@ -1,94 +1,53 @@
-[07-Nov-2024 19:20:48 Europe/Berlin] [{"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3},{"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}]
-[07-Nov-2024 19:20:48 Europe/Berlin] 7
-[07-Nov-2024 19:20:48 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3}
-[07-Nov-2024 19:20:48 Europe/Berlin] PHP Warning:  Attempt to read property "id" on array in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 37
-[07-Nov-2024 19:20:48 Europe/Berlin] PHP Warning:  Attempt to read property "cantidad" on array in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 38
-[07-Nov-2024 19:20:48 Europe/Berlin] 
-[07-Nov-2024 19:20:48 Europe/Berlin] 
-[07-Nov-2024 19:20:48 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:20:48 Europe/Berlin] PHP Warning:  Attempt to read property "id" on array in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 37
-[07-Nov-2024 19:20:48 Europe/Berlin] PHP Warning:  Attempt to read property "cantidad" on array in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 38
-[07-Nov-2024 19:20:48 Europe/Berlin] 
-[07-Nov-2024 19:20:48 Europe/Berlin] 
-[07-Nov-2024 19:21:39 Europe/Berlin] [{"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3},{"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}]
-[07-Nov-2024 19:21:39 Europe/Berlin] 8
-[07-Nov-2024 19:21:39 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3}
-[07-Nov-2024 19:21:39 Europe/Berlin] 1
-[07-Nov-2024 19:21:39 Europe/Berlin] 3
-[07-Nov-2024 19:21:39 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:21:39 Europe/Berlin] 2
-[07-Nov-2024 19:21:39 Europe/Berlin] 2
-[07-Nov-2024 19:22:12 Europe/Berlin] [{"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3},{"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}]
-[07-Nov-2024 19:22:12 Europe/Berlin] 9
-[07-Nov-2024 19:22:12 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3}
-[07-Nov-2024 19:22:12 Europe/Berlin] 1
-[07-Nov-2024 19:22:12 Europe/Berlin] 3
-[07-Nov-2024 19:22:12 Europe/Berlin] INSERT INTO `productocompra` (`idCompra`, `idProducto`, `cantidad`) VALUES (NULL, '9', '1', '3');
-[07-Nov-2024 19:22:12 Europe/Berlin] mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php:43
+[13-Nov-2024 21:39:59 Europe/Berlin] fecha: 13/11/2024
+[13-Nov-2024 21:40:19 Europe/Berlin] fecha: 13/11/2024
+[13-Nov-2024 21:40:19 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= 13/11/2024 AND o.fechaFin >= 13/11/2024
+[13-Nov-2024 21:40:45 Europe/Berlin] fecha: 13/11/2024
+[13-Nov-2024 21:40:45 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '13/11/2024' AND o.fechaFin >= '13/11/2024'
+[13-Nov-2024 21:43:44 Europe/Berlin] fecha: Wed Nov 13 2024
+[13-Nov-2024 21:43:44 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= 'Wed Nov 13 2024' AND o.fechaFin >= 'Wed Nov 13 2024'
+[13-Nov-2024 21:44:45 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:44:45 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:44:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function getOrigen() in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php:44
 Stack trace:
-#0 C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php(43): mysqli->query('INSERT INTO `pr...')
-#1 C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php(21): VentasDao->insertarProductoCompra(Array, 9)
-#2 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(34): VentasDao->realizarCompra('John Doe', 'Sample City', '123456789', 'johndoe@example...', 'local', 'null', 'efectivo', Array)
-#3 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(10): realizarCompra()
-#4 {main}
-[07-Nov-2024 19:22:18 Europe/Berlin] [{"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3},{"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}]
-[07-Nov-2024 19:22:18 Europe/Berlin] 10
-[07-Nov-2024 19:22:18 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3}
-[07-Nov-2024 19:22:18 Europe/Berlin] 1
-[07-Nov-2024 19:22:18 Europe/Berlin] 3
-[07-Nov-2024 19:22:18 Europe/Berlin] INSERT INTO `productocompra` (`idCompra`, `idProducto`, `cantidad`) VALUES (NULL, '10', '1', '3');
-[07-Nov-2024 19:22:18 Europe/Berlin] mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php:43
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(33): Ofertas->obtenerOfertas('2024/11/13')
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(26): obtenerOfertas()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 44
+[13-Nov-2024 21:44:55 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:44:55 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:44:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function getOrigen() in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php:44
 Stack trace:
-#0 C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php(43): mysqli->query('INSERT INTO `pr...')
-#1 C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php(21): VentasDao->insertarProductoCompra(Array, 10)
-#2 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(34): VentasDao->realizarCompra('John Doe', 'Sample City', '123456789', 'johndoe@example...', 'local', 'null', 'efectivo', Array)
-#3 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(10): realizarCompra()
-#4 {main}
-[07-Nov-2024 19:23:15 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3}
-[07-Nov-2024 19:23:15 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:24:24 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":3}
-[07-Nov-2024 19:24:24 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:32:15 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:32:15 Europe/Berlin] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`techpro`.`productocompra`, CONSTRAINT `productocompra_ibfk_3` FOREIGN KEY (`idCompra`) REFERENCES `compra` (`id`)) in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php:39
-Stack trace:
-#0 C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php(39): mysqli->query('INSERT INTO `pr...')
-#1 C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php(21): VentasDao->insertarProductoCompra(Array, 1)
-#2 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(34): VentasDao->realizarCompra('', '', '', '', 'envio', '', '', Array)
-#3 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(10): realizarCompra()
-#4 {main}
-[07-Nov-2024 19:34:12 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:35:01 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:38:43 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:47:37 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:49:33 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:49:48 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:49:50 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:49:52 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:49:53 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:49:54 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:53:44 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[07-Nov-2024 19:54:40 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":3}
-[08-Nov-2024 03:02:20 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":3}
-[08-Nov-2024 03:39:57 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":7}
-[08-Nov-2024 03:40:37 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":4}
-[08-Nov-2024 03:41:58 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":243}
-[08-Nov-2024 03:43:03 Europe/Berlin] {"id":"4","stock":"75","precio":"250","nombre":"Smartwatch","imagen":null,"cantidad":1}
-[08-Nov-2024 03:43:03 Europe/Berlin] {"id":"6","stock":"150","precio":"90","nombre":"Teclado mec\u00e1nico","imagen":null,"cantidad":1}
-[08-Nov-2024 03:45:16 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[08-Nov-2024 03:45:48 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[08-Nov-2024 04:10:16 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":6}
-[08-Nov-2024 18:06:56 Europe/Berlin] {"id":"9","stock":"60","precio":"80","nombre":"C\u00e1mara web","imagen":null,"cantidad":1}
-[08-Nov-2024 18:07:51 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":1}
-[08-Nov-2024 18:11:43 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":1}
-[08-Nov-2024 18:14:45 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":3}
-[08-Nov-2024 18:16:31 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":1}
-[12-Nov-2024 17:43:26 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[12-Nov-2024 17:43:26 Europe/Berlin] {"id":"1","stock":"50","precio":"700","nombre":"Smartphone","imagen":null,"cantidad":1}
-[12-Nov-2024 17:43:26 Europe/Berlin] {"id":"6","stock":"150","precio":"90","nombre":"Teclado mec\u00e1nico","imagen":null,"cantidad":1}
-[12-Nov-2024 17:43:26 Europe/Berlin] {"id":"8","stock":"20","precio":"200","nombre":"Monitor 24\"","imagen":null,"cantidad":1}
-[12-Nov-2024 17:43:26 Europe/Berlin] {"id":"7","stock":"200","precio":"30","nombre":"Rat\u00f3n \u00f3ptico","imagen":null,"cantidad":1}
-[12-Nov-2024 17:43:27 Europe/Berlin] {"id":"10","stock":"25","precio":"300","nombre":"Proyector","imagen":null,"cantidad":1}
-[12-Nov-2024 20:09:16 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":3}
-[12-Nov-2024 20:12:27 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":2}
-[12-Nov-2024 20:14:05 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":5}
-[12-Nov-2024 20:15:15 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Laptop","imagen":null,"cantidad":5}
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(33): Ofertas->obtenerOfertas('2024/11/13')
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(26): obtenerOfertas()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 44
+[13-Nov-2024 21:45:28 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:45:28 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:45:28 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:46:18 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:46:18 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:46:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:47:36 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:47:36 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:47:36 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:47:58 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:47:58 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:47:58 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:48:13 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:48:13 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:48:13 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:48:46 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:48:46 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:48:46 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:49:10 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:49:10 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:49:10 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:51:40 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:51:40 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:51:40 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:52:48 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:52:48 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:52:48 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49
+[13-Nov-2024 21:53:07 Europe/Berlin] fecha: 2024/11/13
+[13-Nov-2024 21:53:07 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/13' AND o.fechaFin >= '2024/11/13'
+[13-Nov-2024 21:53:07 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 49

@@ -12,8 +12,11 @@ window.onload = async () => {
     mostrarProductos(productos);
     agregarEventosFiltro();
 
+
     
 }
+
+
 
 async function obtenerProductos() {
     let respuesta = await new ProductosDAO().obtenerProductos();

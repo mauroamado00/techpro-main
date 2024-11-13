@@ -1,6 +1,7 @@
 <?php
 
 require_once '../DAO/ofertasDao.php';
+require_once __DIR__ . "/../config/Configuracion.php";
 
 $function = $_GET['function'];
 
@@ -17,6 +18,30 @@ switch($function){
     eliminaroferta();
     break;
 
+    case 'crear';
+    crear();
+    break;
+
+    case 'obtenerOfertas':
+    obtenerOfertas();
+    break;
+
+}
+
+function obtenerOfertas(){
+    $fecha = $_POST['fecha'];
+    $resultado = (new Ofertas())->obtenerOfertas($fecha);
+    echo json_encode($resultado);
+}
+
+function crear(){
+    
+        $oferta = $_POST['oferta'];
+        $fechainicio = $_POST['fechaInicio'];
+        $fechafin = $_POST['fechaFin'];
+        $idProducto = $_POST['idProducto'];
+        $resultado = (new Ofertas())->crear($oferta, $fechainicio, $fechafin, $idProducto);
+        echo json_encode($resultado);
 }
 
     function verofertas(){

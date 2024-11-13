@@ -1,27 +1,34 @@
-export default class ofertas{
+import Origen from "./origen.js";
 
-    async verproductos(){
+export default class OfertaDAO{
 
-        let url = "http://localhost/techpro-main/backend/CONTROLLER/ofertas_controller.php?function=ver";
-        let respuestaConsulta = await fetch(url,config);
-        let respuesta = await respuestaConsulta.json();   
+    async agregarOferta(oferta,fechaInicio,fechaFin,idProducto){
+        let url = Origen + "/backend/CONTROLLER/ofertas_controller.php?function=crear";
+        let formData = new FormData();
+        formData.append("oferta",oferta);
+        formData.append("fechaInicio",fechaInicio);
+        formData.append("fechaFin",fechaFin);
+        formData.append("idProducto",idProducto);
+        let response = await fetch(url,{
+            method: "POST",
+            body: formData
+        });
+        let responseData = await response.json();
+        return responseData;
+      
     }
 
-
-    async eliminarproductos(){
-
-        let url = "http://localhost/techpro-main/backend/CONTROLLER/ofertas_controller.php?function=modificar";
-        let respuestaConsulta = await fetch(url,config);
-        let respuesta = await respuestaConsulta.json();        
-
+    async obtenerOfertas(){
+        let url = Origen + "/backend/CONTROLLER/ofertas_controller.php?function=obtenerOfertas";
+        let formData = new FormData();
+        formData.append("fecha", new Date().toISOString().split('T')[0].replace(/-/g, '/'));
+        let config = {
+            method: "POST",
+            body: formData
+        }
+        let response = await fetch(url,config);
+        let responseData = await response.json();
+        return responseData;
     }
-
-    async buscarproductos(){
-
-        let url = "http://localhost/techpro-main/backend/CONTROLLER/ofertas_controller.php?function=eliminar";
-        let respuestaConsulta = await fetch(url,config);
-        let respuesta = await respuestaConsulta.json();        
-
-    }
-
 }
+
