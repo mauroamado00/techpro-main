@@ -19,7 +19,6 @@ class Ofertas{
         }catch(Exception $e){
             return new respuesta(false,"Error al Obtener las Ofertas",null);
         }
-
     }
 
     public function crear($oferta, $fechainicio, $fechafin, $idProducto) {
