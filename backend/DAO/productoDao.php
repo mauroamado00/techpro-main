@@ -9,7 +9,7 @@ class productos{
 
 
     public function verproductos($id, $nombre, $stock, $precio, $imagen_url) {
-        $sql = "INSERT INTO producto (id, nombre, stock, precio, imagen_url) VALUES ('$id', '$nombre', '$stock', '$precio', '$imagen_url')";
+        $sql = "INSERT INTO `producto`(`id`, `stock`, `precio`, `nombre`, `idImagen`) VALUES ('$id', '$nombre', '$stock', '$precio', '$imagen_url')";
         $connection = connection();
         try {
             $connection->query($sql);
@@ -38,6 +38,7 @@ class productos{
                     "imagen" => isset($idImagen) ? $url : null
                 ];
             }
+            
             return new respuesta(true, "Productos obtenidos", $productos);
         } catch (Exception $e) {
             return new respuesta(false, "Error al obtener los productos", null);

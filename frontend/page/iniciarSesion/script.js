@@ -1,9 +1,19 @@
 import SesionDao from "../../dao/SesionDao.js";
 
 window.onload = () => {
+    configurarMenuMovil();
     agregarEvento();
 }
 
+function configurarMenuMovil() {
+    let menuMovil = document.querySelector('.mobile_nav');
+    let botonHamburguesa = document.querySelector('.hamburger');
+  
+    botonHamburguesa.addEventListener('click', () => {
+      menuMovil.classList.toggle('mobile_nav_hide');
+    });
+}
+  
 async function agregarEvento() {
     let formElement = document.querySelector("#frmInicio");
 
@@ -34,3 +44,5 @@ async function iniciarSesion(email, password) {
     }
 }
 
+
+  

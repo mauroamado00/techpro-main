@@ -36,7 +36,6 @@ switch($function){
         echo json_encode($respuesta);
     }
 
-
     function cerrarSesion(){
     
         $respuesta = (new SesionDao)->cerrarSesion();

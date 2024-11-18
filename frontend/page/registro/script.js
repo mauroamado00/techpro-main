@@ -1,9 +1,19 @@
 import usuario from "../../dao/UsuarioDao.js";
 
 window.onload = () => {
+    configurarMenuMovil();
     agregarEvento();
 }
 
+function configurarMenuMovil() {
+    let menuMovil = document.querySelector('.mobile_nav');
+    let botonHamburguesa = document.querySelector('.hamburger');
+  
+    botonHamburguesa.addEventListener('click', () => {
+      menuMovil.classList.toggle('mobile_nav_hide');
+    });
+}
+  
 function agregarEvento() {
     let formElement = document.querySelector("#frmRegistro");
 

@@ -2,18 +2,23 @@ import CarritoDAo from "../../dao/CarritoDao.js";
 
 window.onload = () => {
   agregarevento();
+  actualizarTotalesCarrito();
 };
 
 function agregarevento() {
   let metodoEnvio = document.querySelector("#metodoEnvio");
+  let direccionInput = document.querySelector("#direccion");
+  let direccionLabel = document.querySelector("label[for='direccion']"); 
   let confirmarCompraElement = document.querySelector("#realize-order");
 
   metodoEnvio.onchange = () => {
     let valor = metodoEnvio.value;
-    if (valor == "direccion") {
-      confirmarCompraElement.classList.add("tipoEnvio");
+    if (valor === "local") {
+      direccionInput.style.display = "none";
+      direccionLabel.style.display = "none"; 
     } else {
-      confirmarCompraElement.classList.remove("tipoEnvio");
+      direccionInput.style.display = "block";  
+      direccionLabel.style.display = "block";  
     }
   };
 
@@ -55,3 +60,24 @@ async function confirmarCompra(nombreCompleto, ciudad, numeroDeTelefono, email, 
 }
 
 }
+
+const costoEnvioUYU = 100; 
+
+function actualizarTotalesCarrito() {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    let subtotalUSD = carrito.reduce((acumulador, producto) => {
+        return acumulador + producto.precio * producto.cantidad;
+    }, 0);
+
+    let shippingCostUYU = 0; 
+    if (subtotalUSD <= 1000) {
+        shippingCostUYU = costoEnvioUYU; 
+    }
+    document.getElementById("shipping-cost").textContent = 
+        shippingCostUYU === 0 ? "Gratis" : `$${shippingCostUYU} UYU`;
+
+    document.getElementById("total-price").textContent = 
+        `$${subtotalUSD.toFixed(2)} USD`;
+    localStorage.setItem("ultimaActualizacionCarrito", JSON.stringify(Date.now()));
+}
+

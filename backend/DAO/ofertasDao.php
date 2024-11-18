@@ -5,9 +5,7 @@
     require_once __DIR__ . "/Origen.php";
 
 
-
 class Ofertas{
-
 
     public function verofertas($id,$oferta, $fechainicio, $fechafin){
 
@@ -31,7 +29,6 @@ class Ofertas{
             }catch(Exception $e){
                 return new respuesta(false,"Error al Crear las Ofertas",null);
             }
-
     }
 
     public function obtenerOfertas($fecha){

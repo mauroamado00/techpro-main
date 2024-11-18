@@ -27,6 +27,7 @@ export default class ProductosDAO{
         formData.append("precio", precio);
         formData.append("imagen", imagen);
 
+        
         let config = {
 
             method: "POST",
@@ -47,6 +48,5 @@ export default class ProductosDAO{
             let respuesta = await respuestaConsulta.json();
             return respuesta;
     }
-
 
 }

@@ -1,14 +1,26 @@
 import CarritoDAo from "../../dao/CarritoDao.js";
+import ProductosDAO from "../../dao/ProductoDao.js";
 
 window.onload = () => {
+    configurarMenuMovil();
     let productos = obtenerProductos();
     mostrarProductos(productos);
     actualizarResumen();
 };
 
+function configurarMenuMovil() {
+    let menuMovil = document.querySelector('.mobile_nav');
+    let botonHamburguesa = document.querySelector('.hamburger');
+  
+    botonHamburguesa.addEventListener('click', () => {
+      menuMovil.classList.toggle('mobile_nav_hide');
+    });
+}
+  
 function obtenerProductos() {
     let carritoDAO = new CarritoDAo();
     return carritoDAO.obtenerCarrito();
+    
 }
 
 function mostrarProductos(productos) {
@@ -52,7 +64,6 @@ function mostrarProductos(productos) {
     });
 }
 
-// Funciones para modificar el carrito y actualizar los productos mostrados
 function eliminarProducto(id) {
     let carritoDAO = new CarritoDAo();
     console.log("Eliminando producto", id);
@@ -62,9 +73,17 @@ function eliminarProducto(id) {
 
 function aumentar(id) {
     let carritoDAO = new CarritoDAo();
-    console.log("Aumentando cantidad", id);
-    carritoDAO.aumentarCantidadCarrito(id);
-    actualizarProductos();
+    let productos = obtenerProductos();
+    let producto = productos.find(p => p.id === id);
+
+    if (producto.cantidad < producto.stock) {
+        console.log("Aumentando cantidad", id);
+        carritoDAO.aumentarCantidadCarrito(id);
+        actualizarProductos();
+    } else {
+        alert(`No puedes agregar más unidades de ${producto.nombre}. Stock máximo alcanzado.`);
+    }
+
 }
 
 function disminuir(id) {
@@ -74,14 +93,12 @@ function disminuir(id) {
     actualizarProductos();
 }
 
-// Función para actualizar el carrito y el resumen
 function actualizarProductos() {
     let productos = obtenerProductos();
     mostrarProductos(productos);
     actualizarResumen();
 }
 
-// Función para calcular el subtotal
 function calcularTotal() {
     let productos = obtenerProductos();
     let subtotal = 0;
@@ -91,13 +108,20 @@ function calcularTotal() {
     return subtotal;
 }
 
-// Función para actualizar el DOM
 function actualizarResumen() {
     const total = calcularTotal();
     document.getElementById("total").textContent = `$${total.toFixed(2)}`;
 }
 
-document.getElementById("confirmarcompra").addEventListener("click", () => {
-    // Redirigir a finalizarcompra.html
-    window.location.href = "../comprar/finalizarcompra.html";
-});
+function verificarYRedirigir() {
+
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    if (carrito.length === 0) {
+        alert("Tu carrito está vacío. Agrega productos para continuar con la compra.");
+        window.location.href = '../productos/productos.html'
+    } else {
+        window.location.href = "../comprar/finalizarcompra.html";
+    }
+}
+
+document.getElementById("confirmarcompra").addEventListener("click", verificarYRedirigir);

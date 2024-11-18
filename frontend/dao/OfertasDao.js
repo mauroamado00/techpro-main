@@ -30,5 +30,7 @@ export default class OfertaDAO{
         let responseData = await response.json();
         return responseData;
     }
+    
+
 }
 

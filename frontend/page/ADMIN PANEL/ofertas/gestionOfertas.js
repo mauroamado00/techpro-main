@@ -5,9 +5,6 @@ window.onload = async function(){
     let productos = await obtenerProductos();
     mostrarProductos(productos);
     agregarEventoForm();
-
-    
-
 }
 
 function agregarEventoForm(){
@@ -42,18 +39,31 @@ async function obtenerProductos() {
     
 }
 
-function mostrarProductos(productos){
-    let listElement = document.querySelector("#product-list")
-    listElement.innerHTML = "";
+function mostrarProductos(productos) {
+    let listElement = document.querySelector("#product-list");
+    listElement.innerHTML = ""; // Limpiar la lista de productos
+    
+    const validExtensions = ['jpg', 'jpeg', 'png', 'gif']; // Extensiones válidas
+
     productos.forEach(producto => {
         let productElement = document.createElement("div");
         productElement.className = "product";
 
+        // Título del producto
         let productTitle = document.createElement("h3");
         productTitle.textContent = producto.nombre;
 
+        // Imagen del producto
         let productImage = document.createElement("img");
-        productImage.src = producto.imagen == null ? "../../../image/banner1.jpg" : producto.imagen;
+        let imagenSrc = producto.imagen;
+
+        if (imagenSrc && imagenSrc.includes('.')) {
+            productImage.src = `http://localhost/images/${imagenSrc}`;
+        } else {
+            productImage.src = "../../../image/banner1.jpg"; // Imagen predeterminada
+        }
+        
+
         productImage.alt = `Imagen de ${producto.nombre}`;
 
         let productPrice = document.createElement("p");
@@ -65,11 +75,9 @@ function mostrarProductos(productos){
 
         listElement.appendChild(productElement);
 
-        productElement.onclick = ()=>{
+        productElement.onclick = () => {
             let inputElement = document.querySelector("#product-id");
             inputElement.value = producto.id;
-        }
-        
+        };
     });
-
 }
