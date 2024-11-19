@@ -8,7 +8,7 @@ Bienvenido al repositorio del ecommerce de venta de tecnología de **TechProuy**
 - **Catálogo de productos**: Los usuarios pueden ver productos por categorías, filtrar por precio, popularidad y más.
 - **Carrito de compras**: Los usuarios pueden añadir productos al carrito y ver el total de su compra en tiempo real.
 - **Compra segura**: Procesamiento de pagos y confirmación de pedidos.
-- **Panel de administración**: Los administradores pueden ver el listado de los productos y eliminarlos.
+- **Panel de administración**: Los administradores pueden ver el listado de los productos y eliminarlos, además de crear ofertas de forma rapida.
 
 ## Tecnologías utilizadas
 
