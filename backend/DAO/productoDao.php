@@ -57,6 +57,7 @@ class productos{
         }catch(Exception $e){
             return new respuesta(false,"Error al eliminar el Producto",null);
         }
+        
 
     }
 

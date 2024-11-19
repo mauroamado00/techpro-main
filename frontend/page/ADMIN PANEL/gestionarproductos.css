@@ -2,12 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('/techpro-main/frontend/ADMINPANEL/images/blurry-1714335_1280.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed;
 }
-
 
 /* Navbar estilo */
 .navbar {
@@ -17,12 +12,14 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; 
 }
 
 .navbar-container {
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
 }
 
 .navbar-logo img {
@@ -65,6 +62,7 @@ body {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 /* Formulario de Producto */
@@ -122,26 +120,36 @@ input[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
-input.delete-btn {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 14px;
+.btnAccion {
+    background-color: #e74c3c; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
     transition: background-color 0.3s, transform 0.2s;
+    text-align: center; 
 }
 
-input.delete-btn:hover {
-    background-color: #c0392b;
-    transform: translateY(-2px);
+.btnAccion.Eliminar {
+    background-color: #e74c3c; 
 }
 
-input.delete-btn:active {
-    background-color: #a93226;
+.btnAccion.Eliminar:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05); 
 }
 
+.btnAccion.Eliminar:active {
+    background-color: #d35400; 
+    transform: scale(0.98); 
+}
+
+.btnAccion.Eliminar:focus {
+    outline: none; 
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.5); 
+}
 
 /* Vista previa de la imagen */
 #productoImagen {
@@ -201,7 +209,7 @@ tr:hover {
     background-color: #ecf0f1;
 }
 
-/* Responsiveness */
+/* responsive del gestionar producto */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -212,14 +220,34 @@ tr:hover {
     .formulario-producto,
     .lista-productos {
         width: 100%;
+        margin-right: 0; 
     }
 
     .navbar-menu {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     input[type="submit"] {
         font-size: 14px;
+    }
+
+    .navbar-logo img {
+        max-height: 40px; 
+    }
+
+    .btnAccion {
+        padding: 8px 15px; 
+    }
+
+    table {
+        font-size: 14px; 
     }
 }

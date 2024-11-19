@@ -10,13 +10,25 @@ export default class ProductosDAO{
     }
 
 
-    async eliminarproductos(){
+    async eliminarProducto(id) {
+        if (!id) {
+            console.error("El ID es undefined en eliminarProducto");
+            return { estado: false }; 
+        }
 
-        let url = Origen+"/backend/CONTROLLER/productos_controlador.php?function=eliminar";
-        let respuestaConsulta = await fetch(url,config);
-        let respuesta = await respuestaConsulta.json();        
-
+        let url = `${Origen}/backend/CONTROLLER/productos_controlador.php?function=eliminar`;
+        let formData = new FormData();
+        formData.append('id', id);
+        
+        let respuesta = await fetch(url, {
+            method: 'POST',
+            body: formData
+        });      
+        let datos = await respuesta.json();  
+        return datos; 
     }
+    
+    
 
     async agregarproductos(nombre,stock,precio,imagen){
 

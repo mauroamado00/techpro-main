@@ -20,11 +20,9 @@ switch($function){
     case 'obtener';
     obtener();
     break;
-
     case 'crear';
     crear();
     break;
-
     case 'obtenerOfertas':
     obtenerOfertas();
     break;
