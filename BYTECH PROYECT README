@@ -1,0 +1,23 @@
+# Ecommerce TechProuy
+
+Bienvenido al repositorio del ecommerce de venta de tecnología de **TechProuy**. Este proyecto tiene como objetivo ofrecer una plataforma moderna y fácil de usar para la compra de productos tecnológicos. Los usuarios pueden explorar productos, añadirlos al carrito, realizar compras y disfrutar de una experiencia de compra sin fricciones. Además, los administradores pueden ver el listado de los productos y eliminarlos, además de administrar las ofertas.
+
+## Funcionalidades
+
+- **Página de inicio**: Muestra productos destacados, categorías y opciones de navegación fáciles.
+- **Catálogo de productos**: Los usuarios pueden ver productos por categorías, filtrar por precio, popularidad y más.
+- **Carrito de compras**: Los usuarios pueden añadir productos al carrito y ver el total de su compra en tiempo real.
+- **Compra segura**: Procesamiento de pagos y confirmación de pedidos.
+- **Panel de administración**: Los administradores pueden ver el listado de los productos y eliminarlos.
+
+## Tecnologías utilizadas
+
+- **Frontend**: 
+  - **HTML** (estructura de la página)
+  - **CSS** (diseño y estilo visual)
+  - **JavaScript** (interactividad y funcionalidades dinámicas)
+  
+- **Backend**:
+  - **PHP** (para la gestión del servidor y lógica de negocio)
+  - **MySQL**(base de datos relacional para almacenamiento de productos y usuarios)
+  
