@@ -9,6 +9,29 @@ export default class ProductosDAO{
         let respuesta = await respuestaConsulta.json();   
     }
 
+    async modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen,idProductoActivo){
+        let url =  Origen+"/backend/CONTROLLER/productos_controlador.php?function=modificar";
+        let formData = new FormData();
+        formData.append("nombre", productoNombre);
+        formData.append("stock", productoStock);
+        formData.append("precio", productoPrecio);
+        formData.append("imagen", productoImagen);
+        formData.append("id",idProductoActivo);
+
+        
+        let config = {
+
+            method: "POST",
+            body:formData
+        }
+
+
+        let respuestaConsulta = await fetch(url,config);
+        let respuesta = await respuestaConsulta.json(); 
+        console.log(respuesta) 
+        return respuesta;  
+    }
+
 
     async eliminarProducto(id) {
         if (!id) {

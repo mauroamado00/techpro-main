@@ -6,7 +6,26 @@
     require_once __DIR__ . "/ImagenDAO.php";
 
 class productos{
+ 
+    public function modificarProducto($nombre, $stock, $precio, $imagen,$id){
+    
+        if(isset($imagen)){
+            $imagenDAO = new ImagenDAO();
+            $respuesta = $imagenDAO->agregarImagen($imagen);
+            $imagen = $respuesta->datos;
+            $sql = "UPDATE `producto` SET `nombre` = '$nombre',`stock` = '$stock',`precio` = '$precio',`idImagen` = '$imagen' WHERE `producto`.`id` = $id;";
+        }else{
+            $sql = "UPDATE `producto` SET `nombre` = '$nombre',`stock` = '$stock',`precio` = '$precio' WHERE `producto`.`id` = $id;";
 
+        }
+        $connection = connection();
+        try {
+            $connection->query($sql);
+            return new respuesta(true, "Producto modificado", null);
+        } catch (Exception $e) {
+            return new respuesta(false, "Error al modificar el Producto", null);
+        }
+    }
 
     public function verproductos($id, $nombre, $stock, $precio, $imagen_url) {
         $sql = "INSERT INTO `producto`(`id`, `stock`, `precio`, `nombre`, `idImagen`) VALUES ('$id', '$nombre', '$stock', '$precio', '$imagen_url')";

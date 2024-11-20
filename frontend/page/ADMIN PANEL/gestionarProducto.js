@@ -1,5 +1,6 @@
 import ProductosDAO from "../../dao/ProductoDao.js";
 
+let idProductoActivo = null;
 window.onload = async function() {
     let productos = await obtenerProductos();
     mostrarProductos(productos);
@@ -16,9 +17,47 @@ function agregarEventoForm() {
         let productoPrecio = formCrearElement.productoPrecio.value;
         let productoStock = formCrearElement.productoStock.value;
         let productoImagen = formCrearElement.productoImagen.files[0];
+        let accion = formCrearElement.submit.value;
+        console.log(accion);
+        if(accion == "Modificar"){
+            modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen,idProductoActivo);
+        }else{
+            agregarproductos(productoNombre, productoPrecio, productoStock, productoImagen);
 
-        agregarproductos(productoNombre, productoPrecio, productoStock, productoImagen);
+        }
+
+
     };
+}
+
+async function modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen,idProductoActivo){
+    let respuesta = await new ProductosDAO().modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen,idProductoActivo);
+    if(respuesta.estado){
+        alert("Producto modificado");
+    }
+    let formCrearElement = document.querySelector("#productoForm");
+    formCrearElement.reset();
+    formCrearElement.submit.value = "Crear producto";
+    let productos = await obtenerProductos();
+    mostrarProductos(productos);
+
+
+}
+
+function activarModificar(producto){
+    console.log(producto);
+    let formCrearElement = document.querySelector("#productoForm");
+    let productoNombre = formCrearElement.productoNombre;
+    let productoPrecio = formCrearElement.productoPrecio;
+    let productoStock = formCrearElement.productoStock;
+    let productoSubmit = formCrearElement.submit;
+    idProductoActivo = producto.id;
+
+    productoNombre.value = producto.nombre;
+    productoPrecio.value = producto.precio;
+    productoStock.value = producto.stock;
+    productoSubmit.value = "Modificar";
+
 }
 
 async function agregarproductos(productoNombre, productoPrecio, productoStock, productoImagen) {
@@ -72,6 +111,13 @@ function mostrarProductos(productos) {
         btnEliminar.classList.add('btnAccion');        
         btnEliminar.classList.add('Eliminar'); 
         btnEliminar.textContent = 'Eliminar';
+       
+        let btnModificar = document.createElement("button");
+         btnModificar.innerHTML="Modificar";
+        btnModificar.onclick = ()=>{
+            activarModificar(producto);
+        }
+        tdEliminar.appendChild(btnModificar)
     
         btnEliminar.addEventListener("click", function() {
             console.log("ID del producto a eliminar:", producto.id);  
@@ -93,7 +139,6 @@ function mostrarProductos(productos) {
 async function eliminarProducto(id) {
     console.log("Eliminar producto con id:", id); 
     if (!id) {
-        console.error("El ID es undefined o no válido.");
         return;
     }
 

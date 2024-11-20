@@ -10,7 +10,6 @@ window.onload = async () => {
     allProductos = productos;
     mostrarProductos(productos);
     agregarEventosFiltro();
-    
 }
 
 async function obtenerProductos() {
@@ -34,7 +33,7 @@ function mostrarProductos(productos) {
         divInfoProducto.innerHTML = `
             <p>Nombre: ${producto.nombre}</p>
             <p>Precio: $${producto.precio}</p>
-            <p>Stock: ${producto.stock}</p>
+            ${producto.stock > 0 ? `<p>Stock: ${producto.stock}</p>` : "Sin Stock"}
         `;
 
         divProducto.appendChild(divInfoProducto);
@@ -45,7 +44,7 @@ function mostrarProductos(productos) {
         btn.onclick = () => {
             agregarProducto(producto);
         }
-        divInfoProducto.appendChild(btn);
+        if(producto.stock > 0 ){divInfoProducto.appendChild(btn)};
 
         datosElement.appendChild(divProducto);
     });

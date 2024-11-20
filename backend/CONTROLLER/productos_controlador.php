@@ -25,6 +25,10 @@ switch($function){
     obtener();
     break;
 
+    case "modificar":
+        modificarProducto();
+        break;
+
 }
     function verproductos(){
 
@@ -51,6 +55,16 @@ switch($function){
         $precio = $_POST['precio'];
         $imagen = isset($_FILES['imagen']) ? $_FILES['imagen'] : null;
         $resultado = (new productos())->agregarproductos($nombre, $stock, $precio, $imagen); 
+        echo json_encode($resultado);
+    }
+
+    function modificarProducto() {
+        $nombre = $_POST['nombre'];
+        $stock = $_POST['stock'];
+        $precio = $_POST['precio'];
+        $imagen = isset($_FILES['imagen']) ? $_FILES['imagen'] : null;
+        $id = $_POST["id"];
+        $resultado = (new productos())->modificarProducto($nombre, $stock, $precio, $imagen,$id); 
         echo json_encode($resultado);
     }
     

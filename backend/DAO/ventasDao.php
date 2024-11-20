@@ -27,10 +27,29 @@ class VentasDao
         return $respuesta;
     }
 
+    function actualizarStockProducto($producto){
+        $connection = connection();
+        $idProducto = $producto["id"];
+        $cantidad = $producto["cantidad"];
+
+        $sql="UPDATE `producto` SET `stock` = stock - $cantidad  WHERE `producto`.`id` = '$idProducto';";
+        try{
+            $connection->query($sql);
+            $respuesta = new respuesta(true, "stick reducido correctamente", null);
+        }catch (Exception $e) {
+            error_log($e);
+            $respuesta = new respuesta(false, "No se pudo reducir el stock", null);
+        }
+        return $respuesta;
+
+
+    }
+
     function insertarProductoCompra($productos,$idCompra){
         $connection = connection();
         foreach ($productos as $producto) {
             error_log(json_encode($producto));
+            $this->actualizarStockProducto($producto);
             $idProducto = $producto["id"];
             $cantidad = $producto["cantidad"];
 
