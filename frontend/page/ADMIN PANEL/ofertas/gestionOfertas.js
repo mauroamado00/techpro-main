@@ -57,8 +57,6 @@ function mostrarProductos(productos) {
     let listElement = document.querySelector("#product-list");
     listElement.innerHTML = ""; 
 
-    const validExtensions = ['jpg', 'jpeg', 'png', 'gif'];
-
     productos.forEach(producto => {
         let productElement = document.createElement("div");
         productElement.className = "product";

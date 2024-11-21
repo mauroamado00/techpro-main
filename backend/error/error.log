@@ -1960,3 +1960,282 @@ Stack trace:
 [20-Nov-2024 19:22:06 Europe/Berlin] fecha: 2024/11/20
 [20-Nov-2024 19:22:06 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/20' AND o.fechaFin >= '2024/11/20'
 [20-Nov-2024 19:22:06 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[20-Nov-2024 21:01:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 63
+[20-Nov-2024 21:07:41 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 63
+[20-Nov-2024 21:22:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 63
+[20-Nov-2024 21:35:03 Europe/Berlin] fecha: 2024/11/20
+[20-Nov-2024 21:35:03 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/20' AND o.fechaFin >= '2024/11/20'
+[20-Nov-2024 21:35:03 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[20-Nov-2024 21:35:03 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 04:27:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 63
+[21-Nov-2024 15:10:15 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:15 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:15 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:15 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:15 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:15 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:15 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:15 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:17 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:17 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:17 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:17 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:18 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:18 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:18 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:18 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:19 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:19 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:19 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:19 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:19 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:20 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:20 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:20 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:20 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:22 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:22 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:22 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:22 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:22 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:23 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:23 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:23 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:23 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:24 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:24 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:24 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:24 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:24 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:25 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:25 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:25 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:25 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:25 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:25 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:26 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:26 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:26 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:26 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:26 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:26 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:26 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:26 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:39 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:39 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:39 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:39 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:40 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:10:40 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:10:40 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:10:40 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:15:01 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:15:01 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:15:01 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:15:01 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:19:21 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:19:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:19:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:19:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:20:33 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:20:33 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:20:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:20:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:21:14 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:21:14 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:21:14 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:21:14 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:21:14 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:22:17 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:22:17 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:22:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:22:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:22:17 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:13 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:23:13 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:23:13 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:13 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:13 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:40 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:23:40 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:23:40 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:40 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:40 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:43 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:23:43 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:23:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:23:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:21 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:24:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:24:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:32 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:24:32 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:24:32 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:32 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:32 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:32 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:24:33 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:24:33 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:43 Europe/Berlin] fecha: 2024/11/21
+[21-Nov-2024 15:24:43 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/21' AND o.fechaFin >= '2024/11/21'
+[21-Nov-2024 15:24:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[21-Nov-2024 15:24:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45

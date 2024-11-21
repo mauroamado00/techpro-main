@@ -9,9 +9,6 @@ class VentasDao
     // Método para agregar una compra en la base de datos
     function realizarCompra($nombreCompleto, $ciudad, $numeroDeTelefono, $email, $metodoDeEnvio, $direccion, $metodoDePago,$productos)
     {
-        
-        
-
         $sql = "INSERT INTO `compra` (`nombrecompleto`, `ciudad`, `numerodetelefono`, `email`, `metododeenvio`, `direccion`, `metododepago`, `id`) VALUES ('$nombreCompleto', '$ciudad', '$$numeroDeTelefono', '$email', '$metodoDeEnvio', '$direccion', '$metodoDePago', NULL);";
         $connection = connection();
         

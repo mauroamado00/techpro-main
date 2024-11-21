@@ -101,7 +101,7 @@ body {
   
   #formCrear input[type="submit"] {
     width: 100%;
-    background-color: #28a745; /* Botón verde para "Crear oferta" */
+    background-color: #28a745;
     color: white;
     padding: 12px;
     border: none;

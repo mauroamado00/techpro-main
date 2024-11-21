@@ -113,6 +113,7 @@ function mostrarProductos(productos) {
         btnEliminar.textContent = 'Eliminar';
        
         let btnModificar = document.createElement("button");
+        btnModificar.classList.add("btnModificar");
          btnModificar.innerHTML="Modificar";
         btnModificar.onclick = ()=>{
             activarModificar(producto);
