@@ -86,6 +86,11 @@ function mostrarProductos(productos) {
     });
 }
 
+document.querySelector('.hamburger').addEventListener('click', () => {
+    const menu = document.querySelector('.navbar-menu');
+    menu.classList.toggle('active');
+});
+
 document.getElementById("logout").addEventListener("click", cerrarSesion);
 
 async function cerrarSesion() {

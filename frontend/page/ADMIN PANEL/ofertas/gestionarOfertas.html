@@ -9,18 +9,25 @@
 </head>
 <body>
 
-      <!-- Navbar -->
-      <nav class="navbar">
+
+        <!-- Navbar -->
+    <nav class="navbar">
         <div class="navbar-container">
-            <a href="gestionarOfertas.html" class="navbar-logo">
+            <a href="../gestionarproductos.html" class="navbar-logo">
                 <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="Logo" class="logo">
             </a>
             <ul class="navbar-menu">
                 <li><a href="../gestionarproductos.html">Gestionar Productos</a></li>
                 <li><a href="javascript:void(0);" id="logout">Cerrar sesión</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
 
     <h2>Crear Oferta</h2>
     <form action="/submit-offer" method="post" id="formCrear">
@@ -44,7 +51,6 @@
     <div id="product-list">
         <!-- listado de los productos -->
     </div>
-   
     
 </body>
 </html>

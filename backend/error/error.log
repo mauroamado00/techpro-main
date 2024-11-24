@@ -2272,3 +2272,32 @@ Stack trace:
 [23-Nov-2024 05:00:36 Europe/Berlin] fecha: 2024/11/23
 [23-Nov-2024 05:00:36 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/23' AND o.fechaFin >= '2024/11/23'
 [23-Nov-2024 05:00:36 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[23-Nov-2024 05:05:42 Europe/Berlin] fecha: 2024/11/23
+[23-Nov-2024 05:05:42 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/23' AND o.fechaFin >= '2024/11/23'
+[23-Nov-2024 05:05:42 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[23-Nov-2024 05:07:22 Europe/Berlin] {"id":"3","stock":"43","precio":"200","nombre":"Xiaomi Huawei Apple Pro Auricular Bluetooth True Wireless","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/3.jpg\r\n","cantidad":43}
+[23-Nov-2024 05:08:34 Europe/Berlin] fecha: 2024/11/23
+[23-Nov-2024 05:08:34 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/23' AND o.fechaFin >= '2024/11/23'
+[23-Nov-2024 05:08:34 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[24-Nov-2024 04:17:44 Europe/Berlin] fecha: 2024/11/24
+[24-Nov-2024 04:17:44 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
+[24-Nov-2024 04:17:44 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[24-Nov-2024 04:18:47 Europe/Berlin] fecha: 2024/11/24
+[24-Nov-2024 04:18:47 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
+[24-Nov-2024 04:18:47 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[24-Nov-2024 04:19:00 Europe/Berlin] fecha: 2024/11/24
+[24-Nov-2024 04:19:00 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
+[24-Nov-2024 04:19:00 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[24-Nov-2024 04:19:09 Europe/Berlin] fecha: 2024/11/24
+[24-Nov-2024 04:19:09 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
+[24-Nov-2024 04:19:09 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[24-Nov-2024 04:21:28 Europe/Berlin] fecha: 2024/11/24
+[24-Nov-2024 04:21:28 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
+[24-Nov-2024 04:21:28 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[24-Nov-2024 04:22:42 Europe/Berlin] fecha: 2024/11/24
+[24-Nov-2024 04:22:42 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
+[24-Nov-2024 04:22:42 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[24-Nov-2024 04:31:48 Europe/Berlin] {"id":"1","stock":"12","precio":"1700","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/1.png","cantidad":1}
+[24-Nov-2024 15:42:57 Europe/Berlin] fecha: 2024/11/24
+[24-Nov-2024 15:42:57 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
+[24-Nov-2024 15:42:57 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
