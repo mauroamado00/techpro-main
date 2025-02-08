@@ -147,92 +147,357 @@ hr {
   padding: 0 20px; 
 }
 
+/* Estilo principal del contenedor de filtros */
 .filtros {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  background-color: #fdfdfd;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  gap: 24px;
+  padding: 30px 35px;
+  background-color: #f9f9f9; /* Fondo suave y limpio */
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 100%;
-  margin: 20px auto;
-  font-family: 'Arial', sans-serif;
+  max-width: 460px;
+  margin: 50px auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  transition: box-shadow 0.3s ease;
 }
 
+/* Efecto de hover para el contenedor de filtros */
+.filtros:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para las etiquetas */
 .filtros label {
-  font-size: 1.6rem;
-  color: #fa8072;
-  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ff6f61; /* Rojo salmón suave */
+  font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
   transition: color 0.3s ease;
 }
 
+/* Efecto de hover sobre las etiquetas */
 .filtros label:hover {
-  color: #e06d5a;
+  color: #e05c50; /* Un tono ligeramente más oscuro para hover */
 }
 
+/* Estilo para el campo de texto */
 .filtros input[type="text"] {
-  padding: 12px;
+  padding: 14px;
   font-size: 1.3rem;
-  border: 2px solid #fa8072;
-  border-radius: 6px;
-  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
   color: #333;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
   width: 100%;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
+/* Estilo cuando el campo de texto tiene el foco */
 .filtros input[type="text"]:focus {
-  border-color: #e06d5a;
-  background-color: #ffffff;
+  border-color: #ff6f61; /* Rojo salmón en el borde al enfocar */
+  background-color: #fff;
   outline: none;
 }
 
+/* Estilo para el deslizador (range) */
 .filtros input[type="range"] {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #ddd;
-  height: 8px;
+  background-color: #e0e0e0;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
+/* Efecto cuando el deslizador tiene el foco */
 .filtros input[type="range"]:focus {
   outline: none;
+  background-color: #cfd8dc;
 }
 
+/* Estilo del pulgar del deslizador (thumb) */
 .filtros input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: #fa8072;
+  width: 22px;
+  height: 22px;
+  background-color: #ff6f61; /* Rojo salmón */
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Efecto hover en el pulgar del deslizador */
 .filtros input[type="range"]::-webkit-slider-thumb:hover {
-  background-color: #e06d5a;
+  background-color: #e05c50; /* Un tono más oscuro de rojo salmón */
   transform: scale(1.1);
 }
 
+/* Estilo del precio */
 #precioValor {
-  font-size: 1.4rem;
-  color: #fa8072;
-  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ff6f61; /* Rojo salmón */
+  font-weight: 700;
   text-align: center;
+  margin-top: 15px;
   transition: color 0.3s ease;
 }
 
+/* Efecto hover en el precio */
 #precioValor:hover {
-  color: #e06d5a;
+  color: #e05c50; /* Un tono más oscuro de rojo salmón */
+  cursor: pointer;
+}
+
+
+/* Media Queries para mejorar la adaptabilidad */
+@media (max-width: 768px) {
+  .filtros {
+    padding: 20px;
+    max-width: 100%;
+    margin: 30px auto;
+  }
+
+  .filtros label {
+    font-size: 1.4rem;
+  }
+
+  .filtros input[type="text"] {
+    font-size: 1.2rem;
+  }
+
+  #precioValor {
+    font-size: 1.4rem;
+  }
+
+  .filtros input[type="range"] {
+    height: 8px;
+  }
+
+  .filtros input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filtros {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .filtros label {
+    font-size: 1.2rem;
+  }
+
+  .filtros input[type="text"] {
+    font-size: 1.1rem;
+  }
+
+  #precioValor {
+    font-size: 1.3rem;
+  }
+
+  .filtros input[type="range"] {
+    height: 6px;
+  }
+
+  .filtros input[type="range"]::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Estilo del Header (Encabezado) con imágenes que ocupan todo el ancho */
+.header {
+  background-image: url('/techpro-main/frontend/image/auth-image.png'); /* Imagen inicial */
+  background-repeat: no-repeat;
+  background-size: cover; /* La imagen cubre todo el fondo */
+  background-position: center center;
+  color: #ffffff;
+  text-align: center;
+  padding: 120px 20px; /* Más espacio superior para una mejor proporción */
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidad */
+  animation: changeBackground 20s infinite ease-in-out; /* Animación más lenta y suave */
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('/techpro-main/frontend/image/auth-image.png');
+    opacity: 1;
+  }
+  50% {
+    background-image: url('/techpro-main/frontend/image/seccion\ registro4.jpg');
+    opacity: 1;
+  }
+  100% {
+    background-image: url('/frontend/image/');
+    opacity: 1;
+  }
+}
+
+/* Texto en el header */
+.header h1 {
+  font-size: 56px; /* Título grande en PC */
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Sombra para el texto */
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.filtro-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.filtro-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Limita el ancho máximo en pantallas grandes */
+  margin: 0 auto;  /* Centra el contenedor */
+}
+
+input#filtroNombre {
+  padding: 10px;
+  width: 80%;  /* Ajusta el campo de búsqueda para que ocupe el 80% */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box; /* Para incluir el padding en el ancho */
+}
+
+input#filtroNombre:focus {
+  border-color: #3498db; /* Resalta el borde al hacer foco */
+}
+
+.search-container button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Estilo para PC */
+@media (min-width: 768px) {
+  .search-container {
+      max-width: 600px; /* El contenedor tiene un ancho máximo de 600px */
+  }
+
+  input#filtroNombre {
+      width: 80%;  /* Ajustamos el tamaño del campo para PC */
+  }
+}
+
+/* Estilo para móviles */
+@media (max-width: 767px) {
+  .filtro-container h2 {
+      font-size: 20px;
+  }
+
+  .search-container {
+      width: 90%; /* En móviles, el campo ocupa el 90% del ancho */
+  }
+
+  input#filtroNombre {
+      width: 100%;  /* En móviles, el input ocupa todo el espacio disponible */
+  }
+}
+
+
+.header p {
+  font-size: 20px; /* Tamaño grande del párrafo en PC */
+  margin-top: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Botón */
+.header a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fa8072;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header a:hover {
+  background-color: #e06d5a;
+  transform: scale(1.05);
+}
+
+/* Estilos responsivos */
+@media (max-width: 800px) {
+  /* Ajustar tamaño de texto en móvil */
+  .header h1 {
+    font-size: 42px; /* Más pequeño en móviles */
+  }
+
+  .header p {
+    font-size: 16px; /* Reducción en tamaño del párrafo para móvil */
+    line-height: 1.5; /* Menor espacio entre líneas en móviles */
+    margin-top: 15px;
+    padding: 0 15px; /* Añadir un pequeño padding para que no quede pegado a los bordes */
+  }
+
+  .header a {
+    font-size: 14px; /* Más pequeño en móviles */
+    padding: 10px 25px;
+  }
+
+  /* Reducir padding para que se vea más ajustado en dispositivos pequeños */
+  .header {
+    padding: 80px 20px;
+  }
 }
 
 /* Estilo para los productos */
@@ -505,3 +770,4 @@ hr {
     height: 40px;
   }
 }
+

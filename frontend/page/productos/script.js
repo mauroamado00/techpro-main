@@ -1,15 +1,10 @@
 import CarritoDAo from "../../dao/CarritoDao.js";
 import ProductosDAO from "../../dao/ProductoDao.js";
 
-let nombreFiltro = "";
-let precioFiltro = "";
-let allProductos = [];
 
 window.onload = async () => {
     let productos = await obtenerProductos();
-    allProductos = productos;
     mostrarProductos(productos);
-    agregarEventosFiltro();
 }
 
 async function obtenerProductos() {
@@ -57,38 +52,4 @@ function agregarProducto(producto) {
     carritoDAO.agregarProductoCarrito(producto); 
     let item = JSON.parse(localStorage.getItem('carrito')) || [];
     document.getElementById('largo-carrito').innerText = item.length;
-}
-
-function agregarEventosFiltro() {
-    let inputNombre = document.querySelector("#filtroNombre");
-    let inputPrecio = document.querySelector("#filtroPrecio");
-
-    inputNombre.onkeyup = () => {
-        nombreFiltro = inputNombre.value.toLowerCase();
-        filtrarProductos();
-    }
-
-    inputPrecio.oninput = () => {
-        precioFiltro = parseFloat(inputPrecio.value);
-        document.querySelector("#precioValor").textContent = `$${precioFiltro}`;
-        filtrarProductos();
-    }
-}
-
-function filtrarProductos() {
-    let productosFiltrados = allProductos.filter(producto => {
-        let nombreCoincide = producto.nombre.toLowerCase().startsWith(nombreFiltro.toLowerCase());
-        let precioCoincide = producto.precio <= precioFiltro;
-
-        return nombreCoincide && precioCoincide; 
-    });
-
-    let mensajeNoProductos = document.getElementById('mensajeNoProductos');
-    if (precioFiltro === 0 || productosFiltrados.length === 0) {
-        mensajeNoProductos.style.display = 'block';  
-        mensajeNoProductos.textContent = "No se han encontrado productos.";
-    } else {
-        mensajeNoProductos.style.display = 'none';  
-        mostrarProductos(productosFiltrados);  
-    }
 }

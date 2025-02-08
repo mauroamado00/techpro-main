@@ -6,17 +6,22 @@
     <title>ADMIN PANEL | GESTIONAR PRODUCTOS</title>
     <link rel="stylesheet" href="gestionarproductos.css">
     <script type="module" src="gestionarProducto.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     
-       <!-- Navbar -->
-       <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar">
         <div class="navbar-container">
             <a href="gestionarproductos.html" class="navbar-logo">
                 <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="Logo" class="logo">
             </a>
             <ul class="navbar-menu">
                 <li><a href="ofertas/gestionarOfertas.html">Gestionar Ofertas</a></li>
+                <li><a href="VER COMPRAS/vercomprasusuario.html">Gestionar Compras</a></li>
+                <li><a href="RECIBIR MAIL/mailsusuarios.html">Mensajes Usuario</a></li>
+                <li><a href="CANTIDAD EMPLEADOS/empleados.html">Cantidad Empleados</a></li>
+                <li><a href="Usuarios Registrados/usuariosregistrados.html">Usuarios Registrados</a></li>
                 <li><a href="javascript:void(0);" id="logout">Cerrar sesión</a></li>
             </ul>
             <div class="hamburger">
@@ -27,7 +32,7 @@
         </div>
     </nav>
 
-    <!-- form para crear el producto -->
+    <!-- Formulario para crear el producto -->
     <div class="content">
         <div class="formulario-producto">
             <h2>Crear Producto</h2>
@@ -40,7 +45,7 @@
             
                 <label for="productoStock">Stock:</label>
                 <input type="number" id="productoStock" name="productoStock" placeholder="Stock del producto" required>
-            
+
                 <label>Imagen:</label>
                 <input type="file" id="productoImagen" name="productoImagen" accept="image/*">
             
@@ -49,6 +54,8 @@
             <p id="resultadoOperacion"></p>
         </div>
 
+
+        <!-- Lista de productos -->
         <div class="lista-productos">
             <h2>Lista de Productos</h2>
             <table id="productTable">
@@ -58,16 +65,17 @@
                         <th name="nombre">Nombre</th>
                         <th name="precio">Precio</th>
                         <th name="stock">Stock</th>
+                        <th name="acciones">Acciones</th>
                     </tr>
                 </thead>
                 <tbody id="productList">
-
-                    
+                    <!-- Aquí se llenarán los productos -->
                 </tbody>
             </table>
         </div>
-    </div>
 
-    
+
+    <div id="mensajeContainer"></div>
+
 </body>
 </html>

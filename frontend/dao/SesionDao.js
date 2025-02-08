@@ -45,9 +45,4 @@ export default class SesionDao{
         return respuesta;      
 
     }
-
-
-
-
-
 }

@@ -27,102 +27,6 @@ ul {
 }
 
 
-/* navbar */
-.nav {
-  width: 100%;
-  height: 8rem;
-  position: relative;
-  z-index: 10;
-  background-color: #db4444;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 0 2rem; 
-}
-
-.nav_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.nav_logo {
-  font-size: 2.4rem; 
-  font-weight: 800;
-  color: #fff; 
-  display: flex;
-  align-items: center;
-}
-
-.logo_img {
-  height: 70px;
-  width: 200px;
-  margin-right: 10px;
-}
-
-.nav_list {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  flex-grow: 1;
-}
-
-.nav_item {
-  position: relative;
-  margin: 0 1.5rem;
-  padding: 0.5rem 1rem;
-  transition: transform 0.3s, background-color 0.3s ease;
-  border-radius: 8px;
-}
-
-.nav_item:hover {
-  transform: scale(1.05);
-  background-color: #e2e6ea;
-}
-
-.nav_link {
-  color: black; 
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.nav_form {
-  padding: 0.8rem;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-}
-
-.nav_input {
-  padding: 0.4rem;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-}
-
-.nav_carrito {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.nav_carrito img {
-  height: 30px;
-  width: auto;
-  margin-left: 10px;
-}
-
-.nav_carrito_activo {
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 0.5rem;
-}
 
 /* categories style */
 
@@ -244,6 +148,151 @@ img {
   height: 50px; 
 }
 
+/* Navbar General */
+.nav {
+  width: 100%;
+  height: 8rem;
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(135deg, #db4444, #d88e8e); /* Degradado sutil para un toque moderno */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.nav_logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.nav_item {
+  position: relative;
+  margin: 0 1.5rem;
+  padding: 0.6rem 1.8rem;
+  background-color: transparent;
+  border-radius: 25px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav_item:hover {
+  transform: translateY(-3px); /* Suaviza la transición al mover los elementos */
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo sutil al hacer hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra más fuerte */
+}
+
+.nav_item:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(219, 68, 68, 0.7); /* Contorno al enfocar */
+}
+
+.nav_item .nav_link {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  transition: color 0.3s ease;
+}
+
+.nav_item:hover .nav_link {
+  color: #fff; 
+}
+
+.nav_item.active {
+  background-color: #e75f5f;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(219, 68, 68, 0.5);
+}
+
+/* Animación para los elementos */
+.nav_item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.nav_item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.nav_item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav_item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo para el formulario y el carrito */
+.nav_form {
+  padding: 0.8rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.nav_input {
+  padding: 0.5rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.nav_carrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav_carrito img {
+  height: 30px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.nav_carrito_activo {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
 /* mobile nav */
 .mobile_nav {
   background-color: #ffffff;
@@ -302,10 +351,6 @@ img {
   .servicio-cliente div {
       margin: 10px 0;
   }
-
-  iframe {
-      height: 200px;
-  }
 }
 
 /* Contenedor de ofertas */
@@ -331,6 +376,7 @@ img {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
   flex: 0 0 auto; 
+  margin: 10px;
 }
 
 .oferta:hover {
@@ -372,18 +418,13 @@ img {
   border: 2px solid #ffb74d;
 }
 
-.oferta-imagen {
-  height: 180px; 
-}
-
 .oferta-info p:last-child {
   color: #e60000;
   font-weight: bold;
   font-size: 16px;
 }
 
-/* ofertas */
-
+/* Sección de ofertas */
 .section_offers {
   display: flex;
   align-items: center;
@@ -391,6 +432,7 @@ img {
   padding: 1rem 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  flex-wrap: wrap; /* Asegura que las ofertas se adapten a pantallas pequeñas */
 }
 
 .section_offers_p {
@@ -420,6 +462,99 @@ img {
   text-align: center;
   line-height: 1.2;
 }
+
+/* Media Queries para adaptar a teléfonos */
+@media (max-width: 768px) {
+  .oferta {
+    width: 100%; /* Las ofertas ocupan todo el ancho en pantallas pequeñas */
+    margin: 10px 0; /* Asegura que las ofertas no estén pegadas entre sí */
+  }
+
+  .section_offers {
+    padding: 1rem;
+    justify-content: center; /* Centra las ofertas en pantallas pequeñas */
+  }
+
+  .section_offers_p {
+    font-size: 1rem;
+    padding-left: 1rem;
+    max-width: 100%; /* La descripción se adapta al tamaño de pantalla */
+  }
+
+  .section_title_offers {
+    font-size: 2rem; /* Reduce el tamaño de título en móviles */
+  }
+
+  /* Ajustar las imágenes en pantallas pequeñas */
+  .oferta-imagen {
+    height: 150px; /* Reduce la altura de las imágenes */
+  }
+
+  .oferta-info p {
+    font-size: 13px; /* Reduce el tamaño de las fuentes */
+  }
+
+  .oferta-info h3 {
+    font-size: 15px; /* Ajusta tamaño de encabezados */
+  }
+}
+
+@media (max-width: 480px) {
+  .section_title_offers {
+    font-size: 1.8rem; /* Tamaño de título aún más pequeño */
+  }
+
+  .oferta-info h3 {
+    font-size: 14px; /* Título más pequeño */
+  }
+
+  .oferta-info p {
+    font-size: 12px; /* Texto más pequeño */
+  }
+}
+/* Estilo para cada oferta */
+.oferta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 12px; 
+  width: 250px; 
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  flex: 0 0 auto; 
+  margin: 10px;
+}
+
+.oferta-imagen {
+  width: 80%; /* Ajusta el ancho de la imagen dentro del contenedor */
+  height: 140px; /* Reduces la altura de la imagen */
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
+  border-bottom: 2px solid #ddd; 
+}
+
+/* Media Queries para adaptar a teléfonos */
+@media (max-width: 768px) {
+  .oferta {
+    width: 100%; /* Las ofertas ocupan todo el ancho en pantallas pequeñas */
+    margin: 10px 0; /* Asegura que las ofertas no estén pegadas entre sí */
+  }
+
+  .oferta-imagen {
+    width: 90%; /* Aumenta un poco el tamaño de la imagen en pantallas pequeñas */
+    height: 120px; /* Reduce la altura de la imagen */
+  }
+}
+
+@media (max-width: 480px) {
+  .oferta-imagen {
+    width: 100%; /* Ocupa todo el ancho disponible en pantallas muy pequeñas */
+    height: 100px; /* Ajusta aún más la altura */
+  }
+}
+
 
 /* Servicio al cliente estilo */
 .servicio-cliente {

@@ -2301,3 +2301,1959 @@ Stack trace:
 [24-Nov-2024 15:42:57 Europe/Berlin] fecha: 2024/11/24
 [24-Nov-2024 15:42:57 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2024/11/24' AND o.fechaFin >= '2024/11/24'
 [24-Nov-2024 15:42:57 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:24:59 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:24:59 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:24:59 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'techpro' in C:\xampp\htdocs\techpro-main\backend\CONEXION\conexion.php on line 12
+[15-Jan-2025 00:24:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php:40
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php(40): mysqli->query('SELECT o.oferta...')
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(34): Ofertas->obtenerOfertas('2025/01/14')
+#2 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(27): obtenerOfertas()
+#3 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 40
+[15-Jan-2025 00:27:47 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:27:47 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:27:47 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:29:07 Europe/Berlin] {"id":"9","stock":"70","precio":"350","nombre":"Monitor 24\" Full HD Dell","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/9.jpg","cantidad":1}
+[15-Jan-2025 00:29:42 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:29:42 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:29:42 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:31:16 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:31:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:31:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:33:34 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:33:34 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:33:34 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:33:37 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:33:37 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:33:37 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:33:44 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:33:44 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:33:44 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:33:54 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:33:54 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:33:54 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:37:52 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:37:52 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:37:52 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:39:12 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:39:12 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:39:12 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:39:16 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:39:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:39:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:39:20 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:39:20 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:39:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:40:31 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:40:31 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:40:31 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:40:32 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:40:32 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:40:32 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:40:44 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:40:44 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:40:44 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:43:23 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:43:23 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:43:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:44:00 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:44:00 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:44:00 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:44:03 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:44:03 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:44:03 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:44:16 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:44:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:44:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:44:20 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:44:20 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:44:20 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:51:19 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:51:19 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:51:19 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:51:41 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:51:41 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:51:41 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:54:45 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:54:45 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:54:45 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:57:59 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:57:59 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:57:59 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:58:11 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:58:11 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:58:11 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 00:58:59 Europe/Berlin] fecha: 2025/01/14
+[15-Jan-2025 00:58:59 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/14' AND o.fechaFin >= '2025/01/14'
+[15-Jan-2025 00:58:59 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:01:21 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:01:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:01:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:02:32 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:02:32 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:02:32 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:14:10 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:14:10 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:14:10 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:14:10 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:19:33 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:19:33 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:19:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:19:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:21:27 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:21:27 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:21:27 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:21:27 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:22:41 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:22:41 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:22:41 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:22:41 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:23:47 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:23:47 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:23:47 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:23:47 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:25:41 Europe/Berlin] {"id":"3","stock":"40","precio":"200","nombre":"Xiaomi Huawei Apple Pro Auricular Bluetooth True Wireless","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/3","cantidad":1}
+[15-Jan-2025 01:35:16 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:35:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:35:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:35:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:36:34 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:36:34 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:36:34 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:36:34 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:37:51 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:37:51 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:37:51 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:37:51 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:37:51 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:38:38 Europe/Berlin] {"id":"7","stock":"80","precio":"90","nombre":"Teclado Mec\u00e1nico Logitech G413","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/7","cantidad":9}
+[15-Jan-2025 01:38:44 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 01:38:44 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 01:38:44 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:38:44 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 01:38:44 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:10:58 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:10:58 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:10:58 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:10:58 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:10:58 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:12:36 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:12:36 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:12:36 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:12:36 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:12:36 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:12:43 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:12:43 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:12:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:12:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:12:43 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:14:23 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:14:23 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:14:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:14:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:14:23 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:15:30 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:15:30 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:15:30 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:15:30 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:15:30 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:15:38 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:15:38 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:15:38 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:15:38 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:15:38 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:16:33 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:16:33 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:16:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:16:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:16:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:19:27 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:19:27 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:19:27 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:19:27 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:19:27 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:20:05 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 02:20:05 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 02:20:05 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:20:05 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 02:20:05 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 23:37:18 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 23:37:18 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 23:37:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 23:37:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 23:37:18 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 23:37:37 Europe/Berlin] fecha: 2025/01/15
+[15-Jan-2025 23:37:37 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[15-Jan-2025 23:37:37 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 23:37:37 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[15-Jan-2025 23:37:37 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 00:20:22 Europe/Berlin] fecha: 2025/01/15
+[16-Jan-2025 00:20:22 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/15' AND o.fechaFin >= '2025/01/15'
+[16-Jan-2025 00:20:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 00:20:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 00:20:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 00:48:47 Europe/Berlin] {"id":"1","stock":"30","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/1","cantidad":2}
+[16-Jan-2025 00:49:41 Europe/Berlin] {"id":"1","stock":"28","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/1","cantidad":1}
+[16-Jan-2025 00:58:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 00:58:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 00:59:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 00:59:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:01:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:01:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:01:41 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:01:41 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:01:41 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:01:57 Europe/Berlin] {"id":"7","stock":"71","precio":"90","nombre":"Teclado Mec\u00e1nico Logitech G413","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/7","cantidad":1}
+[16-Jan-2025 01:01:57 Europe/Berlin] {"id":"6","stock":"150","precio":"90","nombre":"Teclado inal\u00e1mbrico M87 Bluetooth de modo dual con sensaci\u00f3n mec\u00e1nica para juegos, juegos, oficina, teclado silencioso","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/6","cantidad":1}
+[16-Jan-2025 01:01:57 Europe/Berlin] {"id":"1","stock":"27","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/1","cantidad":1}
+[16-Jan-2025 01:02:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:03:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:03:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:03:40 Europe/Berlin] {"id":"2","stock":"30","precio":"1000","nombre":"Apple MacBook Air 13.3\" Core i7 \/ 8GB \/ 128GB","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/2","cantidad":1}
+[16-Jan-2025 01:03:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:05:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:06:39 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:07:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:08:40 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:09:26 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 62
+[16-Jan-2025 01:11:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:12:01 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "class", expecting "function" or "const" in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 60
+[16-Jan-2025 01:12:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:12:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:13:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:15:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:16:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:16:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:17:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:18:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method SesionDao::obteneSesion() in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php:50
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#1 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 50
+[16-Jan-2025 01:18:47 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 01:18:47 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 01:19:38 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 01:19:38 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 01:19:54 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:19:54 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:19:54 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:20:21 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:20:21 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:20:21 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:21:14 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:21:14 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:21:14 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:21:15 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:21:15 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:21:15 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:21:22 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:21:22 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:21:22 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:21:53 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:21:53 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:21:53 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:22:04 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:22:04 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:22:04 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:34:31 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:34:31 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:34:31 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 01:48:11 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 01:48:11 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 01:48:11 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:01:04 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:01:04 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:01:04 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:01:49 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:01:49 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:01:49 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:04:27 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:04:27 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:04:27 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:09:34 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:09:34 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:09:34 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:10:27 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:10:27 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:10:27 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:10:30 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:10:30 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:10:30 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:10:38 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:10:38 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:10:38 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:11:28 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:11:28 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:11:28 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:11:50 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:11:50 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:11:50 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:39:33 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:39:33 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:39:33 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:43:16 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:43:16 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:43:16 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:43:54 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:43:54 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:43:54 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:44:28 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:44:28 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:44:28 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:46:31 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:46:31 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:46:31 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:50:13 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:50:13 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:50:13 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:53:42 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:53:42 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:53:42 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:55:07 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:55:07 Europe/Berlin] SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:55:07 Europe/Berlin] PHP Warning:  Undefined array key "extension" in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 45
+[16-Jan-2025 02:56:41 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:56:41 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:56:50 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:56:50 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 02:59:20 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 02:59:20 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 03:22:42 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 03:22:42 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 03:22:57 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:22:57 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:23:18 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 03:23:18 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 03:23:39 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 03:23:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 03:24:13 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 03:24:13 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 03:25:17 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:25:17 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:25:19 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:25:19 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:25:21 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:25:21 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:25:27 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:25:27 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:26:20 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:26:20 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:27:06 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:27:06 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:28:01 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:28:01 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:30:09 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:30:09 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 47
+[16-Jan-2025 03:32:53 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:32:53 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 45
+[16-Jan-2025 03:34:00 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:34:01 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:35:37 Europe/Berlin] {"id":"1","stock":"26","precio":"1500","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[16-Jan-2025 03:35:43 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 03:35:43 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 03:41:32 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function VentasDao::obtenerComprasUsuario(), 0 passed in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 43 and exactly 1 expected in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php:60
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(43): VentasDao->obtenerComprasUsuario()
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 60
+[16-Jan-2025 03:42:23 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function VentasDao::obtenerComprasUsuario(), 0 passed in C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php on line 43 and exactly 1 expected in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php:60
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(43): VentasDao->obtenerComprasUsuario()
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ventas_controlador.php(16): obtenerComprasUsuario()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ventasDao.php on line 60
+[16-Jan-2025 03:42:45 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 03:42:45 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[16-Jan-2025 03:57:46 Europe/Berlin] {"id":"2","stock":"29","precio":"1000","nombre":"Apple MacBook Air 13.3\" Core i7 \/ 8GB \/ 128GB","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/2.png","cantidad":1}
+[16-Jan-2025 18:03:08 Europe/Berlin] fecha: 2025/01/16
+[16-Jan-2025 18:03:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[17-Jan-2025 00:53:37 Europe/Berlin] fecha: 2025/01/16
+[17-Jan-2025 00:53:37 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[17-Jan-2025 00:54:11 Europe/Berlin] fecha: 2025/01/16
+[17-Jan-2025 00:54:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/16' AND o.fechaFin >= '2025/01/16'
+[18-Jan-2025 01:56:59 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 01:56:59 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 01:59:08 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 01:59:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 01:59:18 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 01:59:18 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:01:06 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:01:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:02:07 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:02:07 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:02:08 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:02:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:02:16 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:02:16 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:03:24 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:03:24 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:03:43 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:03:43 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:03:58 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:03:58 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:04:04 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:04:04 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:04:12 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:04:12 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:04:24 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:04:24 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:07:08 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:07:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:07:52 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:07:52 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:08:57 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:08:57 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:09:53 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:09:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:10:00 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:10:00 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:10:09 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:10:09 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:10:12 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:10:12 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:12:01 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:12:01 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:12:03 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:12:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:13:11 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:13:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:13:22 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:13:22 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:14:44 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:14:44 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:14:56 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:14:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:18:08 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:18:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:18:19 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:18:19 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:18:27 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:18:27 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:19:21 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:19:21 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:19:37 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:19:37 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:25:53 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:25:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:28:48 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:28:48 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:28:57 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:28:57 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:35:25 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:35:25 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:35:33 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:35:33 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:38:22 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:38:22 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 02:40:03 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 02:40:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:15:44 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:15:44 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:16:10 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:16:10 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:16:43 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:16:43 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:16:52 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:16:52 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:19:13 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:19:13 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:19:51 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:19:51 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:20:06 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:20:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:20:33 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:20:33 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:20:57 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:20:57 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:27:11 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:27:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:32:19 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:32:19 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:34:19 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:34:19 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:36:07 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:36:07 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:36:21 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:36:21 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:37:35 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:37:35 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:45:56 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:45:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:47:00 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:47:00 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 03:47:48 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 03:47:48 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[18-Jan-2025 04:07:55 Europe/Berlin] fecha: 2025/01/18
+[18-Jan-2025 04:07:55 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[19-Jan-2025 00:43:32 Europe/Berlin] fecha: 2025/01/18
+[19-Jan-2025 00:43:32 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[19-Jan-2025 00:55:16 Europe/Berlin] fecha: 2025/01/18
+[19-Jan-2025 00:55:16 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/18' AND o.fechaFin >= '2025/01/18'
+[20-Jan-2025 00:24:44 Europe/Berlin] fecha: 2025/01/19
+[20-Jan-2025 00:24:44 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/19' AND o.fechaFin >= '2025/01/19'
+[20-Jan-2025 00:24:49 Europe/Berlin] fecha: 2025/01/19
+[20-Jan-2025 00:24:49 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/19' AND o.fechaFin >= '2025/01/19'
+[20-Jan-2025 00:30:46 Europe/Berlin] fecha: 2025/01/19
+[20-Jan-2025 00:30:46 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/19' AND o.fechaFin >= '2025/01/19'
+[20-Jan-2025 00:32:15 Europe/Berlin] fecha: 2025/01/19
+[20-Jan-2025 00:32:15 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/19' AND o.fechaFin >= '2025/01/19'
+[20-Jan-2025 01:56:28 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 01:56:28 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 02:22:10 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 02:22:10 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 02:51:57 Europe/Berlin] {"id":"4","stock":"75","precio":250,"nombre":"Apple Watch SE ","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/4.jpg\r\n","cantidad":1}
+[20-Jan-2025 04:05:58 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:05:58 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:06:14 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:06:14 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:09:08 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:09:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:15:20 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:15:20 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:21:40 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:21:40 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:28:30 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:28:30 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:34:04 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:34:04 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:34:07 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:34:07 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 04:34:13 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 04:34:13 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 05:19:41 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 05:19:41 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 05:41:31 Europe/Berlin] {"id":"53","stock":"33","precio":3,"nombre":"ee","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/69.jpg","cantidad":33}
+[20-Jan-2025 05:41:49 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 05:41:49 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 06:09:26 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 06:09:26 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 06:10:38 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 06:10:38 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 06:11:27 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 06:11:27 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 06:15:26 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 06:15:26 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 06:17:34 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 06:17:34 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 06:21:27 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 06:21:27 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 16:59:28 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 16:59:28 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 16:59:59 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 16:59:59 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 17:18:04 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 17:18:04 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 18:16:32 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 18:16:32 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 18:16:43 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 18:16:43 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 18:20:52 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 18:20:52 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:50:56 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:50:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:51:41 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:51:41 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:51:49 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:51:49 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:53:17 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:53:17 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:54:53 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:54:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:54:54 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:54:54 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:55:16 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:55:16 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:55:24 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:55:24 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:57:01 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:57:01 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:57:08 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:57:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:58:03 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:58:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:58:04 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:58:04 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[20-Jan-2025 23:58:14 Europe/Berlin] fecha: 2025/01/20
+[20-Jan-2025 23:58:14 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:00:15 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:00:15 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:00:31 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:00:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:00:39 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:00:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:00:47 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:00:47 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:00:49 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:00:49 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:01:05 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:01:05 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:01:18 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:01:18 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:01:29 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:01:29 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:01:39 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:01:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:01:48 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:01:48 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:01:56 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:01:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:02:06 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:02:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:02:31 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:02:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:04:05 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:04:05 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:12:26 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:12:26 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:12:29 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:12:29 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:12:35 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:12:35 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:26:13 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:26:13 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[21-Jan-2025 00:31:15 Europe/Berlin] fecha: 2025/01/20
+[21-Jan-2025 00:31:15 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/20' AND o.fechaFin >= '2025/01/20'
+[22-Jan-2025 00:52:32 Europe/Berlin] fecha: 2025/01/21
+[22-Jan-2025 00:52:32 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/21' AND o.fechaFin >= '2025/01/21'
+[22-Jan-2025 00:52:54 Europe/Berlin] fecha: 2025/01/21
+[22-Jan-2025 00:52:54 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/21' AND o.fechaFin >= '2025/01/21'
+[22-Jan-2025 02:00:32 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 02:00:32 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 02:00:47 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 02:00:47 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 03:12:36 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 03:12:36 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 15:13:06 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 15:13:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 15:15:44 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 15:15:44 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 15:24:22 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 15:24:22 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 15:25:06 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 15:25:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 16:17:55 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 16:17:55 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 17:52:28 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 17:52:28 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:21:55 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:21:55 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:21:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function connection() in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php:41
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(34): Ofertas->obtenerOfertas('2025/01/22')
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(27): obtenerOfertas()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 41
+[22-Jan-2025 19:22:15 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:22:15 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:22:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function connection() in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php:41
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(34): Ofertas->obtenerOfertas('2025/01/22')
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(27): obtenerOfertas()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 41
+[22-Jan-2025 19:22:38 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:22:38 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:23:03 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:23:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:26:50 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:26:50 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:26:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function connection() in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php:41
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(34): Ofertas->obtenerOfertas('2025/01/22')
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(27): obtenerOfertas()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 41
+[22-Jan-2025 19:27:51 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:27:51 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:27:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function connection() in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php:41
+Stack trace:
+#0 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(34): Ofertas->obtenerOfertas('2025/01/22')
+#1 C:\xampp\htdocs\techpro-main\backend\CONTROLLER\ofertas_controller.php(27): obtenerOfertas()
+#2 {main}
+  thrown in C:\xampp\htdocs\techpro-main\backend\DAO\ofertasDao.php on line 41
+[22-Jan-2025 19:28:04 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:28:04 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:28:11 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:28:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:29:00 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:29:00 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:30:09 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:30:09 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:45:15 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:45:15 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:47:42 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:47:42 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 19:54:39 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 19:54:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 20:01:42 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 20:01:42 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 20:01:56 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 20:01:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 20:03:30 Europe/Berlin] {"id":"2","stock":"28","precio":1000,"nombre":"Apple MacBook Air 13.3\" Core i7 \/ 8GB \/ 128GB","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/2.png","cantidad":3}
+[22-Jan-2025 20:35:59 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 20:35:59 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[22-Jan-2025 22:02:28 Europe/Berlin] fecha: 2025/01/22
+[22-Jan-2025 22:02:28 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/22' AND o.fechaFin >= '2025/01/22'
+[23-Jan-2025 16:45:11 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 16:45:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 16:51:09 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 16:51:09 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:30:05 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:30:05 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:30:58 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:30:58 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:32:41 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:32:41 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:32:50 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:32:50 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:33:36 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:33:36 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:33:45 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:33:45 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:33:52 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:33:52 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:34:31 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:34:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:34:36 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:34:36 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:34:39 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:34:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:35:07 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:35:07 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:35:55 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:35:55 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:36:02 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:36:02 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:36:03 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:36:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:36:05 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:36:05 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:36:54 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:36:54 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:37:20 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:37:20 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:37:32 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:37:32 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:40:47 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:40:47 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:43:02 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:43:02 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:44:21 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:44:21 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:45:18 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:45:18 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:45:19 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:45:19 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:45:19 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:45:19 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:46:39 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:46:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:46:40 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:46:40 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:46:53 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:46:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:48:08 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:48:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:48:33 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:48:33 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[23-Jan-2025 23:48:58 Europe/Berlin] fecha: 2025/01/23
+[23-Jan-2025 23:48:58 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[24-Jan-2025 00:01:12 Europe/Berlin] fecha: 2025/01/23
+[24-Jan-2025 00:01:12 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/23' AND o.fechaFin >= '2025/01/23'
+[24-Jan-2025 17:00:25 Europe/Berlin] fecha: 2025/01/24
+[24-Jan-2025 17:00:25 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/24' AND o.fechaFin >= '2025/01/24'
+[24-Jan-2025 17:46:11 Europe/Berlin] {"id":"2","stock":"1","precio":1000,"nombre":"Apple MacBook Air 13.3\" Core i7 \/ 8GB \/ 128GB","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/2.png","cantidad":1}
+[26-Jan-2025 00:42:22 Europe/Berlin] fecha: 2025/01/25
+[26-Jan-2025 00:42:22 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/25' AND o.fechaFin >= '2025/01/25'
+[26-Jan-2025 00:46:22 Europe/Berlin] fecha: 2025/01/25
+[26-Jan-2025 00:46:22 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/25' AND o.fechaFin >= '2025/01/25'
+[26-Jan-2025 00:50:01 Europe/Berlin] {"id":"3","stock":"3","precio":200,"nombre":"Xiaomi Huawei Apple Pro Auricular Bluetooth True Wireless","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/58.jfif","cantidad":1}
+[26-Jan-2025 00:59:06 Europe/Berlin] fecha: 2025/01/25
+[26-Jan-2025 00:59:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/25' AND o.fechaFin >= '2025/01/25'
+[26-Jan-2025 01:02:28 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:02:28 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:02:46 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:02:46 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:03:08 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:03:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:04:06 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:04:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:04:08 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:04:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:05:11 Europe/Berlin] {"id":"1","stock":"16","precio":2000,"nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":2}
+[26-Jan-2025 01:08:25 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:08:25 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:09:20 Europe/Berlin] {"id":"8","stock":"60","precio":200,"nombre":"Auriculares Gamer HyperX Cloud II","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/8.jpg","cantidad":1}
+[26-Jan-2025 01:09:20 Europe/Berlin] {"id":"9","stock":"15","precio":500,"nombre":"Monitor 24\" Full HD Dell","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/9.jpg","cantidad":1}
+[26-Jan-2025 01:09:26 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:09:26 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:11:51 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:11:51 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[26-Jan-2025 01:49:45 Europe/Berlin] fecha: 2025/01/26
+[26-Jan-2025 01:49:45 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/26' AND o.fechaFin >= '2025/01/26'
+[28-Jan-2025 01:30:24 Europe/Berlin] fecha: 2025/01/28
+[28-Jan-2025 01:30:24 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/28' AND o.fechaFin >= '2025/01/28'
+[28-Jan-2025 01:33:01 Europe/Berlin] fecha: 2025/01/28
+[28-Jan-2025 01:33:01 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/28' AND o.fechaFin >= '2025/01/28'
+[28-Jan-2025 01:33:08 Europe/Berlin] fecha: 2025/01/28
+[28-Jan-2025 01:33:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/28' AND o.fechaFin >= '2025/01/28'
+[28-Jan-2025 01:34:37 Europe/Berlin] fecha: 2025/01/28
+[28-Jan-2025 01:34:37 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/28' AND o.fechaFin >= '2025/01/28'
+[28-Jan-2025 01:44:53 Europe/Berlin] fecha: 2025/01/28
+[28-Jan-2025 01:44:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/28' AND o.fechaFin >= '2025/01/28'
+[29-Jan-2025 19:36:25 Europe/Berlin] fecha: 2025/01/29
+[29-Jan-2025 19:36:25 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/01/29' AND o.fechaFin >= '2025/01/29'
+[02-Feb-2025 00:50:29 Europe/Berlin] fecha: 2025/02/01
+[02-Feb-2025 00:50:29 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/01' AND o.fechaFin >= '2025/02/01'
+[02-Feb-2025 00:51:06 Europe/Berlin] fecha: 2025/02/01
+[02-Feb-2025 00:51:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/01' AND o.fechaFin >= '2025/02/01'
+[02-Feb-2025 01:19:17 Europe/Berlin] fecha: 2025/02/02
+[02-Feb-2025 01:19:17 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/02' AND o.fechaFin >= '2025/02/02'
+[02-Feb-2025 01:55:27 Europe/Berlin] fecha: 2025/02/02
+[02-Feb-2025 01:55:27 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/02' AND o.fechaFin >= '2025/02/02'
+[04-Feb-2025 01:37:52 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:37:52 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:38:50 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:38:50 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:38:51 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:38:51 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:39:39 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:39:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:39:46 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:39:46 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:40:00 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:40:00 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:40:35 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:40:35 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:42:30 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:42:30 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:43:50 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:43:50 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:43:58 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:43:58 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:50:28 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:50:28 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[04-Feb-2025 01:50:53 Europe/Berlin] fecha: 2025/02/04
+[04-Feb-2025 01:50:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[05-Feb-2025 00:40:19 Europe/Berlin] fecha: 2025/02/04
+[05-Feb-2025 00:40:19 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[05-Feb-2025 00:53:51 Europe/Berlin] fecha: 2025/02/04
+[05-Feb-2025 00:53:51 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/04' AND o.fechaFin >= '2025/02/04'
+[05-Feb-2025 01:27:26 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 01:27:26 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 01:33:41 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 01:33:41 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 13:57:03 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 13:57:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 14:20:31 Europe/Berlin] {"id":"4","stock":"7","precio":"250","nombre":"Apple Watch SE ","descripcion":"o","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/4.jpg\r\n","cantidad":7}
+[05-Feb-2025 14:20:31 Europe/Berlin] {"id":"3","stock":"2","precio":"200","nombre":"Xiaomi Huawei Apple Pro Auricular Bluetooth True Wireless","descripcion":"l","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/58.jfif","cantidad":2}
+[05-Feb-2025 14:20:31 Europe/Berlin] {"id":"1","stock":"66","precio":"2000","nombre":"iPhone 16 Pro Max","descripcion":"undefined","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[05-Feb-2025 14:21:26 Europe/Berlin] {"id":"1","stock":"65","precio":"2000","nombre":"iPhone 16 Pro Max","descripcion":"undefined","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[05-Feb-2025 14:46:17 Europe/Berlin] {"id":"1","stock":"64","precio":"2000","nombre":"iPhone 16 Pro Max","descripcion":"undefined","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":1}
+[05-Feb-2025 14:48:12 Europe/Berlin] {"id":"1","stock":"63","precio":"2000","nombre":"iPhone 16 Pro Max","descripcion":"undefined","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/53.webp","cantidad":29}
+[05-Feb-2025 14:50:11 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 14:50:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 14:50:22 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 14:50:22 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 15:48:30 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 15:48:30 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 15:48:37 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 15:48:37 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 16:00:51 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 16:00:51 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 16:16:01 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 16:16:01 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[05-Feb-2025 16:24:30 Europe/Berlin] fecha: 2025/02/05
+[05-Feb-2025 16:24:30 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/05' AND o.fechaFin >= '2025/02/05'
+[06-Feb-2025 01:02:06 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 01:02:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 01:02:14 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 01:02:14 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 01:16:17 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 01:16:17 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 01:16:29 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 01:16:29 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 16:20:18 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 16:20:18 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 16:26:16 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 16:26:16 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 16:26:21 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 16:26:21 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 16:27:21 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 16:27:21 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 16:37:31 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 16:37:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 16:38:03 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 16:38:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 18:04:02 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 18:04:02 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 18:07:34 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 18:07:34 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 18:11:10 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 18:11:10 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 18:21:32 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 18:21:32 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 18:45:57 Europe/Berlin] {"id":"2","precio":"100","stock":"97","nombre":"Apple MacBook Air 13.3\" Core i7 \/ 8GB \/ 128G","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/86.jpg","cantidad":97}
+[06-Feb-2025 18:45:57 Europe/Berlin] {"id":"1","precio":"799","stock":"66","nombre":"iPhone 16 Pro Max","imagen":"http:\/\/localhost\/techpro-main\/backend\/imagenes\/89.jpg","cantidad":66}
+[06-Feb-2025 18:55:56 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 18:55:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[06-Feb-2025 20:40:06 Europe/Berlin] fecha: 2025/02/06
+[06-Feb-2025 20:40:06 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'

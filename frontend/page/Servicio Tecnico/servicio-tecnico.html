@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicio Técnico Profesional - Reparación de computadoras, soporte y más.">
+    <title>Servicio Técnico</title>
+    <link rel="stylesheet" href="servicio-tecnico.css">
+    <script type="module" src="servicio-tecnico.js"></script>
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+<nav class="nav">
+    <div class="container nav_container">
+      <!-- Logo -->
+      <a href="../index/index.html" class="nav_logo">
+        <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="Logo" class="logo_img">
+      </a>
+      <!-- Lista de Items del Menú -->
+      <ul class="nav_list">
+        <li class="nav_item"><a href="../index/index.html" class="nav_link">Principal</a></li>
+        <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
+        <li class="nav_item"><a href="../productos/productos.html" class="nav_link">Productos</a></li>
+        <li class="nav_item"><a href="../registro/registro.html" class="nav_link">Registrarse</a></li>
+      </ul>
+      <!-- Carrito -->
+      <a href="../carrito/carrito.html" class="icon_link">
+        <img src="/techpro-main/frontend/image/iconos/cart.png" alt="Carrito" class="icon_img">
+      </a>
+    </div>
+  </nav>
+  
+  
+          <!-- nvbar celular -->
+          <span class="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </span>
+        </div>
+      </nav>
+      <nav class="mobile_nav mobile_nav_hide">
+        <ul class="mobile_nav_list">
+          <li class="mobile_nav_item">
+            <a href="../index/index.html" class="mobile_nav_link">Inicio</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../sobrenosotros/sobrenosotros.html" class="mobile_nav_link">Sobre Nosotros</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../productos/productos.html" class="mobile_nav_link">Productos</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../registro/registro.html" class="mobile_nav_link">Registrarse</a>
+          </li>
+          <li class="mobile_nav_item">
+            <a href="../carrito/carrito.html" class="mobile_nav_link">Carrito</a>
+          </li>
+        </ul>
+      </nav>
+
+     <!-- Section de inicio -->
+     <section id="inicio">
+        <div class="container">
+            <h2>¿Tu dispositivo necesita reparación o limpieza?</h2>
+            <p>Te ofrecemos soluciones rápidas y profesionales para mantener tus dispositivos en perfecto estado.</p>
+            <a href="#formContacto" class="cta-btn">Solicitar Servicio</a>
+        </div>
+    </section>
+
+    <!-- Section de Servicios -->
+    <section id="servicios">
+        <div class="container">
+            <h2>Servicios Especializados</h2>
+            <div class="servicio">
+                <h3>Reparación de Dispositivos</h3>
+                <p>Reparación de teléfonos, computadoras, tablets y otros dispositivos electrónicos con diagnóstico preciso y soluciones rápidas.</p>
+            </div>
+            <div class="servicio">
+                <h3>Limpieza de Dispositivos</h3>
+                <p>Eliminamos el polvo y las impurezas que afectan el rendimiento de tus dispositivos para evitar fallos y mejorar su rendimiento.</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Sección de Contacto -->
+    <form action="/techpro-main/backend/CONTACTO/contactomail.php" id="formContacto" method="POST">
+      <h1>Contáctanos</h1>
+      
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+      <!-- Aquí se mostrará la respuesta del backend -->
+      <div id="respuesta"></div>
+    </form>
+
+ 
+</body>
+</html>

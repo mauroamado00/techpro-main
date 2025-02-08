@@ -1,38 +1,34 @@
 import ProductosDAO from "../../dao/ProductoDao.js";
 
 let idProductoActivo = null;
-window.onload = async function() {
+
+window.onload = async function () {
     let productos = await obtenerProductos();
     mostrarProductos(productos);
     agregarEventoForm();
 };
 
-
 function agregarEventoForm() {
-
     let formCrearElement = document.querySelector("#productoForm");
     formCrearElement.onsubmit = async (e) => {
         e.preventDefault();
         let productoNombre = formCrearElement.productoNombre.value;
-        let productoPrecio = formCrearElement.productoPrecio.value;
         let productoStock = formCrearElement.productoStock.value;
+        let productoPrecio = formCrearElement.productoPrecio.value;
         let productoImagen = formCrearElement.productoImagen.files[0];
         let accion = formCrearElement.submit.value;
-        console.log(accion);
-        if(accion == "Modificar"){
-            modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen,idProductoActivo);
-        }else{
+
+        if (accion == "Modificar") {
+            modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen, idProductoActivo);
+        } else {
             agregarproductos(productoNombre, productoPrecio, productoStock, productoImagen);
-
         }
-
-
     };
 }
 
-async function modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen,idProductoActivo){
-    let respuesta = await new ProductosDAO().modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen,idProductoActivo);
-    if(respuesta.estado){
+async function modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen, idProductoActivo) {
+    let respuesta = await new ProductosDAO().modificarProducto(productoNombre, productoPrecio, productoStock, productoImagen, idProductoActivo);
+    if (respuesta.estado) {
         alert("Producto modificado");
     }
     let formCrearElement = document.querySelector("#productoForm");
@@ -40,12 +36,9 @@ async function modificarProducto(productoNombre, productoPrecio, productoStock, 
     formCrearElement.submit.value = "Crear producto";
     let productos = await obtenerProductos();
     mostrarProductos(productos);
-
-
 }
 
-function activarModificar(producto){
-    console.log(producto);
+function activarModificar(producto) {
     let formCrearElement = document.querySelector("#productoForm");
     let productoNombre = formCrearElement.productoNombre;
     let productoPrecio = formCrearElement.productoPrecio;
@@ -53,120 +46,149 @@ function activarModificar(producto){
     let productoSubmit = formCrearElement.submit;
     idProductoActivo = producto.id;
 
+    // Corregí los valores que se asignan a los campos del formulario
     productoNombre.value = producto.nombre;
-    productoPrecio.value = producto.precio;
-    productoStock.value = producto.stock;
+    productoPrecio.value = producto.precio;  // Precio debe estar aquí
+    productoStock.value = producto.stock;  // Stock debe estar aquí
     productoSubmit.value = "Modificar";
-
 }
 
 async function agregarproductos(productoNombre, productoPrecio, productoStock, productoImagen) {
-
     let productodao = new ProductosDAO();
-    let response = await productodao.agregarproductos(productoNombre, productoPrecio, productoStock, productoImagen); 
+    let response = await productodao.agregarproductos(productoNombre, productoPrecio, productoStock, productoImagen);
 
     if (response.estado) {
         alert("Producto creado correctamente");
-        location.reload(); 
+        location.reload();
     } else {
         alert("Error al crear el producto");
-        location.reload(); 
+        location.reload();
     }
 }
-
 
 async function obtenerProductos() {
     let productosDAO = new ProductosDAO();
     let productos = await productosDAO.obtenerProductos();
-    console.log(productos);
     return productos.datos;
 }
 
-function mostrarProductos(productos) {
-    let listElement = document.querySelector("#productList");
-    listElement.innerHTML = ""; 
+async function mostrarProductos() {
+    // Obtén los productos usando la función del DAO
+    let productosDAO = new ProductosDAO();
+    let respuesta = await productosDAO.obtenerProductos();
 
-    productos.forEach(producto => {
-        let productElement = document.createElement("tr");
-    
-        let productImage = document.createElement("td");
-        let imgElement = document.createElement("img");
-        imgElement.src = producto.imagen || "../../../image/banner1.jpg"; 
-        imgElement.alt = `Imagen de ${producto.nombre}`;
-        imgElement.style.maxWidth = "100px"; 
-        productImage.appendChild(imgElement);        
-    
-        let productTitle = document.createElement("td");
-        productTitle.textContent = producto.nombre;
-    
-        let productPrice = document.createElement("td");
-        productPrice.textContent = `$${producto.precio}`;
-    
-        let productStock = document.createElement("td");
-        productStock.textContent = producto.stock;
-    
-        let tdEliminar = document.createElement('td');
-        let btnEliminar = document.createElement('button');
-        
-        btnEliminar.classList.add('btnAccion');        
-        btnEliminar.classList.add('Eliminar'); 
-        btnEliminar.textContent = 'Eliminar';
-       
-        let btnModificar = document.createElement("button");
-        btnModificar.classList.add("btnModificar");
-         btnModificar.innerHTML="Modificar";
-        btnModificar.onclick = ()=>{
-            activarModificar(producto);
-        }
-        tdEliminar.appendChild(btnModificar)
-    
-        btnEliminar.addEventListener("click", function() {
-            console.log("ID del producto a eliminar:", producto.id);  
-            eliminarProducto(producto.id); 
+    if (respuesta.estado && respuesta.datos) {
+        let productos = respuesta.datos;
+        let listElement = document.querySelector("#productList");
+        listElement.innerHTML = ""; // Limpiar tabla antes de mostrar los productos
+
+        productos.forEach(producto => {
+            let productElement = document.createElement("tr");
+
+            // Mostrar la imagen
+            let productImage = document.createElement("td");
+            let imgElement = document.createElement("img");
+            imgElement.src = producto.imagen || "../../../image/banner1.jpg";
+            imgElement.alt = `Imagen de ${producto.nombre}`;
+            imgElement.style.maxWidth = "100px";
+            productImage.appendChild(imgElement);
+
+            // Mostrar el nombre del producto
+            let productTitle = document.createElement("td");
+            productTitle.textContent = producto.nombre;
+
+            // Mostrar el precio
+            let productPrice = document.createElement("td");
+            productPrice.textContent = `$${producto.precio}`;
+
+            // Mostrar el stock
+            let productStock = document.createElement("td");
+            productStock.textContent = producto.stock;
+
+            // Crear las acciones
+            let tdEliminar = document.createElement('td');
+            let btnEliminar = document.createElement('button');
+            btnEliminar.classList.add('btnAccion');
+            btnEliminar.classList.add('Eliminar');
+            btnEliminar.textContent = 'Eliminar';
+
+            let btnModificar = document.createElement("button");
+            btnModificar.classList.add("btnModificar");
+            btnModificar.innerHTML = "Modificar";
+            btnModificar.onclick = () => {
+                activarModificar(producto);
+            };
+
+            tdEliminar.appendChild(btnModificar);
+
+            btnEliminar.addEventListener("click", function () {
+                eliminarProducto(producto.id);
+            });
+
+            tdEliminar.appendChild(btnEliminar);
+            productElement.appendChild(productImage);
+            productElement.appendChild(productTitle);
+            productElement.appendChild(productPrice);
+            productElement.appendChild(productStock);
+            productElement.appendChild(tdEliminar);
+
+            listElement.appendChild(productElement);
         });
-    
-        tdEliminar.appendChild(btnEliminar);
-        productElement.appendChild(productImage);
-        productElement.appendChild(productTitle);
-        productElement.appendChild(productPrice);
-        productElement.appendChild(productStock);
-        productElement.appendChild(tdEliminar);
-    
-        listElement.appendChild(productElement);
-    });
-    
+    } else {
+        let listElement = document.querySelector("#productList");
+        listElement.innerHTML = "<tr><td colspan='5'>No se pudieron obtener productos.</td></tr>";
+    }
 }
 
+// Función para eliminar un producto
 async function eliminarProducto(id) {
-    console.log("Eliminar producto con id:", id); 
-    if (!id) {
+    // Verificar si el ID es válido
+    if (isNaN(id) || id <= 0) {
+        alert("ID de producto no válido.");
         return;
     }
 
-    let respuesta = await new ProductosDAO().eliminarProducto(id);
-
-    if (respuesta && respuesta.estado) { 
-        console.log("Producto eliminado con éxito");
-        let productos = await obtenerProductos();
-        mostrarProductos(productos);
-    } else {
-        console.error("Error al eliminar el producto", respuesta);
+    // Mostrar un mensaje de confirmación antes de proceder
+    if (!confirm("¿Estás seguro de eliminar este producto?")) {
+        return; // Si el usuario cancela, no hacer nada
     }
-}
 
-document.querySelector('.hamburger').addEventListener('click', () => {
-    const menu = document.querySelector('.navbar-menu');
-    menu.classList.toggle('active');
-});
+    try {
+        // Realizamos la llamada al backend (PHP)
+        const response = await fetch(`/techpro-main/backend/DAO/productoDao.php?id=${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
 
-document.getElementById("logout").addEventListener("click", cerrarSesion);
+        // Verificamos si la respuesta es exitosa
+        if (response.ok) {
+            // Intentamos leer la respuesta como texto
+            const text = await response.text(); // Lee la respuesta como texto
 
-async function cerrarSesion() {
+            // Si la respuesta está vacía
+            if (text.trim() === "") {
+                alert("La respuesta del servidor está vacía.");
+                return;
+            }
 
-    localStorage.removeItem("token");
-    localStorage.removeItem("usuario");
+            // Intentamos analizar el JSON
+            const data = JSON.parse(text);
 
-    alert("Has cerrado sesión. Redirigiendo al inicio de sesión.");
-    window.location.href = "/techpro-main/frontend/page/index/index.html";
+            // Si la respuesta tiene estado true, eliminar el producto
+            if (data.estado) {
+                alert("Producto eliminado correctamente");
+                location.reload(); // Recargar la página para que se actualice la lista de productos
+            } else {
+                alert(`Error al eliminar el producto: ${data.mensaje}`);
+            }
+        } else {
+            alert("Hubo un problema al contactar al servidor.");
+        }
+    } catch (error) {
+        console.error("Error en la eliminación del producto: ", error);
+        alert("Error al eliminar el producto");
+    }
 }
 

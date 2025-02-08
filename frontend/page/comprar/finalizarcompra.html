@@ -10,65 +10,67 @@
 </head>
 <body>
 
-    <!-- form finalizar compra -->
-    <form class="container" id="realize-order">
-        <h1>Finalizar Compra</h1>
-        <div class="checkout">
-            <div class="customer-info">
-                <label for="nombre-completo" name="nombrecompleto">Nombre Completo</label>
-                <input type="text" id="nombre-completo" name="nombreCompleto">
-                <label for="ciudad" name="ciudad">Ciudad</label>
-                <select id="ciudad" name="ciudad">
-                    <option value="">Seleccione una ciudad</option>
-                    <option>Colonia</option>
-                    <option>Rosario</option>
-                    <option>Tarariras</option>
-                    <option>Juan Lacaze</option>
-                    <option>Ombues de Lavalle</option>
-                    <option>Carmelo</option>
-                    <option>Nueva palmira</option>
-                    <option>Montevideo</option>
-                    <option>Otra ciudad.</option>
-                </select>
-                
-                <label for="numero-telefono" >Numero de Telefono</label>
-                <input type="tel" id="numero-telefono" name="numerodetelefono">
-                <label for="email" >Email</label>
-                <input type="email" id="email" name="email">
-                <div class="checkbox">
-                    <input type="checkbox" id="checkbox" name="checkbox" value="1">
-                    <label for="checkbox">Guardar informacion para proximas compras</label>
-                </div>
-            </div>
-            <div class="checkout-info">
-                <div class="cart-total">
-                    <div class="shipping">
-                        <p>Envío:</p>
-                        <p id="shipping-cost">Gratis</p>
-                    </div>
-                    <div class="total">
-                        <p>Total:</p>
-                        <p id="total-price">0.00</p>
-                    </div>                    
-                </div>                
-                <label for="metodoEnvio">Metodo Envio</label>
-                <select id="metodoEnvio" name="metodoEnvio">
-                    <option value="envio">Envio a Domicilio</option>
-                    <option value="local">Retiro en Sucursal</option>
-                </select>
-                <div class="direccion-container">
-                    <label for="direccion">Direccion</label>
-                    <input type="text" id="direccion" name="direccion">
-                </div>
-                <label for="metodoPago">Método de Pago</label>
-                <select id="metodoPago" name="metodoPago">
-                    <option value="efectivo">Efectivo</option>
-                    <option value="tarjeta">Tarjeta</option>                       
-                </select>
-                <button>Realizar pedido</button>
+<!-- form finalizar compra -->
+<form class="container" id="realize-order">
+    <h1>Finalizar Compra</h1>
+    <div class="checkout">
+        <div class="customer-info">
+            <label for="nombre-completo" name="nombrecompleto">Nombre Completo</label>
+            <input type="text" id="nombre-completo" name="nombreCompleto" required>
+            <label for="ciudad" name="ciudad">Ciudad</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="">Seleccione una ciudad</option>
+                <option>Colonia</option>
+                <option>Rosario</option>
+                <option>Tarariras</option>
+                <option>Juan Lacaze</option>
+                <option>Ombues de Lavalle</option>
+                <option>Carmelo</option>
+                <option>Nueva palmira</option>
+                <option>Montevideo</option>
+                <option>Otra ciudad.</option>
+            </select>
+
+            <label for="numero-telefono">Numero de Telefono</label>
+            <input type="tel" id="numero-telefono" name="numerodetelefono" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox" value="1">
+                <label for="checkbox">Guardar informacion para proximas compras</label>
             </div>
         </div>
-    </form>
-    
+        <div class="checkout-info">
+            <div class="cart-total">
+                <div class="shipping">
+                    <p>Envío:</p>
+                    <p id="shipping-cost">Gratis</p>
+                </div>
+                <div class="total">
+                    <p>Total:</p>
+                    <p id="total-price">0.00</p>
+                </div>
+            </div>
+            <label for="metodoEnvio">Metodo Envio</label>
+            <select id="metodoEnvio" name="metodoEnvio" required>
+                <option value="envio">Envio a Domicilio</option>
+                <option value="local">Retiro en Sucursal</option>
+            </select>
+            <div class="direccion-container">
+                <label for="direccion">Direccion</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <label for="metodoPago">Método de pago:</label>
+            <select id="metodoPago" name="metodoPago" required>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        
+            <div id="paypal-button-container">
+                <button id="paypal-button" style="display: none;">Pagar con PayPal</button>
+            </div>
+
+            <button type="submit">Realizar pedido</button>
 </body>
 </html>

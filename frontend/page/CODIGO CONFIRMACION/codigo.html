@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+</head>
+<body>
+    <h2>Recuperar Contraseña</h2>
+    <form id="formRecuperar">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
+        <button type="submit">Enviar Código</button>
+    </form>
+    <div id="message" style="display: none;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#formRecuperar').on('submit', function(event) {
+                event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada
+
+                var email = $('#email').val(); // Obtén el valor del email
+
+                $.ajax({
+                    url: 'http://localhost/techpro-main/backend/CONTROLLER/CODIGOCORREO.php',  // Cambia esta URL por la correcta en tu servidor
+                    method: 'POST',  // Usamos el método POST
+                    data: { email: email },  // Enviamos el email en los datos de la solicitud
+                    success: function(response) {
+                        $('#message').text(response.message).show();
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error en la solicitud AJAX: " + status + " " + error);
+                        alert("Hubo un error al procesar la solicitud.");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

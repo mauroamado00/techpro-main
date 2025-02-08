@@ -30,19 +30,24 @@
       </div>
     </nav>
 
-    <div class="filtros">
-        <label for="filtroNombre">Filtrar por nombre:</label>
-        <input type="text" id="filtroNombre" placeholder="Nombre del producto">
-        
-        <label for="filtroPrecio">Filtrar por precio:</label>
-        <input type="range" id="filtroPrecio" min="0" max="2000" value="500" step="10">
-        <p id="precioValor">$500</p> 
-        <div id="mensajeNoProductos" style="display: none; color: red; text-align: center; font-size: 1.2rem;"></div>
-    </div>
-    
-    <div id="datos">
-      
-    </div>
+    <div class="header">
+      <h1>La Mejor Tienda de Tecnología</h1>
+      <p>Encuentra los dispositivos más innovadores al mejor precio. ¡Revoluciona tu vida con tecnología de vanguardia!</p>
+  </div>
+  
+
+  <hr>
+    <div class="filtro-container">
+      <h2>Filtro</h2>
+      <div class="search-container">
+          <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
+      </div>
+  </div>
+
+  <div id="datos">
+      <!-- Aquí se mostrarán los productos después de aplicar los filtros -->
+  </div>
+  
 
       <!-- footer -->
       <footer class="footer">

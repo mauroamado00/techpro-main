@@ -214,7 +214,7 @@ th, td {
 }
 
 th {
-  background-color: #f0f0f0;
+  background-color: #ffe6e6; /* Rojo salmón más suave para los encabezados */
   font-weight: bold;
   color: #333;
 }
@@ -230,7 +230,7 @@ tbody tr:hover {
 
 /* Botones de acciones */
 button {
-  background-color: #28a745;
+  background-color: #ff6f61; /* Rojo salmón */
   color: white;
   border: none;
   padding: 8px 16px;
@@ -242,7 +242,7 @@ button {
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #e04e3a; /* Rojo más oscuro */
 }
 
 button:disabled {
@@ -269,13 +269,13 @@ button:disabled {
 #total {
   font-size: 24px;
   font-weight: bold;
-  color: #28a745;
+  color: #ff6f61; /* Rojo salmón */
 }
 
 #confirmarcompra {
   font-size: 16px;
   padding: 12px 20px;
-  background-color: #28a745;
+  background-color: #ff6f61; /* Rojo salmón */
   color: white;
   border: none;
   border-radius: 5px;
@@ -285,7 +285,7 @@ button:disabled {
 }
 
 #confirmarcompra:hover {
-  background-color: #218838;
+  background-color: #e04e3a; /* Rojo más oscuro */
 }
 
 #confirmarcompra:disabled {
@@ -344,7 +344,6 @@ table th:nth-child(5), table td:nth-child(5) {
       padding: 6px 12px;
   }
 }
-
 
 /* footer */
 

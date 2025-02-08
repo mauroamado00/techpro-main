@@ -1,58 +1,66 @@
-import CompraDAO from "../../../dao/CompraDao.js";
-
-window.onload = async function () {
+async function cargarCompras() {
     try {
-        await mostrarCompras();
+        const response = await fetch('/techpro-main/backend/VERCOMPRASUSUARIO/comprasusuario.php');
+        const compras = await response.json();
+
+        const tbody = document.getElementById('compras-tbody');
+        tbody.innerHTML = ''; 
+
+        compras.forEach(compra => {
+            const row = document.createElement('tr');
+            row.setAttribute('data-id', compra.id);  
+
+            row.innerHTML = `
+                <td>${compra.id}</td>
+                <td>${compra.nombrecompleto}</td>
+                <td>${compra.ciudad}</td>
+                <td>${compra.numerodetelefono}</td>
+                <td>${compra.email}</td>
+                <td>${compra.metododeenvio}</td>
+                <td>${compra.direccion}</td>
+                <td>${compra.metododepago}</td>
+                <td>
+                    ${compra.productos.length > 0
+                        ? compra.productos.map(p => `${p.nombreProducto} (Cantidad: ${p.cantidad})`).join('<br>')
+                        : 'No hay productos'}
+                </td>
+                <td>
+                    <button onclick="rechazarCompra(${compra.id}, this)">Rechazar compra</button>
+                </td>
+            `;
+
+            tbody.appendChild(row);
+        });
     } catch (error) {
-        console.error("Error al cargar las compras:", error.message || error);
+        console.error('Error al cargar las compras:', error);
     }
-};
+}
 
-// Función para obtener las compras del usuario
-async function obtenerComprasUsuario() {
-    const compradao = new CompraDAO();
-    const email = localStorage.getItem("userEmail"); // Obtener email desde localStorage
-
-    if (!email) {
-        console.warn("El email del usuario no está definido en localStorage.");
-        return [];
-    }
-
+async function rechazarCompra(idCompra) {
     try {
-        // Llamada al método del DAO para obtener las compras del usuario
-        const respuesta = await compradao.obtenerComprasUsuario(email);
+        const response = await fetch('/techpro-main/backend/VERCOMPRASUSUARIO/comprasusuario.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ idCompra: idCompra })
+        });
 
-        // Verificación de la respuesta
-        if (respuesta && respuesta.datos && Array.isArray(respuesta.datos)) {
-            return respuesta.datos; // Retorna las compras si existen
+        if (!response.ok) {
+            throw new Error(`Error HTTP: ${response.status}`);
+        }
+
+        const data = await response.json();  
+
+        if (data.status === "success") {
+            console.log(data.message); 
         } else {
-            console.warn("No se encontraron compras para el usuario.");
-            return [];
+            console.error("Error:", data.message);
         }
     } catch (error) {
-        console.error("Error al obtener las compras del usuario:", error.message || error);
-        return []; // Retorna un array vacío si ocurre un error
+        console.error('Error al rechazar la compra:', error);
     }
 }
 
-// Función para mostrar las compras en el DOM
-async function mostrarCompras() {
-    const compras = await obtenerComprasUsuario();
-    const listElement = document.querySelector("#compras");
 
-    // Limpiar el contenido de la lista antes de mostrar nuevos elementos
-    listElement.innerHTML = "";
-
-    // Si no hay compras, mostrar un mensaje
-    if (compras.length === 0) {
-        listElement.innerHTML = "<li>No hay compras registradas.</li>";
-        return;
-    }
-
-    // Mostrar las compras obtenidas en el DOM
-    compras.forEach((compra) => {
-        const item = document.createElement("li");
-        item.textContent = `Compra ID: ${compra.id}, Producto: ${compra.producto}, Cantidad: ${compra.cantidad}, Precio: ${compra.precio}`;
-        listElement.appendChild(item);
-    });
-}
+window.onload = cargarCompras;

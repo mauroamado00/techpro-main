@@ -248,14 +248,14 @@ ul {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem; /* Aumentado tamaño */
   text-transform: uppercase;
   margin-bottom: 15px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .hero-content p {
-  font-size: 1.3rem;
+  font-size: 1.6rem; /* Aumentado tamaño */
   margin-bottom: 20px;
   line-height: 1.6;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
@@ -263,8 +263,8 @@ ul {
 
 .hero-button {
   display: inline-block;
-  padding: 15px 30px;
-  font-size: 1rem;
+  padding: 18px 35px; /* Aumentado padding */
+  font-size: 1.2rem; /* Aumentado tamaño */
   color: #fff;
   background: #3498db;
   border: none;
@@ -298,38 +298,37 @@ ul {
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Aumentado tamaño */
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Aumentado tamaño */
   }
 
   .hero-button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 12px 25px;
+    font-size: 1.1rem; /* Aumentado tamaño */
   }
 }
 
 /* Sobre Nosotros */
-
 .sobre-nosotros-texto {
-  text-align: center; 
-  margin: 0 auto; 
-  max-width: 800px; 
-  line-height: 1.8; 
-  font-size: 1.5rem; 
-  color: #333; 
-  font-family: 'Arial', sans-serif; 
-  background-color: #f7f7f7; 
-  padding: 20px; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.8;
+  font-size: 1.8rem; /* Aumentado tamaño */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sobre-nosotros h1 {
-  font-size: 3.5rem;
+  font-size: 4rem; /* Aumentado tamaño */
   font-weight: 800;
   color: #fa8072;
   text-transform: uppercase;
@@ -337,21 +336,25 @@ ul {
   text-align: center;
 }
 
+.sobre-nosotros-texto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem; /* Aumentado tamaño */
   color: #555;
 }
 
 .logo-container svg {
   margin-right: 1rem;
   fill: #fa8072;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem; /* Aumentado tamaño */
+  height: 3rem; /* Aumentado tamaño */
 }
 
 .logo-container p {
@@ -361,22 +364,22 @@ ul {
 /* Mapa */
 iframe {
   border: none;
-  margin: 2rem auto; 
+  margin: 2rem auto;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  display: block; 
+  display: block;
   width: 100%;
-  max-width: 900px; 
-  height: 450px;
+  max-width: 900px;
+  height: 500px; /* Aumentado tamaño */
 }
 
-/* Contacto seccion */
+/* Contacto Sección */
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* Aumentado tamaño */
   font-weight: 700;
   color: #fa8072;
   margin: 4rem 0 2rem;
-  text-align: center; 
+  text-align: center;
 }
 
 /* Redes Sociales */
@@ -388,3 +391,5 @@ h2 {
   transform: scale(1.2);
   fill: #ff6f61;
 }
+
+

@@ -1,32 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADMIN PANEL | VER COMPRAS</title>
-    <script type="module" src="vercomprasusuario.js"></script>
-    <link rel="stylesheet" href="vercomprasusuario.css">
+    <title>ADMIN | VER COMPRAS USUARIOS</title>
+    <link rel="stylesheet" href="vercomprasusuario.css"> 
 </head>
 <body>
 
-     <!-- Navbar -->
-     <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="navbar-logo">
-                <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="Logo" class="logo">
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="../ofertas/gestionarOfertas.html">Ver Ofertas</a></li>
-                <li><a href="../gestionarproductos.html">Gestionar Productos</a></li>
-                <li><a href="javascript:void(0);" id="logout">Cerrar sesión</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <h2>Consultar Compras del Usuario</h2>
-    <div id="compras">
-        
-    </div>
-      
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="../gestionarproductos.html" class="navbar-logo">
+                    <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="Logo" class="logo">
+                </a>
+                <ul class="navbar-menu">
+                    <li><a href="../gestionarproductos.html">Volver</a></li>
+                    <li><a href="javascript:void(0);" id="logout">Cerrar sesión</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+
+    <h1>Compras Usuario</h1>
+    <table id="compras-table">
+        <thead>
+            <tr>
+                <th>ID Compra</th>
+                <th>Nombre Completo</th>
+                <th>Ciudad</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>Metodo de Envio</th>
+                <th>Direccion</th>
+                <th>Metodo de Pago</th>
+                <th>Productos</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="compras-tbody">
+            <!-- Las filas de las compras se agregarán aquí -->
+        </tbody>
+    </table>
+
+    <script src="vercomprasusuario.js"></script> <!-- Asegúrate de tener el script.js -->
 </body>
 </html>

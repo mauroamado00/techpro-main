@@ -41,33 +41,31 @@ async function obtenerOfertas() {
 
 function mostrarOfertas(ofertas) {
   let ofertasElement = document.querySelector("#listaOferta");
-  ofertasElement.innerHTML = "";
-  console.log(ofertas);
-  ofertas.forEach(oferta => {
+  ofertasElement.innerHTML = "";  // Limpiar la lista de ofertas
 
+  ofertas.forEach(oferta => {
       let divOferta = document.createElement("div");
       divOferta.classList.add("oferta");
+      
       divOferta.innerHTML = `
           <img src="${oferta.imagen != null ? oferta.imagen : "../../image/banner1.jpg"}" alt="${oferta.nombre}" class="oferta-imagen">
+          <div class="oferta-info">
+              <h3>${oferta.nombre}</h3>
+              <p>Descuento: ${oferta.oferta}%</p>
+              <button class="btn-ver-oferta" data-oferta-id="${oferta.id}" data-oferta-descuento="${oferta.oferta}">
+                  Ver oferta
+              </button>
+          </div>
       `;
-      console.log("Imagen de la oferta:", oferta.imagen);
-
-
-      let divInfoOferta = document.createElement("div");
-      divInfoOferta.classList.add("oferta-info");
-      let precio = parseFloat(oferta.precio) - (parseFloat(oferta.precio) * (parseFloat(oferta.oferta) / 100));
-      divInfoOferta.innerHTML = `
-          <p>Nombre: ${oferta.nombre}</p>
-          <p>Precio: $${oferta.precio}</p>
-          <p>Descuento: ${oferta.oferta}%</p>
-          <p>Precio con oferta: $${precio}</p>
-      `;
-
-      divOferta.appendChild(divInfoOferta);
-
-     
+      
+      // Agregar el evento para aplicar la oferta al producto correspondiente
+      let btnVerOferta = divOferta.querySelector(".btn-ver-oferta");
+      btnVerOferta.onclick = function() {
+          aplicarOferta(oferta);
+      };
 
       ofertasElement.appendChild(divOferta);
-
   });
 }
+
+

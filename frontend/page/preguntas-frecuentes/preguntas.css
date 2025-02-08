@@ -1,0 +1,212 @@
+/* Estilo general del Body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d79b9b; /* Color gris suave de fondo */
+    color: #6d5656;
+    line-height: 1.6;
+  }
+  
+  /* Estilo para la sección de Información de Pago */
+  #informacion-pago {
+    background-color: #ffffff; /* Fondo blanco para el bloque */
+    padding: 60px 30px; /* Aumentado padding */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 30px auto;
+    max-width: 1100px; /* Max ancho para la sección */
+  }
+  
+  #informacion-pago .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  #informacion-pago h2 {
+    font-size: 3.5rem; /* Aumentado tamaño */
+    color: #fa8072; /* Rojo salmón */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #informacion-pago p {
+    font-size: 1.6rem; /* Aumentado tamaño */
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .metodos-pago h3, .preguntas-frecuentes h3 {
+    font-size: 2.5rem; /* Aumentado tamaño */
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .metodos-pago ul, .preguntas-frecuentes ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .metodos-pago li, .preguntas-frecuentes li {
+    font-size: 1.3rem; /* Aumentado tamaño */
+    margin-bottom: 15px;
+  }
+  
+  .metodos-pago li strong, .preguntas-frecuentes li strong {
+    font-weight: bold;
+    color: #fa8072;
+  }
+  
+  .metodos-pago p, .preguntas-frecuentes p {
+    font-size: 1.3rem; /* Aumentado tamaño */
+    margin-bottom: 25px;
+  }
+  
+  .preguntas-frecuentes {
+    margin-top: 50px; /* Aumentado margen */
+    padding-top: 30px;
+    border-top: 2px solid #ccc;
+  }
+  
+  .preguntas-frecuentes ul {
+    margin-top: 30px;
+  }
+  
+  /* Estilo para los botones */
+  button {
+    background-color: #fa8072; /* Rojo salmón */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6f61;
+    transform: translateY(-3px);
+  }
+  
+  /* Mejoras de estilo en los enlaces */
+  a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #2980b9;
+  }
+  
+  /* Estilo para la sección de Métodos de Pago */
+  .metodos-pago {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .metodos-pago ul li {
+    font-size: 1.5rem; /* Aumentado tamaño */
+  }
+  
+  .metodos-pago h3 {
+    text-align: center;
+    font-size: 2rem; /* Aumentado tamaño */
+  }
+  
+  /* Estilo para la sección de Preguntas Frecuentes */
+  .preguntas-frecuentes {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 2px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .preguntas-frecuentes ul li {
+    font-size: 1.4rem; /* Aumentado tamaño */
+  }
+  
+  /* Estilo en pantallas pequeñas */
+  @media (max-width: 768px) {
+    #informacion-pago {
+      padding: 40px 15px;
+    }
+  
+    #informacion-pago h2 {
+      font-size: 2.5rem;
+    }
+  
+    #informacion-pago p {
+      font-size: 1.2rem;
+    }
+  
+    .metodos-pago h3, .preguntas-frecuentes h3 {
+      font-size: 2rem;
+    }
+  
+    .metodos-pago li, .preguntas-frecuentes li {
+      font-size: 1.2rem;
+    }
+  
+    .metodos-pago p, .preguntas-frecuentes p {
+      font-size: 1.2rem;
+    }
+  
+    button {
+      font-size: 1.3rem;
+      padding: 12px 25px;
+    }
+  }
+  
+  /* Estilo para el botón de volver al inicio */
+.volver-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fa8072; /* Rojo salmón */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .volver-inicio:hover {
+    background-color: #ff6f61; /* Color más oscuro al pasar el ratón */
+    transform: translateY(-3px);
+  }
+  
+  .volver-inicio i {
+    font-size: 1.8rem; /* Tamaño de la flecha */
+    transition: transform 0.3s ease;
+  }
+  
+  .volver-inicio:hover i {
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .volver-inicio {
+      font-size: 1.5rem;
+      padding: 12px 15px;
+    }
+  
+    .volver-inicio i {
+      font-size: 1.5rem;
+    }
+  }
+  

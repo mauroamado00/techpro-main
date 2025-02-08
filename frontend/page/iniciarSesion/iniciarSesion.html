@@ -9,25 +9,27 @@
   </head>
   <body>
  
-    <!-- nvbar -->
-    <nav class="nav">
-      <div class="container nav_container">
-        <a href="../index/index.html" class="nav_logo">
-          <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="" class="logo_img">
-        </a>
-        <ul class="nav_list">
-          <li class="nav_item"><a href="../index/index.html" class="nav_link">Principal</a></li>
-          <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
-          <li class="nav_item"><a href="../productos/productos.html" class="nav_link">Productos</a></li>
-          <li class="nav_item">
-            <a href="../registro/registro.html" class="nav_link">Registrarse</a>
-          </li>
-        </ul>
-        <a href="../carrito/carrito.html" class="icon_link">
-          <img src="/techpro-main/frontend/image/iconos/cart.png" alt="Carrito" class="icon_img">
-        </a>
-      </div>
-    </nav>
+  <!-- Navbar -->
+<nav class="nav">
+  <div class="container nav_container">
+    <!-- Logo -->
+    <a href="../index/index.html" class="nav_logo">
+      <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="Logo" class="logo_img">
+    </a>
+    <!-- Lista de Items del Menú -->
+    <ul class="nav_list">
+      <li class="nav_item"><a href="../index/index.html" class="nav_link">Principal</a></li>
+      <li class="nav_item"><a href="../sobrenosotros/sobrenosotros.html" class="nav_link">Sobre Nosotros</a></li>
+      <li class="nav_item"><a href="../productos/productos.html" class="nav_link">Productos</a></li>
+      <li class="nav_item"><a href="../registro/registro.html" class="nav_link">Registrarse</a></li>
+    </ul>
+    <!-- Carrito -->
+    <a href="../carrito/carrito.html" class="icon_link">
+      <img src="/techpro-main/frontend/image/iconos/cart.png" alt="Carrito" class="icon_img">
+    </a>
+  </div>
+</nav>
+
 
         <!-- nvbar celular -->
         <span class="hamburger">
@@ -84,6 +86,8 @@
             <div class="form_group">
               <input type="submit" value="Logear" class="form-btn" name="btnLoguear">
             </div>
+            <!-- Agrega este contenedor debajo del formulario -->
+            <div id="mensaje" class="mensaje"></div>
             <div class="form_group">
               <span
                 >No tienes una cuenta aún?
@@ -95,40 +99,51 @@
         </div>
       </div>
 
-      <!-- footer -->
-      <footer class="footer">
-        <div class="container footer_container">
-          <div class="footer_item">
-            <a href="../index/index.html" class="footer_logo">TECHPROUY</a>
-            <div class="footer_p">
-              Si tienes problemas para registrarte o iniciar sesión, puedes enviarnos un mensaje a nuestras redes sociales. Nuestro personal está listo para ayudarte.
-            </div>
-          </div>
-          <div class="footer_item">
-            <h3 class="footer_item_titl">Información</h3>
-            <ul class="footer_list">
-              <li class="li footer_list_item">Ombues de Lavalle, Colonia</li>
-              <li class="li footer_list_item">TECHPRO@gmail.com</li>
-              <li class="li footer_list_item"></li>
-            </ul>
-          </div>
-          <div class="footer_item">
-            <h3 class="footer_item_titl">Redes Sociales</h3>
-            <div class="footer_socials">
-              <a href="https://www.facebook.com/TecHprouy" class="footer_social_link" target="_blank">
-                <i class="fab fa-facebook-f"></i> 
-              </a>
-              <a href="https://www.tiktok.com/@techprouy" class="footer_social_link" target="_blank">
-                <i class="fab fa-tiktok"></i> 
-              </a>              
-              <a href="https://www.instagram.com/techprouy" class="footer_social_link" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>        
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer_container">
+      <div class="footer_item">
+        <a href="../index/index.html" class="footer_logo">TECHPROUY</a>
+        <div class="footer_p">
+          Si tienes problemas para registrarte o iniciar sesión, puedes enviarnos un mensaje a nuestras redes sociales. Nuestro personal está listo para ayudarte.
         </div>
-      </footer>
+      </div>
       
+      <!-- Información -->
+      <div class="footer_item">
+        <h3 class="footer_item_titl">Información</h3>
+        <ul class="footer_list">
+          <li class="footer_list_item">Ombues de Lavalle, Colonia</li>
+          <li class="footer_list_item">TECHPRO@gmail.com</li>
+          <li class="footer_list_item"></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="footer_item">
+        <h3 class="footer_item_titl">Redes Sociales</h3>
+        <div class="footer_socials">
+          <a href="https://www.facebook.com/TecHprouy" class="footer_social_link" target="_blank">
+            <i class="fab fa-facebook-f"></i> 
+          </a>
+          <a href="https://www.tiktok.com/@techprouy" class="footer_social_link" target="_blank">
+            <i class="fab fa-tiktok"></i> 
+          </a>              
+          <a href="https://www.instagram.com/techprouy" class="footer_social_link" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div> 
+
+        <!-- Métodos de Pago (Enlace a otra página) -->
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Como puedo pagar?</h3>
+          <a href="../preguntas-frecuentes/preguntas.html" class="footer_payment_link">Ver metodos de Pagos</a>
+        </div>        
+      </div>
+    </footer>
+
+        
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </body>
 </html>

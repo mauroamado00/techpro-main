@@ -1,0 +1,293 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* nvbar estilo */
+  .navbar {
+    background-color: #1f2937;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .navbar-logo img {
+    max-height: 50px;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-menu li {
+    list-style: none;
+  }
+  
+  .navbar-menu a {
+    color: #f3f4f6;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-menu a:hover {
+    background-color: #374151;
+    color: #ffffff;
+  }
+  
+/* Menu hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto; /* Esto mueve el menú hamburguesa a la derecha */
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+  
+  @media (max-width: 768px) {
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #374151;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-menu.active {
+      display: flex;
+    }
+
+    .hamburger {
+        display: flex; 
+        margin-left: auto; 
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #374151;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 15px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.active {
+        display: flex; 
+    }
+
+    .navbar-container {
+        justify-content: space-between;
+    }
+  }
+  
+h1 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    color: #2c3e50; /* Color oscuro para el texto */
+    font-weight: 700; /* Peso de fuente negrita */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Mayúsculas para darle un estilo más llamativo */
+    background: linear-gradient(45deg, #979da1, #00000056); /* Fondo de gradiente */
+    -webkit-background-clip: text; /* Aplica el fondo al texto */
+    color: transparent; /* Hace el texto transparente para que el gradiente se vea */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reducir el tamaño en pantallas pequeñas */
+        letter-spacing: 1px; /* Reducir el espaciado entre letras */
+    }
+}
+
+/* Tabla */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px; /* Espacio debajo de la tabla */
+}
+
+th, td {
+    padding: 12px 18px;
+    text-align: left;
+    font-size: 16px;
+    color: #2c3e50; /* Texto negro para mayor visibilidad */
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Acción de botones */
+button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    width: 100%; /* Se asegura que el botón ocupe todo el ancho en móvil */
+    box-sizing: border-box; /* Esto asegura que el padding no afecte el tamaño */
+    margin-top: 10px; /* Espacio superior entre los botones */
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d35400;
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.6);
+}
+
+/* Estilo para el tbody cuando no hay datos */
+#mensajes-tbody {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d; /* Color más suave para el texto cuando no hay mensajes */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        margin: 10px;
+    }
+
+    th, td {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
+    /* Botones de acción (Eliminar) */
+    button {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;  /* Hacer los botones de acción más grandes en móvil */
+        margin-top: 10px; /* Espacio superior entre botones */
+        text-align: center;
+        box-sizing: border-box; /* Asegura que los botones no se corten */
+    }
+
+    /* Ajustar tabla para móvil */
+    th, td {
+        font-size: 14px;
+    }
+
+    /* Mejora la visibilidad de las filas y los datos */
+    tr {
+        font-size: 14px;
+    }
+
+    .btnAccion,
+    .btnModificar {
+        width: 100%; /* Botones de eliminar y modificar se expanden */
+        padding: 12px 0;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    /* Botones de eliminación con mejor visibilidad */
+    .btnAccion {
+        background-color: #e74c3c;
+        color: white;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+        margin-top: 5px;
+        box-sizing: border-box; /* Asegura que el botón se ajuste sin cortar */
+    }
+
+    .btnAccion:hover {
+        background-color: #c0392b;
+        transform: scale(1.05);
+    }
+
+    .btnAccion:active {
+        background-color: #d35400;
+        transform: scale(0.98);
+    }
+}

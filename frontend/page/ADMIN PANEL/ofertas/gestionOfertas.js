@@ -101,3 +101,4 @@ async function cerrarSesion() {
     alert("Has cerrado sesión. Redirigiendo al inicio de sesión.");
     window.location.href = "/techpro-main/frontend/page/index/index.html";
 }
+

@@ -27,22 +27,28 @@ async function agregarEvento() {
 }
 
 async function iniciarSesion(email, password) {
-    let respuesta = await new SesionDao().iniciarSesion(email, password);
+  let respuesta = await new SesionDao().iniciarSesion(email, password);
 
-    if (respuesta && respuesta.estado === true) {
-        if(respuesta.datos.usuario.isadmin == 0){
-            alert("Bienvenido " +respuesta.datos.usuario.nombre);
-            window.location.href = "../index/index.html"; 
-        }else{
-            alert("Bienvenido administrador");
-            window.location.href = "../ADMIN%20PANEL/gestionarproductos.html";
-        }
-         
-    } else {
-        alert("No se ha encontrado la cuenta. Redirigiendo al registro.");
-        window.location.href = "../registro/registro.html"; 
-    }
+  // Debugging: Log the entire response to verify what is returned
+  console.log('Respuesta completa:', respuesta);
+
+  if (respuesta && respuesta.estado === true) {
+      // Access the 'isadmin' value and log it for debugging
+      const isAdmin = respuesta.datos.usuario.isadmin;
+
+      // Log 'isadmin' to see if it is coming as expected
+      console.log('isadmin value:', isAdmin);
+
+      // Explicitly convert isadmin to a number and compare
+      if (Number(isAdmin) === 0) {
+          alert("Bienvenido " + respuesta.datos.usuario.nombre);
+          window.location.href = "../index/index.html"; // Regular user
+      } else {
+          alert("Bienvenido administrador");
+          window.location.href = "../ADMIN%20PANEL/gestionarproductos.html"; // Admin user
+      }
+  } else {
+      alert("No se ha encontrado la cuenta. Redirigiendo al registro.");
+      window.location.href = "../registro/registro.html"; 
+  }
 }
-
-
-  

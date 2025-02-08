@@ -30,34 +30,37 @@ class Ofertas{
                 return new respuesta(false,"Error al Crear las Ofertas",null);
             }
     }
-
-    public function obtenerOfertas($fecha){
+    public function obtenerOfertas($fecha) {
         error_log("fecha: $fecha");
-        $sql = "SELECT o.oferta,p.* FROM `oferta` o LEFT JOIN producto p ON o.idProducto = p.id WHERE o.fechaInicio <= '$fecha' AND o.fechaFin >= '$fecha'";
+        $sql = "SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '$fecha' AND o.fechaFin >= '$fecha'";
         error_log($sql);
         $connection = connection();
-        try{
+        try {
             $result = $connection->query($sql);
             $productos = [];
             while ($row = $result->fetch_assoc()) {
                 $origen = getOrigen();
                 $idImagen = $row["idImagen"];
                 $extension = $row["extension"];
-                $url = "$origen/backend/imagenes/$idImagen.$extension";
+                // Asegúrate de que idImagen y extension no sean nulos
+                $url = (isset($idImagen) && isset($extension)) ? "$origen/backend/imagenes/$idImagen.$extension" : null;
                 $productos[] = [
                     "id" => $row["id"],
                     "stock" => $row["stock"],
                     "precio" => $row["precio"],
                     "nombre" => $row["nombre"],
-                    "imagen" => isset($idImagen) ? $url : null,
+                    "imagen" => $url,
                     "oferta" => $row["oferta"]
                 ];
             }
-            return new respuesta(true,"Ofertas obtenidas",$productos);
-        }catch(Exception $e){
-            return new respuesta(false,"Error al Obtener las Ofertas",null);
+            return new respuesta(true, "Ofertas obtenidas", $productos);
+        } catch (Exception $e) {
+            return new respuesta(false, "Error al Obtener las Ofertas", null);
         }
-
     }
 
 

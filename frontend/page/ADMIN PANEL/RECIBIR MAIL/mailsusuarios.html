@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN | Mensajes Recibidos</title>
+    <link rel="stylesheet" href="recibirmailsusuario.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../gestionarproductos.html" class="navbar-logo">
+                <img src="/techpro-main/frontend/image/iconos/TECHPRO.png" alt="Logo" class="logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="../gestionarproductos.html">Volver</a></li>
+                <li><a href="javascript:void(0);" id="logout">Cerrar sesión</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <h1>Gestión de Mensajes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Mensaje</th>
+                <th>Fecha</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="mensajes-tbody">
+            <!-- Los mensajes se cargarán aquí dinámicamente -->
+        </tbody>
+    </table>
+    <script src="recibirmailsusuario.js"></script>
+</body>
+</html>

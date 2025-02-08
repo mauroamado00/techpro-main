@@ -6,6 +6,7 @@ body {
     padding: 0;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    background-color: #4a607d;
   }
   
   a {
@@ -18,7 +19,6 @@ body {
     padding: 0;
     margin: 0;
   }
-  
   
   /* nvbar estilo */
   .navbar {
@@ -145,6 +145,7 @@ body {
 .formulario-producto {
     flex: 1;
     margin-right: 20px;
+    max-width: 100%;
 }
 
 .formulario-producto h2 {
@@ -189,6 +190,7 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Asegurar que el botón de envío ocupe todo el ancho */
 }
 
 input[type="submit"]:hover {
@@ -209,6 +211,7 @@ input[type="submit"]:hover {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     text-align: center;
+    width: 100%;  /* Hacer que los botones ocupen todo el ancho */
 }
 
 .btnAccion.Eliminar,
@@ -245,6 +248,7 @@ input[type="submit"]:hover {
     transition: background-color 0.3s, transform 0.2s;
     margin-bottom: 10px;
     text-align: center;
+    width: 100%;  /* Asegurar que el botón ocupe todo el ancho */
 }
 
 .btnModificar:hover {
@@ -266,13 +270,15 @@ input[type="submit"]:hover {
 #productoImagen {
     display: block;
     margin-top: 10px;
+    max-width: 100%;
 }
 
+/* Resultado de la operación */
 #resultadoOperacion {
     margin-top: 15px;
     font-weight: bold;
-    color: #27ae60;
     font-size: 1.1em;
+    color: #27ae60;
     transition: color 0.3s;
 }
 
@@ -283,6 +289,7 @@ input[type="submit"]:hover {
 /* Lista de Productos */
 .lista-productos {
     flex: 2;
+    width: 100%;  /* Asegurar que la lista ocupe todo el ancho disponible */
 }
 
 .lista-productos h2 {
@@ -301,7 +308,7 @@ table {
 }
 
 th, td {
-    padding: 15px;
+    padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ecf0f1;
 }
@@ -331,50 +338,44 @@ tr:hover {
     .formulario-producto,
     .lista-productos {
         width: 100%;
-        margin-right: 0; 
+        margin-right: 0;
     }
 
-    .navbar-menu {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .navbar-container {
-        flex-direction: column;
-        align-items: center;
+    .formulario-producto h2,
+    .lista-productos h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     input[type="submit"] {
         font-size: 14px;
+        padding: 12px 0;
     }
 
-    .navbar-logo img {
-        max-height: 40px;
+    label {
+        font-size: 14px;
     }
 
     .btnAccion,
     .btnModificar,
     .btn {
-        padding: 8px 15px; 
+        padding: 12px 0;
         font-size: 14px;
+        margin-bottom: 10px;
+        width: 100%;
     }
 
+    /* Ajuste de la tabla */
     table {
         font-size: 14px;
     }
 
-    /* Mejorar la apariencia de los botones en móviles */
-    .btnAccion,
-    .btn {
-        width: 100%;
-        margin: 10px 0;
-        padding: 12px 0;
-        text-align: center;
+    th, td {
+        padding: 10px;
     }
 
-    /* Mejorar los márgenes en los inputs */
+    /* Mejora del formulario */
     input[type="text"],
     input[type="number"],
     input[type="file"] {
@@ -383,32 +384,25 @@ tr:hover {
         margin-bottom: 15px;
     }
 
-    label {
-        font-size: 14px;
-    }
-
-    /* Ajustar el estilo de las cabeceras */
-    .formulario-producto h2,
-    .lista-productos h2 {
-        font-size: 1.5em;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    /* Ajustar la imagen previa */
+    /* Mejorar la apariencia de las imágenes */
     #productoImagen {
         max-width: 100%;
         height: auto;
     }
 
-    /* Adaptar tablas en móvil */
-    table {
-        font-size: 14px;
-        width: 100%;
+    /* Ajuste de los botones */
+    .btnAccion,
+    .btnModificar {
+        padding: 14px 0;
+        font-size: 16px;
     }
 
-    /* Ajustar la apariencia de las filas de la tabla */
-    th, td {
-        padding: 10px;
+    /* Ajustar la visibilidad de las tablas */
+    table {
+        font-size: 14px;
+    }
+
+    tr {
+        font-size: 14px;
     }
 }

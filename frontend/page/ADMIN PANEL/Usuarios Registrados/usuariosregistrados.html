@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="usuariosregistrados.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+        
+        <table id="usuariosTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se mostrarán los usuarios -->
+            </tbody>
+            
+        </table>
+        
+    </div>
+
+                <!-- Modal (ventana emergente) -->
+        <div id="modal" style="display: none;" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Enviar Correo al Usuario</h2>
+                <p><strong>Email:</strong> <span id="emailUsuario"></span></p>
+                <textarea id="mensajeCorreo" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button onclick="enviarCorreoDesdeModal()">Enviar Correo</button>
+            </div>
+        </div>
+
+
+        
+    
+        <script src="usuariosregistrados.js"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</body>
+
+</html>

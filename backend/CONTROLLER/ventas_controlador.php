@@ -39,12 +39,10 @@ function obtenerTodas(): void{
     $respuesta = (new ventasDao())->obtenerTodas();
     echo json_encode($respuesta);
 }
-
-function obtenerComprasUsuario(){
-    $respuesta = (new ventasDao())->obtenercomprasusuario();
+function obtenerComprasUsuario(): void{
+    $respuesta = (new ventasDao())->obtenerComprasUsuario();
     echo json_encode($respuesta);
 }
-
 
 function actualizarCompra(){
     $id = $_POST['id'];
