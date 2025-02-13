@@ -637,4 +637,64 @@ ul {
   }
 }
 
+.form-password {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
+.form-password input {
+  width: 100%;
+  padding: 10px 45px 10px 10px; /* Espacio para el ícono */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Botón de mostrar/ocultar contraseña */
+.toggle-password {
+  position: absolute;
+  right: 10px; /* Espacio dinámico */
+  top: 53%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+}
+
+.toggle-password:hover {
+  color: #000;
+}
+
+/* Ícono de candado */
+.toggle-password::before {
+  content: "🔒"; /* Candado cerrado por defecto */
+}
+
+.toggle-password.show::before {
+  content: "🔓"; /* Candado abierto cuando se muestra la contraseña */
+}
+
+/* 📱 Estilos Responsivos para Teléfonos */
+@media screen and (max-width: 480px) {
+  .form-password {
+    flex-direction: row;
+  }
+
+  .form-password input {
+    padding-right: 40px; /* Espacio suficiente para el botón */
+  }
+
+  .toggle-password {
+    right: 10px; /* Ajustar para que no se salga */
+    font-size: 18px; /* Reducir tamaño en móviles */
+  }
+}

@@ -70,51 +70,13 @@ class productos {
     }
     
     public function eliminarproductos($id) {
-        // Primero, obtenemos la imagen asociada al producto
-        $sql = "SELECT id_imagen FROM producto WHERE id = ?";
+        $sql = "DELETE FROM producto where id='$id'";
         $connection = connection();
-        
-        // Usamos una sentencia preparada para evitar inyección SQL
-        if ($stmt = $connection->prepare($sql)) {
-            $stmt->bind_param("i", $id); 
-            $stmt->execute();
-            $stmt->store_result();
-            
-            if ($stmt->num_rows > 0) {
-                $stmt->bind_result($id_imagen);
-                $stmt->fetch();
-                
-                // Si el producto tiene una imagen asociada, la eliminamos del servidor
-                if ($id_imagen) {
-                    $rutaImagen = 'images/' . $id_imagen . '.jpg';
-                    if (file_exists($rutaImagen)) {
-                        unlink($rutaImagen); 
-                    }
-                }
-            }
-            
-            $stmt->close();
-        }
-    
-        // Ahora eliminamos el producto
-        $sql = "DELETE FROM producto WHERE id = ?";
         try {
-            if ($stmt = $connection->prepare($sql)) {
-                $stmt->bind_param("i", $id); // "i" para entero
-                $stmt->execute();
-                
-                if ($stmt->affected_rows > 0) {
-                    return new respuesta(true, "Producto eliminado correctamente", null);
-                } else {
-                    return new respuesta(false, "No se encontró el producto con ese ID", null);
-                }
-            } else {
-                throw new Exception("Error al preparar la consulta de eliminación");
-            }
+            $connection->query($sql);
+            return new respuesta(true, "Producto eliminado correctamente", null);
         } catch (Exception $e) {
-            return new respuesta(false, "Error al eliminar el Producto: " . $e->getMessage(), null);
-        } finally {
-            $connection->close(); // Asegúrate de cerrar la conexión
+            return new respuesta(false, "Error al eliminar el Producto", null);
         }
     }
     
@@ -145,11 +107,19 @@ class productos {
         }
     }
 
-    public function buscarproductos($nombre, $precio) {
-        $sql = "SELECT * FROM producto WHERE nombre = '$nombre' AND precio = '$precio'";
-        $connection = connection();
-        $resultado = $connection->query($sql);
-        return $resultado ? $resultado->fetch_all(MYSQLI_ASSOC) : [];
+    public function buscarProductos($nombre) {
+        try {
+            $sql = "SELECT * FROM producto WHERE nombre LIKE :nombre";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->bindValue(":nombre", "%" . $nombre . "%", PDO::PARAM_STR);
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            error_log("Error al buscar productos: " . $e->getMessage());
+            return [];
+        }
     }
+    
+    
 }
 ?>

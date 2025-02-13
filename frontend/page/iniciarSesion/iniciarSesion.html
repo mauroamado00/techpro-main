@@ -68,36 +68,36 @@
       </ul>
     </nav>
 
-        <!-- inicio sesion form -->
-        <div class="form-content">
-          <form id="frmInicio" class="auth_form">
-            <h2 class="form-titulo">Inicio de Sesión</h2>
-            <p class="form-p">Ingresa los datos debajo</p>
-            <div class="form_group">
-              <input type="email" placeholder="Email" name="email" class="form-input" />
-            </div>
-            <div class="form_group form-password">
-              <input
-                type="password"
-                placeholder="Password" name="password"
-                class="form-input" 
-              />
-            </div>
-            <div class="form_group">
-              <input type="submit" value="Logear" class="form-btn" name="btnLoguear">
-            </div>
-            <!-- Agrega este contenedor debajo del formulario -->
-            <div id="mensaje" class="mensaje"></div>
-            <div class="form_group">
-              <span
-                >No tienes una cuenta aún?
-                <a href="../registro/registro.html" class="form_auth_link"
-                  >Registrarse</a
-                ></span>
-            </div>
-          </form>
+            <!-- Formulario de Inicio de Sesión -->
+    <div class="form-content">
+      <form id="frmInicio" class="auth_form">
+        <h2 class="form-titulo">Inicio de Sesión</h2>
+        <p class="form-p">Ingresa los datos debajo</p>
+        
+        <div class="form_group">
+          <input type="email" placeholder="Email" name="email" class="form-input" />
         </div>
-      </div>
+        
+        <div class="form_group">
+          <input type="password" placeholder="Password" name="password" class="form-input" id="password" />
+          <button type="button" class="toggle-password" data-target="password"></button>
+        </div>
+
+        <div class="form_group">
+          <input type="submit" value="Logear" class="form-btn" name="btnLoguear">
+        </div>
+
+        <div id="mensaje" class="mensaje"></div>
+
+        <div class="form_group">
+          <span>
+            No tienes una cuenta aún?
+            <a href="../registro/registro.html" class="form_auth_link">Registrarse</a>
+          </span>
+        </div>
+      </form>
+    </div>
+
 
   <!-- footer -->
   <footer class="footer">

@@ -1,10 +1,11 @@
 import OfertaDAO from "../../dao/OfertasDao.js";
 
 window.onload = async () => {
-  configurarMenuMovil();
   let ofertas = await obtenerOfertas();
   mostrarOfertas(ofertas);
+  configurarMenuMovil();
 }
+
 
 // muestra los banners y hace el slide
 let slideIndex = 0;
@@ -67,5 +68,4 @@ function mostrarOfertas(ofertas) {
       ofertasElement.appendChild(divOferta);
   });
 }
-
 

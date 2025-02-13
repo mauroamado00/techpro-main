@@ -69,39 +69,50 @@
    
     <section class="section">
       <div class="auth_container">
-        <div class="auth_content">
-          <form action="" id="frmRegistro" class="auth_form">
-            <h2 class="form_title">Crear Cuenta</h2>
-            <p class="auth_p">Ingresa tus datos debajo</p>
-            <div class="form_group">
-              <input type="text" placeholder="nombre" name="nombre" class="form_input" />
-            </div>
-            <div class="form_group">
-              <input type="text" placeholder="apellido" name="apellido" class="form_input" />
-            </div>
-            <div class="form_group">
-              <input type="email" placeholder="email" name="email" class="form_input" />
-            </div>
-            <div class="form_group form_pass">
-              <input type="password" placeholder="password" class="form_input" name="password" />
-            </div>
-            <div class="form_group form_pass">
-              <input type="password" placeholder="confirm password" class="form_input" name="confirmpassword" />
-            </div>
-            <div class="form_group">
-              <input type="submit" value="Confirmar" class="form-btn" name="confirmarbtn">
-            </div>
-            <p id="message" class="auth_p error"></p>
-            <div class="form_group">
-              <span>
-                ¿Ya tienes una cuenta? 
-                <a href="../iniciarSesion/iniciarSesion.html" class="form_auth_link">Login</a>
-              </span>
-            </div>
-          </form>
-        </div>
+          <div class="auth_content">
+              <form action="" id="frmRegistro" class="auth_form">
+                  <h2 class="form_title">Crear Cuenta</h2>
+                  <p class="auth_p">Ingresa tus datos debajo</p>
+  
+                  <div class="form_group">
+                      <input type="text" placeholder="Nombre" name="nombre" class="form_input" />
+                  </div>
+                  <div class="form_group">
+                      <input type="text" placeholder="Apellido" name="apellido" class="form_input" />
+                  </div>
+                  <div class="form_group">
+                      <input type="email" placeholder="Email" name="email" class="form_input" />
+                  </div>
+  
+                  <!-- Campo de password con botón de mostrar -->
+                  <div class="form_group form_pass">
+                      <input type="password" placeholder="Password" class="form_input" name="password" />
+                      <button type="button" class="toggle-password">👁</button>
+                  </div>
+  
+                  <!-- Campo de confirmación con botón de mostrar -->
+                  <div class="form_group form_pass">
+                      <input type="password" placeholder="Confirm Password" class="form_input" name="confirmpassword" />
+                      <button type="button" class="toggle-password">👁</button>
+                  </div>
+  
+                  <div class="form_group">
+                      <input type="submit" value="Confirmar" class="form-btn" name="confirmarbtn">
+                  </div>
+  
+                  <p id="message" class="auth_p error"></p>
+  
+                  <div class="form_group">
+                      <span>
+                          ¿Ya tienes una cuenta? 
+                          <a href="../iniciarSesion/iniciarSesion.html" class="form_auth_link">Login</a>
+                      </span>
+                  </div>
+              </form>
+          </div>
       </div>
-    </section>
+  </section>
+  
 
       <!-- footer -->
       <footer class="footer">

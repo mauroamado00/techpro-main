@@ -67,10 +67,9 @@ function modificarProducto() {
     echo json_encode($resultado);
 }
 
-function buscarproductos() {
-    $nombre = $_POST['nombre'];
-    $precio = $_POST['precio'];
-    $resultado = (new productos())->buscarproductos($nombre, $precio);
+function buscarProductos() {
+    $nombre = isset($_POST['nombre']) ? trim($_POST['nombre']) : "";
+    $resultado = (new productos())->buscarProductos($nombre);
     echo json_encode($resultado);
 }
 

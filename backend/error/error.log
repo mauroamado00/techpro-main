@@ -4257,3 +4257,417 @@ Stack trace:
                 LEFT JOIN producto p ON o.idProducto = p.id 
                 LEFT JOIN imagen i ON p.idImagen = i.id 
                 WHERE o.fechaInicio <= '2025/02/06' AND o.fechaFin >= '2025/02/06'
+[08-Feb-2025 01:31:48 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 01:31:48 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 01:56:29 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 01:56:29 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 01:56:35 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 01:56:35 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 01:56:41 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 01:56:41 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 01:57:31 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 01:57:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:03:26 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:03:26 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:06:26 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:06:26 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:06:31 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:06:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:06:39 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:06:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:06:52 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:06:52 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:07:11 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:07:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:07:37 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:07:37 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:12:42 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:12:42 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:12:46 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:12:46 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:12:47 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:12:47 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:13:01 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:13:01 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:13:31 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:13:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:15:00 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:15:00 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:15:25 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:15:25 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:16:39 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:16:39 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:16:52 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:16:52 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:16:53 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:16:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:17:10 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:17:10 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:25:59 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:25:59 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[08-Feb-2025 02:26:17 Europe/Berlin] fecha: 2025/02/08
+[08-Feb-2025 02:26:17 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/08' AND o.fechaFin >= '2025/02/08'
+[10-Feb-2025 16:00:13 Europe/Berlin] fecha: 2025/02/10
+[10-Feb-2025 16:00:13 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/10' AND o.fechaFin >= '2025/02/10'
+[10-Feb-2025 16:01:21 Europe/Berlin] fecha: 2025/02/10
+[10-Feb-2025 16:01:21 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/10' AND o.fechaFin >= '2025/02/10'
+[10-Feb-2025 16:16:31 Europe/Berlin] fecha: 2025/02/10
+[10-Feb-2025 16:16:31 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/10' AND o.fechaFin >= '2025/02/10'
+[10-Feb-2025 19:58:18 Europe/Berlin] fecha: 2025/02/10
+[10-Feb-2025 19:58:18 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/10' AND o.fechaFin >= '2025/02/10'
+[11-Feb-2025 17:05:07 Europe/Berlin] fecha: 2025/02/11
+[11-Feb-2025 17:05:07 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/11' AND o.fechaFin >= '2025/02/11'
+[11-Feb-2025 17:40:59 Europe/Berlin] fecha: 2025/02/11
+[11-Feb-2025 17:40:59 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/11' AND o.fechaFin >= '2025/02/11'
+[11-Feb-2025 17:41:11 Europe/Berlin] fecha: 2025/02/11
+[11-Feb-2025 17:41:11 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/11' AND o.fechaFin >= '2025/02/11'
+[13-Feb-2025 01:30:38 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:30:38 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:30:46 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:30:46 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:54 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:54 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:55 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:55 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:55 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:55 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:55 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:55 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:56 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:56 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:56 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:56 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:57 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:57 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:57 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:57 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:57 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:57 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:58 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:58 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:31:59 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:31:59 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:32:01 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:32:01 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:32:02 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:32:02 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:32:02 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:32:03 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:32:04 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:32:04 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:32:04 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:32:04 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:33:13 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:33:13 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:41:48 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:41:48 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 01:49:47 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 01:49:47 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:22:09 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:22:09 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:24:08 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:24:08 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:25:07 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:25:07 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:25:36 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:25:36 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:26:13 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:26:13 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:26:53 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:26:53 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:27:19 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:27:19 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:59:33 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:59:33 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 02:59:36 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 02:59:36 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 03:02:15 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 03:02:15 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 03:08:46 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 03:08:46 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 03:17:33 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 03:17:34 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 03:27:21 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 03:27:21 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 04:59:00 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 04:59:00 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'
+[13-Feb-2025 04:59:07 Europe/Berlin] fecha: 2025/02/13
+[13-Feb-2025 04:59:07 Europe/Berlin] SELECT o.oferta, p.*, i.id AS idImagen, i.extension 
+                FROM `oferta` o 
+                LEFT JOIN producto p ON o.idProducto = p.id 
+                LEFT JOIN imagen i ON p.idImagen = i.id 
+                WHERE o.fechaInicio <= '2025/02/13' AND o.fechaFin >= '2025/02/13'

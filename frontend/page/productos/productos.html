@@ -37,12 +37,30 @@
   
 
   <hr>
-    <div class="filtro-container">
-      <h2>Filtro</h2>
-      <div class="search-container">
-          <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
-      </div>
-  </div>
+  <div class="filtro-container">
+    <h2>Filtro</h2>
+
+    <div class="search-container">
+        <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
+    </div>
+
+    <div class="category-container">
+        <label for="filtroCategoria">Categoría:</label>
+        <select id="filtroCategoria">
+            <option value="todos">Todos</option>
+            <option value="computadoras">Computadoras</option>
+            <option value="telefonos">Teléfonos</option>
+            <option value="accesorios">Accesorios</option>
+        </select>
+    </div>
+
+    <div id="productos-container">
+        <!-- Aquí se mostrarán los productos filtrados -->
+    </div>
+
+    <p id="mensajeNoEncontrado" style="display: none; color: red;">No se ha encontrado ningún producto.</p>
+</div>
+
 
   <div id="datos">
       <!-- Aquí se mostrarán los productos después de aplicar los filtros -->

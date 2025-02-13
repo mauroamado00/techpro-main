@@ -140,55 +140,19 @@ async function mostrarProductos() {
     }
 }
 
-// Función para eliminar un producto
 async function eliminarProducto(id) {
-    // Verificar si el ID es válido
-    if (isNaN(id) || id <= 0) {
-        alert("ID de producto no válido.");
+    console.log("Eliminar producto con id:", id); 
+    if (!id) {
         return;
     }
 
-    // Mostrar un mensaje de confirmación antes de proceder
-    if (!confirm("¿Estás seguro de eliminar este producto?")) {
-        return; // Si el usuario cancela, no hacer nada
-    }
+    let respuesta = await new ProductosDAO().eliminarProducto(id);
 
-    try {
-        // Realizamos la llamada al backend (PHP)
-        const response = await fetch(`/techpro-main/backend/DAO/productoDao.php?id=${id}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-
-        // Verificamos si la respuesta es exitosa
-        if (response.ok) {
-            // Intentamos leer la respuesta como texto
-            const text = await response.text(); // Lee la respuesta como texto
-
-            // Si la respuesta está vacía
-            if (text.trim() === "") {
-                alert("La respuesta del servidor está vacía.");
-                return;
-            }
-
-            // Intentamos analizar el JSON
-            const data = JSON.parse(text);
-
-            // Si la respuesta tiene estado true, eliminar el producto
-            if (data.estado) {
-                alert("Producto eliminado correctamente");
-                location.reload(); // Recargar la página para que se actualice la lista de productos
-            } else {
-                alert(`Error al eliminar el producto: ${data.mensaje}`);
-            }
-        } else {
-            alert("Hubo un problema al contactar al servidor.");
-        }
-    } catch (error) {
-        console.error("Error en la eliminación del producto: ", error);
-        alert("Error al eliminar el producto");
+    if (respuesta && respuesta.estado) { 
+        console.log("Producto eliminado con éxito");
+        let productos = await obtenerProductos();
+        mostrarProductos(productos);
+    } else {
+        console.error("Error al eliminar el producto", respuesta);
     }
 }
-

@@ -437,22 +437,6 @@ ul {
   padding-top: 20px; /* Añadir un pequeño espacio superior para evitar que se pegue a la navbar */
 }
 
-/* Estilo del formulario */
-.auth_content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  width: 90%;
-  max-width: 500px;  /* Puedes ajustar el tamaño máximo */
-  font-family: Arial, sans-serif;
-}
-
 /* Estilo de los inputs */
 .form_input {
   width: 100%;
@@ -651,6 +635,45 @@ ul {
   max-width: 500px;  /* Puedes ajustar el tamaño del formulario */
 }
 
+/* Mensajes de alerta personalizados */
+.message {
+  display: none;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Animación para mostrar el mensaje */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* hr */
 hr {
   width: 80%;
@@ -805,15 +828,35 @@ hr {
   letter-spacing: 0.5px; /* Espaciado ligero entre letras */
 }
 
-.error {
-  color: #e74c3c; /* Rojo suave */
-  border-bottom: 2px solid #e74c3c; /* Línea roja más fina */
-  background: none; /* Sin fondo */
+.form_pass {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.success {
-  color: #27ae60; /* Verde suave */
-  border-bottom: 2px solid #27ae60; /* Línea verde más fina */
-  background: none; /* Sin fondo */
+.toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 23px; /* 🔍 Más grande */
+  position: absolute;
+  right: 19px;
+  top: 40%;
+  transform: translateY(-60%); /* 📏 Lo sube un poco */
+  color: #666;
 }
 
+.toggle-password:hover {
+  color: #333; /* 🎨 Cambia de color al pasar el mouse */
+}
+
+.form_pass input {
+  width: 100%;
+  padding-right: 40px; /* 📏 Espacio para el botón */
+  cursor: pointer; /* 🖱 Hace que el cursor también active el botón */
+}
+
+.form_pass input:focus + .toggle-password,
+.form_pass:hover .toggle-password {
+  color: #000; /* 🖤 Hace que el icono resalte cuando interactúas */
+}

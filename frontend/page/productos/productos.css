@@ -771,3 +771,26 @@ input#filtroNombre:focus {
   }
 }
 
+.filtro-container {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.search-container input, 
+.category-container select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#productos-container div {
+  background: white;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
